@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "types": ["react/next", "react-dom/next", "node"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "strict": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "types": [
+    "typePatches"
+  ]
+}
