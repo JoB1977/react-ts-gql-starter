@@ -13,13 +13,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
-    "strict": true
+    "strict": true,
+    "paths": {
+      "lodash": ["./node_modules/lodash-es"]
+    }
   },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
-  "types": [
-    "typePatches"
-  ]
+  "exclude": ["node_modules", "dist"],
+  "types": ["typePatches"]
 }
