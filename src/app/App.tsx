@@ -30,7 +30,6 @@ interface IRepoIssuesResult {
 }
 
 const App: FC = () => {
-  //
   const { loading, data } = useQuery<IRepoIssuesResult>(GET_ISSUES_QUERY);
 
   const [opened, setOpened] = useState<string[]>([]);
