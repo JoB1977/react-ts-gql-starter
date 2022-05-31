@@ -1,4 +1,5 @@
 import { gql } from '@apollo/client';
+
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
@@ -99,7 +100,6 @@ export type Actor = {
   /** The HTTP URL for this actor. */
   url: Scalars['URI'];
 };
-
 
 /** Represents an object which can take actions on GitHub. Typically a User or Bot. */
 export type ActorAvatarUrlArgs = {
@@ -519,7 +519,6 @@ export type App = Node & {
   url: Scalars['URI'];
 };
 
-
 /** A GitHub App. */
 export type AppIpAllowListEntriesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -528,7 +527,6 @@ export type AppIpAllowListEntriesArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<IpAllowListEntryOrder>;
 };
-
 
 /** A GitHub App. */
 export type AppLogoUrlArgs = {
@@ -595,7 +593,6 @@ export type Assignable = {
   /** A list of Users assigned to this object. */
   assignees: UserConnection;
 };
-
 
 /** An object that can have users assigned to it. */
 export type AssignableAssigneesArgs = {
@@ -899,7 +896,6 @@ export type Bot = Actor & Node & UniformResourceLocatable & {
   url: Scalars['URI'];
 };
 
-
 /** A special type of user which takes actions on behalf of GitHub Apps. */
 export type BotAvatarUrlArgs = {
   size?: InputMaybe<Scalars['Int']>;
@@ -968,7 +964,6 @@ export type BranchProtectionRule = Node & {
   reviewDismissalAllowances: ReviewDismissalAllowanceConnection;
 };
 
-
 /** A branch protection rule. */
 export type BranchProtectionRuleBranchProtectionRuleConflictsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -976,7 +971,6 @@ export type BranchProtectionRuleBranchProtectionRuleConflictsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A branch protection rule. */
 export type BranchProtectionRuleBypassForcePushAllowancesArgs = {
@@ -986,7 +980,6 @@ export type BranchProtectionRuleBypassForcePushAllowancesArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A branch protection rule. */
 export type BranchProtectionRuleBypassPullRequestAllowancesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -994,7 +987,6 @@ export type BranchProtectionRuleBypassPullRequestAllowancesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A branch protection rule. */
 export type BranchProtectionRuleMatchingRefsArgs = {
@@ -1005,7 +997,6 @@ export type BranchProtectionRuleMatchingRefsArgs = {
   query?: InputMaybe<Scalars['String']>;
 };
 
-
 /** A branch protection rule. */
 export type BranchProtectionRulePushAllowancesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -1013,7 +1004,6 @@ export type BranchProtectionRulePushAllowancesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A branch protection rule. */
 export type BranchProtectionRuleReviewDismissalAllowancesArgs = {
@@ -1421,7 +1411,6 @@ export type CheckRun = Node & RequirableByPullRequest & UniformResourceLocatable
   url: Scalars['URI'];
 };
 
-
 /** A check run. */
 export type CheckRunAnnotationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -1430,13 +1419,11 @@ export type CheckRunAnnotationsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A check run. */
 export type CheckRunIsRequiredArgs = {
   pullRequestId?: InputMaybe<Scalars['ID']>;
   pullRequestNumber?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A check run. */
 export type CheckRunStepsArgs = {
@@ -1620,7 +1607,6 @@ export type CheckSuite = Node & {
   workflowRun?: Maybe<WorkflowRun>;
 };
 
-
 /** A check suite. */
 export type CheckSuiteCheckRunsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -1629,7 +1615,6 @@ export type CheckSuiteCheckRunsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A check suite. */
 export type CheckSuiteMatchingPullRequestsArgs = {
@@ -1881,7 +1866,6 @@ export type Comment = {
   viewerDidAuthor: Scalars['Boolean'];
 };
 
-
 /** Represents a comment. */
 export type CommentUserContentEditsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -2044,7 +2028,6 @@ export type Commit = GitObject & Node & Subscribable & UniformResourceLocatable 
   zipballUrl: Scalars['URI'];
 };
 
-
 /** Represents a Git commit. */
 export type CommitAssociatedPullRequestsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -2054,7 +2037,6 @@ export type CommitAssociatedPullRequestsArgs = {
   orderBy?: InputMaybe<PullRequestOrder>;
 };
 
-
 /** Represents a Git commit. */
 export type CommitAuthorsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -2063,12 +2045,10 @@ export type CommitAuthorsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** Represents a Git commit. */
 export type CommitBlameArgs = {
   path: Scalars['String'];
 };
-
 
 /** Represents a Git commit. */
 export type CommitCheckSuitesArgs = {
@@ -2079,7 +2059,6 @@ export type CommitCheckSuitesArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** Represents a Git commit. */
 export type CommitCommentsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -2087,7 +2066,6 @@ export type CommitCommentsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** Represents a Git commit. */
 export type CommitDeploymentsArgs = {
@@ -2099,12 +2077,10 @@ export type CommitDeploymentsArgs = {
   orderBy?: InputMaybe<DeploymentOrder>;
 };
 
-
 /** Represents a Git commit. */
 export type CommitFileArgs = {
   path: Scalars['String'];
 };
-
 
 /** Represents a Git commit. */
 export type CommitHistoryArgs = {
@@ -2118,7 +2094,6 @@ export type CommitHistoryArgs = {
   until?: InputMaybe<Scalars['GitTimestamp']>;
 };
 
-
 /** Represents a Git commit. */
 export type CommitParentsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -2126,7 +2101,6 @@ export type CommitParentsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** Represents a Git commit. */
 export type CommitSubmodulesArgs = {
@@ -2210,7 +2184,6 @@ export type CommitComment = Comment & Deletable & Minimizable & Node & Reactable
   viewerDidAuthor: Scalars['Boolean'];
 };
 
-
 /** Represents a comment on a given Commit. */
 export type CommitCommentReactionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -2220,7 +2193,6 @@ export type CommitCommentReactionsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<ReactionOrder>;
 };
-
 
 /** Represents a comment on a given Commit. */
 export type CommitCommentUserContentEditsArgs = {
@@ -2267,7 +2239,6 @@ export type CommitCommentThread = Node & RepositoryNode & {
   /** The repository associated with this node. */
   repository: Repository;
 };
-
 
 /** A thread of comments on a commit. */
 export type CommitCommentThreadCommentsArgs = {
@@ -2318,7 +2289,6 @@ export type CommitContributionsByRepository = {
   /** The HTTP URL for the user's commits to the repository in this time range. */
   url: Scalars['URI'];
 };
-
 
 /** This aggregates commits made by a user within one repository. */
 export type CommitContributionsByRepositoryContributionsArgs = {
@@ -2603,12 +2573,10 @@ export type ContributionsCollection = {
   user: User;
 };
 
-
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionCommitContributionsByRepositoryArgs = {
   maxRepositories?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionIssueContributionsArgs = {
@@ -2621,14 +2589,12 @@ export type ContributionsCollectionIssueContributionsArgs = {
   orderBy?: InputMaybe<ContributionOrder>;
 };
 
-
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionIssueContributionsByRepositoryArgs = {
   excludeFirst?: InputMaybe<Scalars['Boolean']>;
   excludePopular?: InputMaybe<Scalars['Boolean']>;
   maxRepositories?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionPullRequestContributionsArgs = {
@@ -2641,14 +2607,12 @@ export type ContributionsCollectionPullRequestContributionsArgs = {
   orderBy?: InputMaybe<ContributionOrder>;
 };
 
-
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionPullRequestContributionsByRepositoryArgs = {
   excludeFirst?: InputMaybe<Scalars['Boolean']>;
   excludePopular?: InputMaybe<Scalars['Boolean']>;
   maxRepositories?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionPullRequestReviewContributionsArgs = {
@@ -2659,12 +2623,10 @@ export type ContributionsCollectionPullRequestReviewContributionsArgs = {
   orderBy?: InputMaybe<ContributionOrder>;
 };
 
-
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionPullRequestReviewContributionsByRepositoryArgs = {
   maxRepositories?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionRepositoryContributionsArgs = {
@@ -2676,13 +2638,11 @@ export type ContributionsCollectionRepositoryContributionsArgs = {
   orderBy?: InputMaybe<ContributionOrder>;
 };
 
-
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionTotalIssueContributionsArgs = {
   excludeFirst?: InputMaybe<Scalars['Boolean']>;
   excludePopular?: InputMaybe<Scalars['Boolean']>;
 };
-
 
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionTotalPullRequestContributionsArgs = {
@@ -2690,20 +2650,17 @@ export type ContributionsCollectionTotalPullRequestContributionsArgs = {
   excludePopular?: InputMaybe<Scalars['Boolean']>;
 };
 
-
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionTotalRepositoriesWithContributedIssuesArgs = {
   excludeFirst?: InputMaybe<Scalars['Boolean']>;
   excludePopular?: InputMaybe<Scalars['Boolean']>;
 };
 
-
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionTotalRepositoriesWithContributedPullRequestsArgs = {
   excludeFirst?: InputMaybe<Scalars['Boolean']>;
   excludePopular?: InputMaybe<Scalars['Boolean']>;
 };
-
 
 /** A contributions collection aggregates contributions such as opened issues and commits created by a user. */
 export type ContributionsCollectionTotalRepositoryContributionsArgs = {
@@ -4075,7 +4032,6 @@ export type Deployment = Node & {
   updatedAt: Scalars['DateTime'];
 };
 
-
 /** Represents triggered deployment instance. */
 export type DeploymentStatusesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4147,7 +4103,6 @@ export type DeploymentProtectionRule = {
   type: DeploymentProtectionRuleType;
 };
 
-
 /** A protection rule. */
 export type DeploymentProtectionRuleReviewersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4201,7 +4156,6 @@ export type DeploymentRequest = {
   waitTimerStartedAt?: Maybe<Scalars['DateTime']>;
 };
 
-
 /** A request to deploy a workflow run to an environment. */
 export type DeploymentRequestReviewersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4247,7 +4201,6 @@ export type DeploymentReview = Node & {
   /** The user that reviewed the deployment. */
   user: User;
 };
-
 
 /** A deployment review. */
 export type DeploymentReviewEnvironmentsArgs = {
@@ -4525,7 +4478,6 @@ export type Discussion = Comment & Deletable & Labelable & Lockable & Node & Rea
   viewerSubscription?: Maybe<SubscriptionState>;
 };
 
-
 /** A discussion in a repository. */
 export type DiscussionCommentsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4533,7 +4485,6 @@ export type DiscussionCommentsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A discussion in a repository. */
 export type DiscussionLabelsArgs = {
@@ -4544,7 +4495,6 @@ export type DiscussionLabelsArgs = {
   orderBy?: InputMaybe<LabelOrder>;
 };
 
-
 /** A discussion in a repository. */
 export type DiscussionReactionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4554,7 +4504,6 @@ export type DiscussionReactionsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<ReactionOrder>;
 };
-
 
 /** A discussion in a repository. */
 export type DiscussionUserContentEditsArgs = {
@@ -4686,7 +4635,6 @@ export type DiscussionComment = Comment & Deletable & Minimizable & Node & React
   viewerHasUpvoted: Scalars['Boolean'];
 };
 
-
 /** A comment on a discussion. */
 export type DiscussionCommentReactionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4697,7 +4645,6 @@ export type DiscussionCommentReactionsArgs = {
   orderBy?: InputMaybe<ReactionOrder>;
 };
 
-
 /** A comment on a discussion. */
 export type DiscussionCommentRepliesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4705,7 +4652,6 @@ export type DiscussionCommentRepliesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A comment on a discussion. */
 export type DiscussionCommentUserContentEditsArgs = {
@@ -4853,7 +4799,6 @@ export type DraftIssue = Node & {
   updatedAt: Scalars['DateTime'];
 };
 
-
 /** A draft issue within a project. */
 export type DraftIssueAssigneesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4958,12 +4903,10 @@ export type Enterprise = Node & {
   websiteUrl?: Maybe<Scalars['URI']>;
 };
 
-
 /** An account to manage multiple organizations with consolidated policy and billing. */
 export type EnterpriseAvatarUrlArgs = {
   size?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** An account to manage multiple organizations with consolidated policy and billing. */
 export type EnterpriseMembersArgs = {
@@ -4978,7 +4921,6 @@ export type EnterpriseMembersArgs = {
   role?: InputMaybe<EnterpriseUserAccountMembershipRole>;
 };
 
-
 /** An account to manage multiple organizations with consolidated policy and billing. */
 export type EnterpriseOrganizationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4989,7 +4931,6 @@ export type EnterpriseOrganizationsArgs = {
   query?: InputMaybe<Scalars['String']>;
   viewerOrganizationRole?: InputMaybe<RoleInOrganization>;
 };
-
 
 /** An account to manage multiple organizations with consolidated policy and billing. */
 export type EnterpriseUserAccountsArgs = {
@@ -5174,7 +5115,6 @@ export type EnterpriseIdentityProvider = Node & {
   ssoUrl?: Maybe<Scalars['URI']>;
 };
 
-
 /** An identity provider configured to provision identities for an enterprise. */
 export type EnterpriseIdentityProviderExternalIdentitiesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5297,7 +5237,6 @@ export type EnterpriseOutsideCollaboratorEdge = {
   repositories: EnterpriseRepositoryInfoConnection;
 };
 
-
 /** A User who is an outside collaborator of an enterprise through one or more organizations. */
 export type EnterpriseOutsideCollaboratorEdgeRepositoriesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5410,7 +5349,6 @@ export type EnterpriseOwnerInfo = {
   twoFactorRequiredSettingOrganizations: OrganizationConnection;
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoAdminsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5423,7 +5361,6 @@ export type EnterpriseOwnerInfoAdminsArgs = {
   role?: InputMaybe<EnterpriseAdministratorRole>;
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoAffiliatedUsersWithTwoFactorDisabledArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5431,7 +5368,6 @@ export type EnterpriseOwnerInfoAffiliatedUsersWithTwoFactorDisabledArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoAllowPrivateRepositoryForkingSettingOrganizationsArgs = {
@@ -5443,7 +5379,6 @@ export type EnterpriseOwnerInfoAllowPrivateRepositoryForkingSettingOrganizations
   value: Scalars['Boolean'];
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoDefaultRepositoryPermissionSettingOrganizationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5453,7 +5388,6 @@ export type EnterpriseOwnerInfoDefaultRepositoryPermissionSettingOrganizationsAr
   orderBy?: InputMaybe<OrganizationOrder>;
   value: DefaultRepositoryPermissionField;
 };
-
 
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoDomainsArgs = {
@@ -5466,7 +5400,6 @@ export type EnterpriseOwnerInfoDomainsArgs = {
   orderBy?: InputMaybe<VerifiableDomainOrder>;
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoEnterpriseServerInstallationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5477,7 +5410,6 @@ export type EnterpriseOwnerInfoEnterpriseServerInstallationsArgs = {
   orderBy?: InputMaybe<EnterpriseServerInstallationOrder>;
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoIpAllowListEntriesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5486,7 +5418,6 @@ export type EnterpriseOwnerInfoIpAllowListEntriesArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<IpAllowListEntryOrder>;
 };
-
 
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoMembersCanChangeRepositoryVisibilitySettingOrganizationsArgs = {
@@ -5498,7 +5429,6 @@ export type EnterpriseOwnerInfoMembersCanChangeRepositoryVisibilitySettingOrgani
   value: Scalars['Boolean'];
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoMembersCanCreateRepositoriesSettingOrganizationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5508,7 +5438,6 @@ export type EnterpriseOwnerInfoMembersCanCreateRepositoriesSettingOrganizationsA
   orderBy?: InputMaybe<OrganizationOrder>;
   value: OrganizationMembersCanCreateRepositoriesSettingValue;
 };
-
 
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoMembersCanDeleteIssuesSettingOrganizationsArgs = {
@@ -5520,7 +5449,6 @@ export type EnterpriseOwnerInfoMembersCanDeleteIssuesSettingOrganizationsArgs = 
   value: Scalars['Boolean'];
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoMembersCanDeleteRepositoriesSettingOrganizationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5530,7 +5458,6 @@ export type EnterpriseOwnerInfoMembersCanDeleteRepositoriesSettingOrganizationsA
   orderBy?: InputMaybe<OrganizationOrder>;
   value: Scalars['Boolean'];
 };
-
 
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoMembersCanInviteCollaboratorsSettingOrganizationsArgs = {
@@ -5542,7 +5469,6 @@ export type EnterpriseOwnerInfoMembersCanInviteCollaboratorsSettingOrganizations
   value: Scalars['Boolean'];
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoMembersCanUpdateProtectedBranchesSettingOrganizationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5552,7 +5478,6 @@ export type EnterpriseOwnerInfoMembersCanUpdateProtectedBranchesSettingOrganizat
   orderBy?: InputMaybe<OrganizationOrder>;
   value: Scalars['Boolean'];
 };
-
 
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoMembersCanViewDependencyInsightsSettingOrganizationsArgs = {
@@ -5564,7 +5489,6 @@ export type EnterpriseOwnerInfoMembersCanViewDependencyInsightsSettingOrganizati
   value: Scalars['Boolean'];
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoOrganizationProjectsSettingOrganizationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5574,7 +5498,6 @@ export type EnterpriseOwnerInfoOrganizationProjectsSettingOrganizationsArgs = {
   orderBy?: InputMaybe<OrganizationOrder>;
   value: Scalars['Boolean'];
 };
-
 
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoOutsideCollaboratorsArgs = {
@@ -5590,7 +5513,6 @@ export type EnterpriseOwnerInfoOutsideCollaboratorsArgs = {
   visibility?: InputMaybe<RepositoryVisibility>;
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoPendingAdminInvitationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5602,7 +5524,6 @@ export type EnterpriseOwnerInfoPendingAdminInvitationsArgs = {
   role?: InputMaybe<EnterpriseAdministratorRole>;
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoPendingCollaboratorInvitationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5612,7 +5533,6 @@ export type EnterpriseOwnerInfoPendingCollaboratorInvitationsArgs = {
   orderBy?: InputMaybe<RepositoryInvitationOrder>;
   query?: InputMaybe<Scalars['String']>;
 };
-
 
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoPendingMemberInvitationsArgs = {
@@ -5624,7 +5544,6 @@ export type EnterpriseOwnerInfoPendingMemberInvitationsArgs = {
   query?: InputMaybe<Scalars['String']>;
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoRepositoryProjectsSettingOrganizationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5634,7 +5553,6 @@ export type EnterpriseOwnerInfoRepositoryProjectsSettingOrganizationsArgs = {
   orderBy?: InputMaybe<OrganizationOrder>;
   value: Scalars['Boolean'];
 };
-
 
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoSamlIdentityProviderSettingOrganizationsArgs = {
@@ -5646,7 +5564,6 @@ export type EnterpriseOwnerInfoSamlIdentityProviderSettingOrganizationsArgs = {
   value: IdentityProviderConfigurationState;
 };
 
-
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoSupportEntitlementsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5655,7 +5572,6 @@ export type EnterpriseOwnerInfoSupportEntitlementsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<EnterpriseMemberOrder>;
 };
-
 
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoTeamDiscussionsSettingOrganizationsArgs = {
@@ -5666,7 +5582,6 @@ export type EnterpriseOwnerInfoTeamDiscussionsSettingOrganizationsArgs = {
   orderBy?: InputMaybe<OrganizationOrder>;
   value: Scalars['Boolean'];
 };
-
 
 /** Enterprise information only visible to enterprise owners. */
 export type EnterpriseOwnerInfoTwoFactorRequiredSettingOrganizationsArgs = {
@@ -5756,7 +5671,6 @@ export type EnterpriseServerInstallation = Node & {
   userAccountsUploads: EnterpriseServerUserAccountsUploadConnection;
 };
 
-
 /** An Enterprise Server installation. */
 export type EnterpriseServerInstallationUserAccountsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5765,7 +5679,6 @@ export type EnterpriseServerInstallationUserAccountsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<EnterpriseServerUserAccountOrder>;
 };
-
 
 /** An Enterprise Server installation. */
 export type EnterpriseServerInstallationUserAccountsUploadsArgs = {
@@ -5839,7 +5752,6 @@ export type EnterpriseServerUserAccount = Node & {
   /** Identifies the date and time when the object was last updated. */
   updatedAt: Scalars['DateTime'];
 };
-
 
 /** A user account on an Enterprise Server installation. */
 export type EnterpriseServerUserAccountEmailsArgs = {
@@ -6030,12 +5942,10 @@ export type EnterpriseUserAccount = Actor & Node & {
   user?: Maybe<User>;
 };
 
-
 /** An account for a user who is an admin of an enterprise or a member of an enterprise through one or more organizations. */
 export type EnterpriseUserAccountAvatarUrlArgs = {
   size?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** An account for a user who is an admin of an enterprise or a member of an enterprise through one or more organizations. */
 export type EnterpriseUserAccountOrganizationsArgs = {
@@ -6097,7 +6007,6 @@ export type Environment = Node & {
   /** The protection rules defined for this environment */
   protectionRules: DeploymentProtectionRuleConnection;
 };
-
 
 /** An environment. */
 export type EnvironmentProtectionRulesArgs = {
@@ -6504,7 +6413,6 @@ export type Gist = Node & Starrable & UniformResourceLocatable & {
   viewerHasStarred: Scalars['Boolean'];
 };
 
-
 /** A Gist. */
 export type GistCommentsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6513,13 +6421,11 @@ export type GistCommentsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A Gist. */
 export type GistFilesArgs = {
   limit?: InputMaybe<Scalars['Int']>;
   oid?: InputMaybe<Scalars['GitObjectID']>;
 };
-
 
 /** A Gist. */
 export type GistForksArgs = {
@@ -6529,7 +6435,6 @@ export type GistForksArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<GistOrder>;
 };
-
 
 /** A Gist. */
 export type GistStargazersArgs = {
@@ -6589,7 +6494,6 @@ export type GistComment = Comment & Deletable & Minimizable & Node & Updatable &
   /** Did the viewer author this comment. */
   viewerDidAuthor: Scalars['Boolean'];
 };
-
 
 /** Represents a comment on an Gist. */
 export type GistCommentUserContentEditsArgs = {
@@ -6666,7 +6570,6 @@ export type GistFile = {
   text?: Maybe<Scalars['String']>;
 };
 
-
 /** A file in a gist. */
 export type GistFileTextArgs = {
   truncate?: InputMaybe<Scalars['Int']>;
@@ -6714,7 +6617,6 @@ export type GitActor = {
   /** The GitHub user corresponding to the email field. Null if no such user exists. */
   user?: Maybe<User>;
 };
-
 
 /** Represents an actor in a Git commit (ie. an author or committer). */
 export type GitActorAvatarUrlArgs = {
@@ -6870,7 +6772,6 @@ export type GrantEnterpriseOrganizationsMigratorRolePayload = {
   /** The organizations that had the migrator role applied to for the given user. */
   organizations?: Maybe<OrganizationConnection>;
 };
-
 
 /** Autogenerated return type of GrantEnterpriseOrganizationsMigratorRole */
 export type GrantEnterpriseOrganizationsMigratorRolePayloadOrganizationsArgs = {
@@ -7185,7 +7086,6 @@ export type Issue = Assignable & Closable & Comment & Labelable & Lockable & Nod
   viewerSubscription?: Maybe<SubscriptionState>;
 };
 
-
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueAssigneesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7193,7 +7093,6 @@ export type IssueAssigneesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueCommentsArgs = {
@@ -7204,12 +7103,10 @@ export type IssueCommentsArgs = {
   orderBy?: InputMaybe<IssueCommentOrder>;
 };
 
-
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueHovercardArgs = {
   includeNotificationContexts?: InputMaybe<Scalars['Boolean']>;
 };
-
 
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueLabelsArgs = {
@@ -7220,7 +7117,6 @@ export type IssueLabelsArgs = {
   orderBy?: InputMaybe<LabelOrder>;
 };
 
-
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueParticipantsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7228,7 +7124,6 @@ export type IssueParticipantsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueProjectCardsArgs = {
@@ -7239,12 +7134,10 @@ export type IssueProjectCardsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueProjectNextArgs = {
   number: Scalars['Int'];
 };
-
 
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueProjectNextItemsArgs = {
@@ -7254,7 +7147,6 @@ export type IssueProjectNextItemsArgs = {
   includeArchived?: InputMaybe<Scalars['Boolean']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueProjectsNextArgs = {
@@ -7266,7 +7158,6 @@ export type IssueProjectsNextArgs = {
   sortBy?: InputMaybe<ProjectNextOrderField>;
 };
 
-
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueReactionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7277,7 +7168,6 @@ export type IssueReactionsArgs = {
   orderBy?: InputMaybe<ReactionOrder>;
 };
 
-
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueTimelineArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7286,7 +7176,6 @@ export type IssueTimelineArgs = {
   last?: InputMaybe<Scalars['Int']>;
   since?: InputMaybe<Scalars['DateTime']>;
 };
-
 
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueTimelineItemsArgs = {
@@ -7299,7 +7188,6 @@ export type IssueTimelineItemsArgs = {
   skip?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueTrackedInIssuesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7307,7 +7195,6 @@ export type IssueTrackedInIssuesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueTrackedIssuesArgs = {
@@ -7317,12 +7204,10 @@ export type IssueTrackedIssuesArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueTrackedIssuesCountArgs = {
   states?: InputMaybe<Array<InputMaybe<TrackedIssueStates>>>;
 };
-
 
 /** An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project. */
 export type IssueUserContentEditsArgs = {
@@ -7408,7 +7293,6 @@ export type IssueComment = Comment & Deletable & Minimizable & Node & Reactable 
   viewerDidAuthor: Scalars['Boolean'];
 };
 
-
 /** Represents a comment on an Issue. */
 export type IssueCommentReactionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7418,7 +7302,6 @@ export type IssueCommentReactionsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<ReactionOrder>;
 };
-
 
 /** Represents a comment on an Issue. */
 export type IssueCommentUserContentEditsArgs = {
@@ -7485,7 +7368,6 @@ export type IssueContributionsByRepository = {
   /** The repository in which the issues were opened. */
   repository: Repository;
 };
-
 
 /** This aggregates issues opened by a user within one repository. */
 export type IssueContributionsByRepositoryContributionsArgs = {
@@ -7752,7 +7634,6 @@ export type Label = Node & {
   url: Scalars['URI'];
 };
 
-
 /** A label for categorizing Issues, Pull Requests, Milestones, or Discussions with a given Repository. */
 export type LabelIssuesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7764,7 +7645,6 @@ export type LabelIssuesArgs = {
   orderBy?: InputMaybe<IssueOrder>;
   states?: InputMaybe<Array<IssueState>>;
 };
-
 
 /** A label for categorizing Issues, Pull Requests, Milestones, or Discussions with a given Repository. */
 export type LabelPullRequestsArgs = {
@@ -7822,7 +7702,6 @@ export type Labelable = {
   /** A list of labels associated with the object. */
   labels?: Maybe<LabelConnection>;
 };
-
 
 /** An object that can have labels assigned to it. */
 export type LabelableLabelsArgs = {
@@ -8039,7 +7918,6 @@ export type Mannequin = Actor & Node & UniformResourceLocatable & {
   /** The URL to this resource. */
   url: Scalars['URI'];
 };
-
 
 /** A placeholder user for attribution of imported data on GitHub. */
 export type MannequinAvatarUrlArgs = {
@@ -8279,7 +8157,6 @@ export type MarketplaceListing = Node & {
   viewerIsListingAdmin: Scalars['Boolean'];
 };
 
-
 /** A listing in the GitHub integration marketplace. */
 export type MarketplaceListingLogoUrlArgs = {
   size?: InputMaybe<Scalars['Int']>;
@@ -8312,7 +8189,6 @@ export type MemberStatusable = {
   /** Get the status messages members of this entity have set that are either public or visible only to the organization. */
   memberStatuses: UserStatusConnection;
 };
-
 
 /** Entities that have members who can set status messages. */
 export type MemberStatusableMemberStatusesArgs = {
@@ -8662,7 +8538,6 @@ export type Milestone = Closable & Node & UniformResourceLocatable & {
   url: Scalars['URI'];
 };
 
-
 /** Represents a Milestone object on a given repository. */
 export type MilestoneIssuesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -8674,7 +8549,6 @@ export type MilestoneIssuesArgs = {
   orderBy?: InputMaybe<IssueOrder>;
   states?: InputMaybe<Array<IssueState>>;
 };
-
 
 /** Represents a Milestone object on a given repository. */
 export type MilestonePullRequestsArgs = {
@@ -9238,1056 +9112,880 @@ export type Mutation = {
   verifyVerifiableDomain?: Maybe<VerifyVerifiableDomainPayload>;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationAbortQueuedMigrationsArgs = {
   input: AbortQueuedMigrationsInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationAcceptEnterpriseAdministratorInvitationArgs = {
   input: AcceptEnterpriseAdministratorInvitationInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationAcceptTopicSuggestionArgs = {
   input: AcceptTopicSuggestionInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddAssigneesToAssignableArgs = {
   input: AddAssigneesToAssignableInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddCommentArgs = {
   input: AddCommentInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddDiscussionCommentArgs = {
   input: AddDiscussionCommentInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddEnterpriseSupportEntitlementArgs = {
   input: AddEnterpriseSupportEntitlementInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddLabelsToLabelableArgs = {
   input: AddLabelsToLabelableInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddProjectCardArgs = {
   input: AddProjectCardInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddProjectColumnArgs = {
   input: AddProjectColumnInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddProjectDraftIssueArgs = {
   input: AddProjectDraftIssueInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddProjectNextItemArgs = {
   input: AddProjectNextItemInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddPullRequestReviewArgs = {
   input: AddPullRequestReviewInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddPullRequestReviewCommentArgs = {
   input: AddPullRequestReviewCommentInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddPullRequestReviewThreadArgs = {
   input: AddPullRequestReviewThreadInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddReactionArgs = {
   input: AddReactionInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddStarArgs = {
   input: AddStarInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddUpvoteArgs = {
   input: AddUpvoteInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationAddVerifiableDomainArgs = {
   input: AddVerifiableDomainInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationApproveDeploymentsArgs = {
   input: ApproveDeploymentsInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationApproveVerifiableDomainArgs = {
   input: ApproveVerifiableDomainInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationArchiveRepositoryArgs = {
   input: ArchiveRepositoryInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationCancelEnterpriseAdminInvitationArgs = {
   input: CancelEnterpriseAdminInvitationInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationCancelSponsorshipArgs = {
   input: CancelSponsorshipInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationChangeUserStatusArgs = {
   input: ChangeUserStatusInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationClearLabelsFromLabelableArgs = {
   input: ClearLabelsFromLabelableInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationCloneProjectArgs = {
   input: CloneProjectInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationCloneTemplateRepositoryArgs = {
   input: CloneTemplateRepositoryInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationCloseIssueArgs = {
   input: CloseIssueInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationClosePullRequestArgs = {
   input: ClosePullRequestInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationConvertProjectCardNoteToIssueArgs = {
   input: ConvertProjectCardNoteToIssueInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationConvertPullRequestToDraftArgs = {
   input: ConvertPullRequestToDraftInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateBranchProtectionRuleArgs = {
   input: CreateBranchProtectionRuleInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateCheckRunArgs = {
   input: CreateCheckRunInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateCheckSuiteArgs = {
   input: CreateCheckSuiteInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateCommitOnBranchArgs = {
   input: CreateCommitOnBranchInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateDiscussionArgs = {
   input: CreateDiscussionInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateEnterpriseOrganizationArgs = {
   input: CreateEnterpriseOrganizationInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateEnvironmentArgs = {
   input: CreateEnvironmentInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateIpAllowListEntryArgs = {
   input: CreateIpAllowListEntryInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateIssueArgs = {
   input: CreateIssueInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateMigrationSourceArgs = {
   input: CreateMigrationSourceInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateProjectArgs = {
   input: CreateProjectInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreatePullRequestArgs = {
   input: CreatePullRequestInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateRefArgs = {
   input: CreateRefInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateRepositoryArgs = {
   input: CreateRepositoryInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateSponsorsTierArgs = {
   input: CreateSponsorsTierInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateSponsorshipArgs = {
   input: CreateSponsorshipInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateTeamDiscussionArgs = {
   input: CreateTeamDiscussionInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationCreateTeamDiscussionCommentArgs = {
   input: CreateTeamDiscussionCommentInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeclineTopicSuggestionArgs = {
   input: DeclineTopicSuggestionInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteBranchProtectionRuleArgs = {
   input: DeleteBranchProtectionRuleInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteDeploymentArgs = {
   input: DeleteDeploymentInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteDiscussionArgs = {
   input: DeleteDiscussionInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteDiscussionCommentArgs = {
   input: DeleteDiscussionCommentInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteEnvironmentArgs = {
   input: DeleteEnvironmentInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteIpAllowListEntryArgs = {
   input: DeleteIpAllowListEntryInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteIssueArgs = {
   input: DeleteIssueInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteIssueCommentArgs = {
   input: DeleteIssueCommentInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteProjectArgs = {
   input: DeleteProjectInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteProjectCardArgs = {
   input: DeleteProjectCardInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteProjectColumnArgs = {
   input: DeleteProjectColumnInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteProjectNextItemArgs = {
   input: DeleteProjectNextItemInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeletePullRequestReviewArgs = {
   input: DeletePullRequestReviewInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeletePullRequestReviewCommentArgs = {
   input: DeletePullRequestReviewCommentInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteRefArgs = {
   input: DeleteRefInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteTeamDiscussionArgs = {
   input: DeleteTeamDiscussionInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteTeamDiscussionCommentArgs = {
   input: DeleteTeamDiscussionCommentInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationDeleteVerifiableDomainArgs = {
   input: DeleteVerifiableDomainInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationDisablePullRequestAutoMergeArgs = {
   input: DisablePullRequestAutoMergeInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationDismissPullRequestReviewArgs = {
   input: DismissPullRequestReviewInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationDismissRepositoryVulnerabilityAlertArgs = {
   input: DismissRepositoryVulnerabilityAlertInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationEnablePullRequestAutoMergeArgs = {
   input: EnablePullRequestAutoMergeInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationFollowOrganizationArgs = {
   input: FollowOrganizationInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationFollowUserArgs = {
   input: FollowUserInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationGrantEnterpriseOrganizationsMigratorRoleArgs = {
   input: GrantEnterpriseOrganizationsMigratorRoleInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationGrantMigratorRoleArgs = {
   input: GrantMigratorRoleInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationInviteEnterpriseAdminArgs = {
   input: InviteEnterpriseAdminInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationLinkRepositoryToProjectArgs = {
   input: LinkRepositoryToProjectInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationLockLockableArgs = {
   input: LockLockableInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationMarkDiscussionCommentAsAnswerArgs = {
   input: MarkDiscussionCommentAsAnswerInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationMarkFileAsViewedArgs = {
   input: MarkFileAsViewedInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationMarkPullRequestReadyForReviewArgs = {
   input: MarkPullRequestReadyForReviewInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationMergeBranchArgs = {
   input: MergeBranchInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationMergePullRequestArgs = {
   input: MergePullRequestInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationMinimizeCommentArgs = {
   input: MinimizeCommentInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationMoveProjectCardArgs = {
   input: MoveProjectCardInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationMoveProjectColumnArgs = {
   input: MoveProjectColumnInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationPinIssueArgs = {
   input: PinIssueInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationRegenerateEnterpriseIdentityProviderRecoveryCodesArgs = {
   input: RegenerateEnterpriseIdentityProviderRecoveryCodesInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationRegenerateVerifiableDomainTokenArgs = {
   input: RegenerateVerifiableDomainTokenInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationRejectDeploymentsArgs = {
   input: RejectDeploymentsInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationRemoveAssigneesFromAssignableArgs = {
   input: RemoveAssigneesFromAssignableInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationRemoveEnterpriseAdminArgs = {
   input: RemoveEnterpriseAdminInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationRemoveEnterpriseIdentityProviderArgs = {
   input: RemoveEnterpriseIdentityProviderInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationRemoveEnterpriseOrganizationArgs = {
   input: RemoveEnterpriseOrganizationInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationRemoveEnterpriseSupportEntitlementArgs = {
   input: RemoveEnterpriseSupportEntitlementInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationRemoveLabelsFromLabelableArgs = {
   input: RemoveLabelsFromLabelableInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationRemoveOutsideCollaboratorArgs = {
   input: RemoveOutsideCollaboratorInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationRemoveReactionArgs = {
   input: RemoveReactionInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationRemoveStarArgs = {
   input: RemoveStarInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationRemoveUpvoteArgs = {
   input: RemoveUpvoteInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationReopenIssueArgs = {
   input: ReopenIssueInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationReopenPullRequestArgs = {
   input: ReopenPullRequestInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationRequestReviewsArgs = {
   input: RequestReviewsInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationRerequestCheckSuiteArgs = {
   input: RerequestCheckSuiteInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationResolveReviewThreadArgs = {
   input: ResolveReviewThreadInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationRevokeEnterpriseOrganizationsMigratorRoleArgs = {
   input: RevokeEnterpriseOrganizationsMigratorRoleInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationRevokeMigratorRoleArgs = {
   input: RevokeMigratorRoleInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationSetEnterpriseIdentityProviderArgs = {
   input: SetEnterpriseIdentityProviderInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationSetOrganizationInteractionLimitArgs = {
   input: SetOrganizationInteractionLimitInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationSetRepositoryInteractionLimitArgs = {
   input: SetRepositoryInteractionLimitInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationSetUserInteractionLimitArgs = {
   input: SetUserInteractionLimitInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationStartRepositoryMigrationArgs = {
   input: StartRepositoryMigrationInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationSubmitPullRequestReviewArgs = {
   input: SubmitPullRequestReviewInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationTransferIssueArgs = {
   input: TransferIssueInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUnarchiveRepositoryArgs = {
   input: UnarchiveRepositoryInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUnfollowOrganizationArgs = {
   input: UnfollowOrganizationInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUnfollowUserArgs = {
   input: UnfollowUserInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUnlinkRepositoryFromProjectArgs = {
   input: UnlinkRepositoryFromProjectInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUnlockLockableArgs = {
   input: UnlockLockableInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUnmarkDiscussionCommentAsAnswerArgs = {
   input: UnmarkDiscussionCommentAsAnswerInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUnmarkFileAsViewedArgs = {
   input: UnmarkFileAsViewedInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUnmarkIssueAsDuplicateArgs = {
   input: UnmarkIssueAsDuplicateInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUnminimizeCommentArgs = {
   input: UnminimizeCommentInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUnpinIssueArgs = {
   input: UnpinIssueInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUnresolveReviewThreadArgs = {
   input: UnresolveReviewThreadInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateBranchProtectionRuleArgs = {
   input: UpdateBranchProtectionRuleInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateCheckRunArgs = {
   input: UpdateCheckRunInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateCheckSuitePreferencesArgs = {
   input: UpdateCheckSuitePreferencesInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateDiscussionArgs = {
   input: UpdateDiscussionInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateDiscussionCommentArgs = {
   input: UpdateDiscussionCommentInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseAdministratorRoleArgs = {
   input: UpdateEnterpriseAdministratorRoleInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseAllowPrivateRepositoryForkingSettingArgs = {
   input: UpdateEnterpriseAllowPrivateRepositoryForkingSettingInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseDefaultRepositoryPermissionSettingArgs = {
   input: UpdateEnterpriseDefaultRepositoryPermissionSettingInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseMembersCanChangeRepositoryVisibilitySettingArgs = {
   input: UpdateEnterpriseMembersCanChangeRepositoryVisibilitySettingInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseMembersCanCreateRepositoriesSettingArgs = {
   input: UpdateEnterpriseMembersCanCreateRepositoriesSettingInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseMembersCanDeleteIssuesSettingArgs = {
   input: UpdateEnterpriseMembersCanDeleteIssuesSettingInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseMembersCanDeleteRepositoriesSettingArgs = {
   input: UpdateEnterpriseMembersCanDeleteRepositoriesSettingInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseMembersCanInviteCollaboratorsSettingArgs = {
   input: UpdateEnterpriseMembersCanInviteCollaboratorsSettingInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseMembersCanMakePurchasesSettingArgs = {
   input: UpdateEnterpriseMembersCanMakePurchasesSettingInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseMembersCanUpdateProtectedBranchesSettingArgs = {
   input: UpdateEnterpriseMembersCanUpdateProtectedBranchesSettingInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseMembersCanViewDependencyInsightsSettingArgs = {
   input: UpdateEnterpriseMembersCanViewDependencyInsightsSettingInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseOrganizationProjectsSettingArgs = {
   input: UpdateEnterpriseOrganizationProjectsSettingInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseOwnerOrganizationRoleArgs = {
   input: UpdateEnterpriseOwnerOrganizationRoleInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseProfileArgs = {
   input: UpdateEnterpriseProfileInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseRepositoryProjectsSettingArgs = {
   input: UpdateEnterpriseRepositoryProjectsSettingInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseTeamDiscussionsSettingArgs = {
   input: UpdateEnterpriseTeamDiscussionsSettingInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnterpriseTwoFactorAuthenticationRequiredSettingArgs = {
   input: UpdateEnterpriseTwoFactorAuthenticationRequiredSettingInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateEnvironmentArgs = {
   input: UpdateEnvironmentInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateIpAllowListEnabledSettingArgs = {
   input: UpdateIpAllowListEnabledSettingInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateIpAllowListEntryArgs = {
   input: UpdateIpAllowListEntryInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateIpAllowListForInstalledAppsEnabledSettingArgs = {
   input: UpdateIpAllowListForInstalledAppsEnabledSettingInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateIssueArgs = {
   input: UpdateIssueInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateIssueCommentArgs = {
   input: UpdateIssueCommentInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateNotificationRestrictionSettingArgs = {
   input: UpdateNotificationRestrictionSettingInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateOrganizationAllowPrivateRepositoryForkingSettingArgs = {
   input: UpdateOrganizationAllowPrivateRepositoryForkingSettingInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateProjectArgs = {
   input: UpdateProjectInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateProjectCardArgs = {
   input: UpdateProjectCardInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateProjectColumnArgs = {
   input: UpdateProjectColumnInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateProjectDraftIssueArgs = {
   input: UpdateProjectDraftIssueInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateProjectNextArgs = {
   input: UpdateProjectNextInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateProjectNextItemFieldArgs = {
   input: UpdateProjectNextItemFieldInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdatePullRequestArgs = {
   input: UpdatePullRequestInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdatePullRequestBranchArgs = {
   input: UpdatePullRequestBranchInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdatePullRequestReviewArgs = {
   input: UpdatePullRequestReviewInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdatePullRequestReviewCommentArgs = {
   input: UpdatePullRequestReviewCommentInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateRefArgs = {
   input: UpdateRefInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateRepositoryArgs = {
   input: UpdateRepositoryInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateSponsorshipPreferencesArgs = {
   input: UpdateSponsorshipPreferencesInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateSubscriptionArgs = {
   input: UpdateSubscriptionInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateTeamDiscussionArgs = {
   input: UpdateTeamDiscussionInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateTeamDiscussionCommentArgs = {
   input: UpdateTeamDiscussionCommentInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateTeamsRepositoryArgs = {
   input: UpdateTeamsRepositoryInput;
 };
 
-
 /** The root query for implementing GraphQL mutations. */
 export type MutationUpdateTopicsArgs = {
   input: UpdateTopicsInput;
 };
-
 
 /** The root query for implementing GraphQL mutations. */
 export type MutationVerifyVerifiableDomainArgs = {
@@ -10321,7 +10019,6 @@ export type OidcProvider = Node & {
   /** The id of the tenant this provider is attached to */
   tenantId: Scalars['String'];
 };
-
 
 /** An OIDC identity provider configured to provision identities for an enterprise. */
 export type OidcProviderExternalIdentitiesArgs = {
@@ -11916,12 +11613,10 @@ export type Organization = Actor & MemberStatusable & Node & PackageOwner & Prof
   websiteUrl?: Maybe<Scalars['URI']>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationAnyPinnableItemsArgs = {
   type?: InputMaybe<PinnableItemType>;
 };
-
 
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationAuditLogArgs = {
@@ -11933,12 +11628,10 @@ export type OrganizationAuditLogArgs = {
   query?: InputMaybe<Scalars['String']>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationAvatarUrlArgs = {
   size?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationDomainsArgs = {
@@ -11951,7 +11644,6 @@ export type OrganizationDomainsArgs = {
   orderBy?: InputMaybe<VerifiableDomainOrder>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationEnterpriseOwnersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -11963,7 +11655,6 @@ export type OrganizationEnterpriseOwnersArgs = {
   query?: InputMaybe<Scalars['String']>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationIpAllowListEntriesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -11973,12 +11664,10 @@ export type OrganizationIpAllowListEntriesArgs = {
   orderBy?: InputMaybe<IpAllowListEntryOrder>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationIsSponsoredByArgs = {
   accountLogin: Scalars['String'];
 };
-
 
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationMemberStatusesArgs = {
@@ -11989,7 +11678,6 @@ export type OrganizationMemberStatusesArgs = {
   orderBy?: InputMaybe<UserStatusOrder>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationMembersWithRoleArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -11997,7 +11685,6 @@ export type OrganizationMembersWithRoleArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationPackagesArgs = {
@@ -12011,7 +11698,6 @@ export type OrganizationPackagesArgs = {
   repositoryId?: InputMaybe<Scalars['ID']>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationPendingMembersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -12019,7 +11705,6 @@ export type OrganizationPendingMembersArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationPinnableItemsArgs = {
@@ -12030,7 +11715,6 @@ export type OrganizationPinnableItemsArgs = {
   types?: InputMaybe<Array<PinnableItemType>>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationPinnedItemsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -12040,18 +11724,15 @@ export type OrganizationPinnedItemsArgs = {
   types?: InputMaybe<Array<PinnableItemType>>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationProjectArgs = {
   number: Scalars['Int'];
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationProjectNextArgs = {
   number: Scalars['Int'];
 };
-
 
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationProjectsArgs = {
@@ -12064,7 +11745,6 @@ export type OrganizationProjectsArgs = {
   states?: InputMaybe<Array<ProjectState>>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationProjectsNextArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -12074,7 +11754,6 @@ export type OrganizationProjectsNextArgs = {
   query?: InputMaybe<Scalars['String']>;
   sortBy?: InputMaybe<ProjectNextOrderField>;
 };
-
 
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationRepositoriesArgs = {
@@ -12090,13 +11769,11 @@ export type OrganizationRepositoriesArgs = {
   privacy?: InputMaybe<RepositoryPrivacy>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationRepositoryArgs = {
   followRenames?: InputMaybe<Scalars['Boolean']>;
   name: Scalars['String'];
 };
-
 
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationRepositoryDiscussionCommentsArgs = {
@@ -12107,7 +11784,6 @@ export type OrganizationRepositoryDiscussionCommentsArgs = {
   onlyAnswers?: InputMaybe<Scalars['Boolean']>;
   repositoryId?: InputMaybe<Scalars['ID']>;
 };
-
 
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationRepositoryDiscussionsArgs = {
@@ -12120,7 +11796,6 @@ export type OrganizationRepositoryDiscussionsArgs = {
   repositoryId?: InputMaybe<Scalars['ID']>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationRepositoryMigrationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -12132,7 +11807,6 @@ export type OrganizationRepositoryMigrationsArgs = {
   state?: InputMaybe<MigrationState>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationSponsoringArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -12141,7 +11815,6 @@ export type OrganizationSponsoringArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<SponsorOrder>;
 };
-
 
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationSponsorsArgs = {
@@ -12153,7 +11826,6 @@ export type OrganizationSponsorsArgs = {
   tierId?: InputMaybe<Scalars['ID']>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationSponsorsActivitiesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -12164,7 +11836,6 @@ export type OrganizationSponsorsActivitiesArgs = {
   period?: InputMaybe<SponsorsActivityPeriod>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationSponsorshipNewslettersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -12173,7 +11844,6 @@ export type OrganizationSponsorshipNewslettersArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<SponsorshipNewsletterOrder>;
 };
-
 
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationSponsorshipsAsMaintainerArgs = {
@@ -12185,7 +11855,6 @@ export type OrganizationSponsorshipsAsMaintainerArgs = {
   orderBy?: InputMaybe<SponsorshipOrder>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationSponsorshipsAsSponsorArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -12195,12 +11864,10 @@ export type OrganizationSponsorshipsAsSponsorArgs = {
   orderBy?: InputMaybe<SponsorshipOrder>;
 };
 
-
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationTeamArgs = {
   slug: Scalars['String'];
 };
-
 
 /** An account on GitHub, with one or more owners, that has repositories, members and teams. */
 export type OrganizationTeamsArgs = {
@@ -12319,7 +11986,6 @@ export type OrganizationIdentityProvider = Node & {
   /** The URL endpoint for the Identity Provider's SAML SSO. */
   ssoUrl?: Maybe<Scalars['URI']>;
 };
-
 
 /** An Identity Provider configured to provision SAML and SCIM identities for Organizations */
 export type OrganizationIdentityProviderExternalIdentitiesArgs = {
@@ -12473,7 +12139,6 @@ export type OrganizationTeamsHovercardContext = HovercardContext & {
   totalTeamCount: Scalars['Int'];
 };
 
-
 /** An organization teams hovercard context */
 export type OrganizationTeamsHovercardContextRelevantTeamsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -12494,7 +12159,6 @@ export type OrganizationsHovercardContext = HovercardContext & {
   /** The total number of organizations this user is in */
   totalOrganizationCount: Scalars['Int'];
 };
-
 
 /** An organization list hovercard context */
 export type OrganizationsHovercardContextRelevantOrganizationsArgs = {
@@ -12524,12 +12188,10 @@ export type Package = Node & {
   versions: PackageVersionConnection;
 };
 
-
 /** Information for an uploaded package. */
 export type PackageVersionArgs = {
   version: Scalars['String'];
 };
-
 
 /** Information for an uploaded package. */
 export type PackageVersionsArgs = {
@@ -12641,7 +12303,6 @@ export type PackageOwner = {
   packages: PackageConnection;
 };
 
-
 /** Represents an owner of a package. */
 export type PackageOwnerPackagesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -12715,7 +12376,6 @@ export type PackageVersion = Node & {
   /** The version string. */
   version: Scalars['String'];
 };
-
 
 /** Information about a specific package version. */
 export type PackageVersionFilesArgs = {
@@ -13115,7 +12775,6 @@ export type ProfileItemShowcase = {
   items: PinnableItemConnection;
 };
 
-
 /** A curatable list of repositories relating to a repository owner, which defaults to showing the most popular repositories they own. */
 export type ProfileItemShowcaseItemsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -13151,12 +12810,10 @@ export type ProfileOwner = {
   websiteUrl?: Maybe<Scalars['URI']>;
 };
 
-
 /** Represents any entity on GitHub that has a profile page. */
 export type ProfileOwnerAnyPinnableItemsArgs = {
   type?: InputMaybe<PinnableItemType>;
 };
-
 
 /** Represents any entity on GitHub that has a profile page. */
 export type ProfileOwnerPinnableItemsArgs = {
@@ -13166,7 +12823,6 @@ export type ProfileOwnerPinnableItemsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   types?: InputMaybe<Array<PinnableItemType>>;
 };
-
 
 /** Represents any entity on GitHub that has a profile page. */
 export type ProfileOwnerPinnedItemsArgs = {
@@ -13219,7 +12875,6 @@ export type Project = Closable & Node & Updatable & {
   viewerCanUpdate: Scalars['Boolean'];
 };
 
-
 /** Projects manage issues, pull requests and notes within a project owner. */
 export type ProjectColumnsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -13227,7 +12882,6 @@ export type ProjectColumnsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** Projects manage issues, pull requests and notes within a project owner. */
 export type ProjectPendingCardsArgs = {
@@ -13340,7 +12994,6 @@ export type ProjectColumn = Node & {
   /** The HTTP URL for this project column */
   url: Scalars['URI'];
 };
-
 
 /** A column inside a project. */
 export type ProjectColumnCardsArgs = {
@@ -13461,7 +13114,6 @@ export type ProjectNext = Closable & Node & Updatable & {
   views: ProjectViewConnection;
 };
 
-
 /** New projects that manage issues, pull requests and drafts using tables and boards. */
 export type ProjectNextFieldsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -13469,7 +13121,6 @@ export type ProjectNextFieldsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** New projects that manage issues, pull requests and drafts using tables and boards. */
 export type ProjectNextItemsArgs = {
@@ -13479,7 +13130,6 @@ export type ProjectNextItemsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** New projects that manage issues, pull requests and drafts using tables and boards. */
 export type ProjectNextRepositoriesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -13487,7 +13137,6 @@ export type ProjectNextRepositoriesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** New projects that manage issues, pull requests and drafts using tables and boards. */
 export type ProjectNextViewsArgs = {
@@ -13636,7 +13285,6 @@ export type ProjectNextItem = Node & {
   updatedAt: Scalars['DateTime'];
 };
 
-
 /** An item within a new Project. */
 export type ProjectNextItemFieldValuesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -13733,12 +13381,10 @@ export type ProjectNextOwner = {
   projectsNext: ProjectNextConnection;
 };
 
-
 /** Represents an owner of a project (beta). */
 export type ProjectNextOwnerProjectNextArgs = {
   number: Scalars['Int'];
 };
-
 
 /** Represents an owner of a project (beta). */
 export type ProjectNextOwnerProjectsNextArgs = {
@@ -13783,12 +13429,10 @@ export type ProjectOwner = {
   viewerCanCreateProjects: Scalars['Boolean'];
 };
 
-
 /** Represents an owner of a Project. */
 export type ProjectOwnerProjectArgs = {
   number: Scalars['Int'];
 };
-
 
 /** Represents an owner of a Project. */
 export type ProjectOwnerProjectsArgs = {
@@ -13876,7 +13520,6 @@ export type ProjectView = Node & {
   /** The view's visible fields. */
   visibleFields?: Maybe<Array<Scalars['Int']>>;
 };
-
 
 /** A view within a Project. */
 export type ProjectViewItemsArgs = {
@@ -14149,7 +13792,6 @@ export type PullRequest = Assignable & Closable & Comment & Labelable & Lockable
   viewerSubscription?: Maybe<SubscriptionState>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestAssigneesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14157,7 +13799,6 @@ export type PullRequestAssigneesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A repository pull request. */
 export type PullRequestClosingIssuesReferencesArgs = {
@@ -14169,7 +13810,6 @@ export type PullRequestClosingIssuesReferencesArgs = {
   userLinkedOnly?: InputMaybe<Scalars['Boolean']>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestCommentsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14179,7 +13819,6 @@ export type PullRequestCommentsArgs = {
   orderBy?: InputMaybe<IssueCommentOrder>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestCommitsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14187,7 +13826,6 @@ export type PullRequestCommitsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A repository pull request. */
 export type PullRequestFilesArgs = {
@@ -14197,12 +13835,10 @@ export type PullRequestFilesArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestHovercardArgs = {
   includeNotificationContexts?: InputMaybe<Scalars['Boolean']>;
 };
-
 
 /** A repository pull request. */
 export type PullRequestLabelsArgs = {
@@ -14213,7 +13849,6 @@ export type PullRequestLabelsArgs = {
   orderBy?: InputMaybe<LabelOrder>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestLatestOpinionatedReviewsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14223,7 +13858,6 @@ export type PullRequestLatestOpinionatedReviewsArgs = {
   writersOnly?: InputMaybe<Scalars['Boolean']>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestLatestReviewsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14232,7 +13866,6 @@ export type PullRequestLatestReviewsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestParticipantsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14240,7 +13873,6 @@ export type PullRequestParticipantsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A repository pull request. */
 export type PullRequestProjectCardsArgs = {
@@ -14251,12 +13883,10 @@ export type PullRequestProjectCardsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestProjectNextArgs = {
   number: Scalars['Int'];
 };
-
 
 /** A repository pull request. */
 export type PullRequestProjectNextItemsArgs = {
@@ -14266,7 +13896,6 @@ export type PullRequestProjectNextItemsArgs = {
   includeArchived?: InputMaybe<Scalars['Boolean']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A repository pull request. */
 export type PullRequestProjectsNextArgs = {
@@ -14278,7 +13907,6 @@ export type PullRequestProjectsNextArgs = {
   sortBy?: InputMaybe<ProjectNextOrderField>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestReactionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14289,7 +13917,6 @@ export type PullRequestReactionsArgs = {
   orderBy?: InputMaybe<ReactionOrder>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestReviewRequestsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14298,7 +13925,6 @@ export type PullRequestReviewRequestsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestReviewThreadsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14306,7 +13932,6 @@ export type PullRequestReviewThreadsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A repository pull request. */
 export type PullRequestReviewsArgs = {
@@ -14318,7 +13943,6 @@ export type PullRequestReviewsArgs = {
   states?: InputMaybe<Array<PullRequestReviewState>>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestTimelineArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14327,7 +13951,6 @@ export type PullRequestTimelineArgs = {
   last?: InputMaybe<Scalars['Int']>;
   since?: InputMaybe<Scalars['DateTime']>;
 };
-
 
 /** A repository pull request. */
 export type PullRequestTimelineItemsArgs = {
@@ -14340,7 +13963,6 @@ export type PullRequestTimelineItemsArgs = {
   skip?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestUserContentEditsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14349,12 +13971,10 @@ export type PullRequestUserContentEditsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A repository pull request. */
 export type PullRequestViewerMergeBodyTextArgs = {
   mergeType?: InputMaybe<PullRequestMergeMethod>;
 };
-
 
 /** A repository pull request. */
 export type PullRequestViewerMergeHeadlineTextArgs = {
@@ -14430,7 +14050,6 @@ export type PullRequestCommitCommentThread = Node & RepositoryNode & {
   repository: Repository;
 };
 
-
 /** Represents a commit comment thread part of a pull request. */
 export type PullRequestCommitCommentThreadCommentsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14482,7 +14101,6 @@ export type PullRequestContributionsByRepository = {
   /** The repository in which the pull requests were opened. */
   repository: Repository;
 };
-
 
 /** This aggregates pull requests opened by a user within one repository. */
 export type PullRequestContributionsByRepositoryContributionsArgs = {
@@ -14596,7 +14214,6 @@ export type PullRequestReview = Comment & Deletable & Node & Reactable & Reposit
   viewerDidAuthor: Scalars['Boolean'];
 };
 
-
 /** A review object for a given pull request. */
 export type PullRequestReviewCommentsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14605,7 +14222,6 @@ export type PullRequestReviewCommentsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A review object for a given pull request. */
 export type PullRequestReviewOnBehalfOfArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14613,7 +14229,6 @@ export type PullRequestReviewOnBehalfOfArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A review object for a given pull request. */
 export type PullRequestReviewReactionsArgs = {
@@ -14624,7 +14239,6 @@ export type PullRequestReviewReactionsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<ReactionOrder>;
 };
-
 
 /** A review object for a given pull request. */
 export type PullRequestReviewUserContentEditsArgs = {
@@ -14718,7 +14332,6 @@ export type PullRequestReviewComment = Comment & Deletable & Minimizable & Node 
   viewerDidAuthor: Scalars['Boolean'];
 };
 
-
 /** A review comment associated with a given repository pull request. */
 export type PullRequestReviewCommentReactionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14728,7 +14341,6 @@ export type PullRequestReviewCommentReactionsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<ReactionOrder>;
 };
-
 
 /** A review comment associated with a given repository pull request. */
 export type PullRequestReviewCommentUserContentEditsArgs = {
@@ -14789,7 +14401,6 @@ export type PullRequestReviewContributionsByRepository = {
   /** The repository in which the pull request reviews were made. */
   repository: Repository;
 };
-
 
 /** This aggregates pull request reviews made by a user within one repository. */
 export type PullRequestReviewContributionsByRepositoryContributionsArgs = {
@@ -14884,7 +14495,6 @@ export type PullRequestReviewThread = Node & {
   /** Whether or not the viewer can unresolve this thread */
   viewerCanUnresolve: Scalars['Boolean'];
 };
-
 
 /** A threaded list of comments for a given pull request. */
 export type PullRequestReviewThreadCommentsArgs = {
@@ -15245,19 +14855,16 @@ export type Query = {
   viewer: User;
 };
 
-
 /** The query root of GitHub's GraphQL interface. */
 export type QueryCodeOfConductArgs = {
   key: Scalars['String'];
 };
-
 
 /** The query root of GitHub's GraphQL interface. */
 export type QueryEnterpriseArgs = {
   invitationToken?: InputMaybe<Scalars['String']>;
   slug: Scalars['String'];
 };
-
 
 /** The query root of GitHub's GraphQL interface. */
 export type QueryEnterpriseAdministratorInvitationArgs = {
@@ -15266,18 +14873,15 @@ export type QueryEnterpriseAdministratorInvitationArgs = {
   userLogin: Scalars['String'];
 };
 
-
 /** The query root of GitHub's GraphQL interface. */
 export type QueryEnterpriseAdministratorInvitationByTokenArgs = {
   invitationToken: Scalars['String'];
 };
 
-
 /** The query root of GitHub's GraphQL interface. */
 export type QueryLicenseArgs = {
   key: Scalars['String'];
 };
-
 
 /** The query root of GitHub's GraphQL interface. */
 export type QueryMarketplaceCategoriesArgs = {
@@ -15286,19 +14890,16 @@ export type QueryMarketplaceCategoriesArgs = {
   includeCategories?: InputMaybe<Array<Scalars['String']>>;
 };
 
-
 /** The query root of GitHub's GraphQL interface. */
 export type QueryMarketplaceCategoryArgs = {
   slug: Scalars['String'];
   useTopicAliases?: InputMaybe<Scalars['Boolean']>;
 };
 
-
 /** The query root of GitHub's GraphQL interface. */
 export type QueryMarketplaceListingArgs = {
   slug: Scalars['String'];
 };
-
 
 /** The query root of GitHub's GraphQL interface. */
 export type QueryMarketplaceListingsArgs = {
@@ -15317,30 +14918,25 @@ export type QueryMarketplaceListingsArgs = {
   withFreeTrialsOnly?: InputMaybe<Scalars['Boolean']>;
 };
 
-
 /** The query root of GitHub's GraphQL interface. */
 export type QueryNodeArgs = {
   id: Scalars['ID'];
 };
-
 
 /** The query root of GitHub's GraphQL interface. */
 export type QueryNodesArgs = {
   ids: Array<Scalars['ID']>;
 };
 
-
 /** The query root of GitHub's GraphQL interface. */
 export type QueryOrganizationArgs = {
   login: Scalars['String'];
 };
 
-
 /** The query root of GitHub's GraphQL interface. */
 export type QueryRateLimitArgs = {
   dryRun?: InputMaybe<Scalars['Boolean']>;
 };
-
 
 /** The query root of GitHub's GraphQL interface. */
 export type QueryRepositoryArgs = {
@@ -15349,18 +14945,15 @@ export type QueryRepositoryArgs = {
   owner: Scalars['String'];
 };
 
-
 /** The query root of GitHub's GraphQL interface. */
 export type QueryRepositoryOwnerArgs = {
   login: Scalars['String'];
 };
 
-
 /** The query root of GitHub's GraphQL interface. */
 export type QueryResourceArgs = {
   url: Scalars['URI'];
 };
-
 
 /** The query root of GitHub's GraphQL interface. */
 export type QuerySearchArgs = {
@@ -15371,7 +14964,6 @@ export type QuerySearchArgs = {
   query: Scalars['String'];
   type: SearchType;
 };
-
 
 /** The query root of GitHub's GraphQL interface. */
 export type QuerySecurityAdvisoriesArgs = {
@@ -15385,12 +14977,10 @@ export type QuerySecurityAdvisoriesArgs = {
   updatedSince?: InputMaybe<Scalars['DateTime']>;
 };
 
-
 /** The query root of GitHub's GraphQL interface. */
 export type QuerySecurityAdvisoryArgs = {
   ghsaId: Scalars['String'];
 };
-
 
 /** The query root of GitHub's GraphQL interface. */
 export type QuerySecurityVulnerabilitiesArgs = {
@@ -15403,7 +14993,6 @@ export type QuerySecurityVulnerabilitiesArgs = {
   package?: InputMaybe<Scalars['String']>;
   severities?: InputMaybe<Array<SecurityAdvisorySeverity>>;
 };
-
 
 /** The query root of GitHub's GraphQL interface. */
 export type QuerySponsorablesArgs = {
@@ -15418,12 +15007,10 @@ export type QuerySponsorablesArgs = {
   orgLoginForDependencies?: InputMaybe<Scalars['String']>;
 };
 
-
 /** The query root of GitHub's GraphQL interface. */
 export type QueryTopicArgs = {
   name: Scalars['String'];
 };
-
 
 /** The query root of GitHub's GraphQL interface. */
 export type QueryUserArgs = {
@@ -15459,7 +15046,6 @@ export type Reactable = {
   /** Can user react to this subject */
   viewerCanReact: Scalars['Boolean'];
 };
-
 
 /** Represents a subject that can be reacted on. */
 export type ReactableReactionsArgs = {
@@ -15574,7 +15160,6 @@ export type ReactionGroup = {
   viewerHasReacted: Scalars['Boolean'];
 };
 
-
 /** A group of emoji reactions to a particular piece of content. */
 export type ReactionGroupReactorsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -15582,7 +15167,6 @@ export type ReactionGroupReactorsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A group of emoji reactions to a particular piece of content. */
 export type ReactionGroupUsersArgs = {
@@ -15668,7 +15252,6 @@ export type Ref = Node & {
   /** The object the ref points to. Returns null when object does not exist. */
   target?: Maybe<GitObject>;
 };
-
 
 /** Represents a Git reference. */
 export type RefAssociatedPullRequestsArgs = {
@@ -15880,7 +15463,6 @@ export type Release = Node & Reactable & UniformResourceLocatable & {
   viewerCanReact: Scalars['Boolean'];
 };
 
-
 /** A release contains the content for a release. */
 export type ReleaseMentionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -15888,7 +15470,6 @@ export type ReleaseMentionsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A release contains the content for a release. */
 export type ReleaseReactionsArgs = {
@@ -15900,7 +15481,6 @@ export type ReleaseReactionsArgs = {
   orderBy?: InputMaybe<ReactionOrder>;
 };
 
-
 /** A release contains the content for a release. */
 export type ReleaseReleaseAssetsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -15909,7 +15489,6 @@ export type ReleaseReleaseAssetsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   name?: InputMaybe<Scalars['String']>;
 };
-
 
 /** A release contains the content for a release. */
 export type ReleaseShortDescriptionHtmlArgs = {
@@ -17532,7 +17111,6 @@ export type Repository = Node & PackageOwner & ProjectOwner & RepositoryInfo & S
   watchers: UserConnection;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryAssignableUsersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -17542,7 +17120,6 @@ export type RepositoryAssignableUsersArgs = {
   query?: InputMaybe<Scalars['String']>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryBranchProtectionRulesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -17551,12 +17128,10 @@ export type RepositoryBranchProtectionRulesArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryCodeownersArgs = {
   refName?: InputMaybe<Scalars['String']>;
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryCollaboratorsArgs = {
@@ -17568,7 +17143,6 @@ export type RepositoryCollaboratorsArgs = {
   query?: InputMaybe<Scalars['String']>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryCommitCommentsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -17577,7 +17151,6 @@ export type RepositoryCommitCommentsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryDeployKeysArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -17585,7 +17158,6 @@ export type RepositoryDeployKeysArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryDeploymentsArgs = {
@@ -17597,12 +17169,10 @@ export type RepositoryDeploymentsArgs = {
   orderBy?: InputMaybe<DeploymentOrder>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryDiscussionArgs = {
   number: Scalars['Int'];
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryDiscussionCategoriesArgs = {
@@ -17612,7 +17182,6 @@ export type RepositoryDiscussionCategoriesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryDiscussionsArgs = {
@@ -17624,12 +17193,10 @@ export type RepositoryDiscussionsArgs = {
   orderBy?: InputMaybe<DiscussionOrder>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryEnvironmentArgs = {
   name: Scalars['String'];
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryEnvironmentsArgs = {
@@ -17638,7 +17205,6 @@ export type RepositoryEnvironmentsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryForksArgs = {
@@ -17653,18 +17219,15 @@ export type RepositoryForksArgs = {
   privacy?: InputMaybe<RepositoryPrivacy>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryIssueArgs = {
   number: Scalars['Int'];
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryIssueOrPullRequestArgs = {
   number: Scalars['Int'];
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryIssuesArgs = {
@@ -17678,12 +17241,10 @@ export type RepositoryIssuesArgs = {
   states?: InputMaybe<Array<IssueState>>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryLabelArgs = {
   name: Scalars['String'];
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryLabelsArgs = {
@@ -17695,7 +17256,6 @@ export type RepositoryLabelsArgs = {
   query?: InputMaybe<Scalars['String']>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryLanguagesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -17704,7 +17264,6 @@ export type RepositoryLanguagesArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<LanguageOrder>;
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryMentionableUsersArgs = {
@@ -17715,12 +17274,10 @@ export type RepositoryMentionableUsersArgs = {
   query?: InputMaybe<Scalars['String']>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryMilestoneArgs = {
   number: Scalars['Int'];
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryMilestonesArgs = {
@@ -17733,13 +17290,11 @@ export type RepositoryMilestonesArgs = {
   states?: InputMaybe<Array<MilestoneState>>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryObjectArgs = {
   expression?: InputMaybe<Scalars['String']>;
   oid?: InputMaybe<Scalars['GitObjectID']>;
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryPackagesArgs = {
@@ -17753,7 +17308,6 @@ export type RepositoryPackagesArgs = {
   repositoryId?: InputMaybe<Scalars['ID']>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryPinnedDiscussionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -17761,7 +17315,6 @@ export type RepositoryPinnedDiscussionsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryPinnedIssuesArgs = {
@@ -17771,18 +17324,15 @@ export type RepositoryPinnedIssuesArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryProjectArgs = {
   number: Scalars['Int'];
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryProjectNextArgs = {
   number: Scalars['Int'];
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryProjectsArgs = {
@@ -17795,7 +17345,6 @@ export type RepositoryProjectsArgs = {
   states?: InputMaybe<Array<ProjectState>>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryProjectsNextArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -17806,12 +17355,10 @@ export type RepositoryProjectsNextArgs = {
   sortBy?: InputMaybe<ProjectNextOrderField>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryPullRequestArgs = {
   number: Scalars['Int'];
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryPullRequestsArgs = {
@@ -17826,12 +17373,10 @@ export type RepositoryPullRequestsArgs = {
   states?: InputMaybe<Array<PullRequestState>>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryRefArgs = {
   qualifiedName: Scalars['String'];
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryRefsArgs = {
@@ -17845,12 +17390,10 @@ export type RepositoryRefsArgs = {
   refPrefix: Scalars['String'];
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryReleaseArgs = {
   tagName: Scalars['String'];
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryReleasesArgs = {
@@ -17861,7 +17404,6 @@ export type RepositoryReleasesArgs = {
   orderBy?: InputMaybe<ReleaseOrder>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryRepositoryTopicsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -17870,12 +17412,10 @@ export type RepositoryRepositoryTopicsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositoryShortDescriptionHtmlArgs = {
   limit?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryStargazersArgs = {
@@ -17886,7 +17426,6 @@ export type RepositoryStargazersArgs = {
   orderBy?: InputMaybe<StarOrder>;
 };
 
-
 /** A repository contains the content for a project. */
 export type RepositorySubmodulesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -17894,7 +17433,6 @@ export type RepositorySubmodulesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryVulnerabilityAlertsArgs = {
@@ -17904,7 +17442,6 @@ export type RepositoryVulnerabilityAlertsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   states?: InputMaybe<Array<RepositoryVulnerabilityAlertState>>;
 };
-
 
 /** A repository contains the content for a project. */
 export type RepositoryWatchersArgs = {
@@ -18033,7 +17570,6 @@ export type RepositoryDiscussionAuthor = {
   repositoryDiscussions: DiscussionConnection;
 };
 
-
 /** Represents an author of discussions in repositories. */
 export type RepositoryDiscussionAuthorRepositoryDiscussionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -18050,7 +17586,6 @@ export type RepositoryDiscussionCommentAuthor = {
   /** Discussion comments this user has authored. */
   repositoryDiscussionComments: DiscussionCommentConnection;
 };
-
 
 /** Represents an author of discussion comments in repositories. */
 export type RepositoryDiscussionCommentAuthorRepositoryDiscussionCommentsArgs = {
@@ -18132,7 +17667,6 @@ export type RepositoryInfo = {
   /** Indicates the repository's visibility level. */
   visibility: RepositoryVisibility;
 };
-
 
 /** A subset of repository info. */
 export type RepositoryInfoShortDescriptionHtmlArgs = {
@@ -18363,12 +17897,10 @@ export type RepositoryOwner = {
   url: Scalars['URI'];
 };
 
-
 /** Represents an owner of a Repository. */
 export type RepositoryOwnerAvatarUrlArgs = {
   size?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** Represents an owner of a Repository. */
 export type RepositoryOwnerRepositoriesArgs = {
@@ -18383,7 +17915,6 @@ export type RepositoryOwnerRepositoriesArgs = {
   ownerAffiliations?: InputMaybe<Array<InputMaybe<RepositoryAffiliation>>>;
   privacy?: InputMaybe<RepositoryPrivacy>;
 };
-
 
 /** Represents an owner of a Repository. */
 export type RepositoryOwnerRepositoryArgs = {
@@ -18667,7 +18198,6 @@ export type RequirableByPullRequest = {
   isRequired: Scalars['Boolean'];
 };
 
-
 /** Represents a type that can be required by a pull request for merging. */
 export type RequirableByPullRequestIsRequiredArgs = {
   pullRequestId?: InputMaybe<Scalars['ID']>;
@@ -18911,7 +18441,6 @@ export type RevokeEnterpriseOrganizationsMigratorRolePayload = {
   organizations?: Maybe<OrganizationConnection>;
 };
 
-
 /** Autogenerated return type of RevokeEnterpriseOrganizationsMigratorRole */
 export type RevokeEnterpriseOrganizationsMigratorRolePayloadOrganizationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -19114,7 +18643,6 @@ export type SecurityAdvisory = Node & {
   withdrawnAt?: Maybe<Scalars['DateTime']>;
 };
 
-
 /** A GitHub Security Advisory */
 export type SecurityAdvisoryCwesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -19122,7 +18650,6 @@ export type SecurityAdvisoryCwesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A GitHub Security Advisory */
 export type SecurityAdvisoryVulnerabilitiesArgs = {
@@ -19511,12 +19038,10 @@ export type Sponsorable = {
   viewerIsSponsoring: Scalars['Boolean'];
 };
 
-
 /** Entities that can be sponsored through GitHub Sponsors */
 export type SponsorableIsSponsoredByArgs = {
   accountLogin: Scalars['String'];
 };
-
 
 /** Entities that can be sponsored through GitHub Sponsors */
 export type SponsorableSponsoringArgs = {
@@ -19526,7 +19051,6 @@ export type SponsorableSponsoringArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<SponsorOrder>;
 };
-
 
 /** Entities that can be sponsored through GitHub Sponsors */
 export type SponsorableSponsorsArgs = {
@@ -19538,7 +19062,6 @@ export type SponsorableSponsorsArgs = {
   tierId?: InputMaybe<Scalars['ID']>;
 };
 
-
 /** Entities that can be sponsored through GitHub Sponsors */
 export type SponsorableSponsorsActivitiesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -19549,7 +19072,6 @@ export type SponsorableSponsorsActivitiesArgs = {
   period?: InputMaybe<SponsorsActivityPeriod>;
 };
 
-
 /** Entities that can be sponsored through GitHub Sponsors */
 export type SponsorableSponsorshipNewslettersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -19558,7 +19080,6 @@ export type SponsorableSponsorshipNewslettersArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<SponsorshipNewsletterOrder>;
 };
-
 
 /** Entities that can be sponsored through GitHub Sponsors */
 export type SponsorableSponsorshipsAsMaintainerArgs = {
@@ -19569,7 +19090,6 @@ export type SponsorableSponsorshipsAsMaintainerArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<SponsorshipOrder>;
 };
-
 
 /** Entities that can be sponsored through GitHub Sponsors */
 export type SponsorableSponsorshipsAsSponsorArgs = {
@@ -19752,7 +19272,6 @@ export type SponsorsListing = Node & {
   tiers?: Maybe<SponsorsTierConnection>;
 };
 
-
 /** A GitHub Sponsors listing. */
 export type SponsorsListingTiersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -19798,7 +19317,6 @@ export type SponsorsTierAdminInfo = {
   /** The sponsorships associated with this tier. */
   sponsorships: SponsorshipConnection;
 };
-
 
 /** SponsorsTier information only visible to users that can administer the associated Sponsors listing. */
 export type SponsorsTierAdminInfoSponsorshipsArgs = {
@@ -20033,7 +19551,6 @@ export type Starrable = {
   viewerHasStarred: Scalars['Boolean'];
 };
 
-
 /** Things that can be starred. */
 export type StarrableStargazersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -20119,7 +19636,6 @@ export type Status = Node & {
   state: StatusState;
 };
 
-
 /** Represents a commit status. */
 export type StatusCombinedContextsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -20127,7 +19643,6 @@ export type StatusCombinedContextsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** Represents a commit status. */
 export type StatusContextArgs = {
@@ -20145,7 +19660,6 @@ export type StatusCheckRollup = Node & {
   /** The combined status for the commit. */
   state: StatusState;
 };
-
 
 /** Represents the rollup for both the check runs and status for a commit. */
 export type StatusCheckRollupContextsArgs = {
@@ -20204,12 +19718,10 @@ export type StatusContext = Node & RequirableByPullRequest & {
   targetUrl?: Maybe<Scalars['URI']>;
 };
 
-
 /** Represents an individual commit status context */
 export type StatusContextAvatarUrlArgs = {
   size?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** Represents an individual commit status context */
 export type StatusContextIsRequiredArgs = {
@@ -20435,7 +19947,6 @@ export type Team = MemberStatusable & Node & Subscribable & {
   viewerSubscription?: Maybe<SubscriptionState>;
 };
 
-
 /** A team of users in an organization. */
 export type TeamAncestorsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -20444,12 +19955,10 @@ export type TeamAncestorsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A team of users in an organization. */
 export type TeamAvatarUrlArgs = {
   size?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A team of users in an organization. */
 export type TeamChildTeamsArgs = {
@@ -20462,12 +19971,10 @@ export type TeamChildTeamsArgs = {
   userLogins?: InputMaybe<Array<Scalars['String']>>;
 };
 
-
 /** A team of users in an organization. */
 export type TeamDiscussionArgs = {
   number: Scalars['Int'];
 };
-
 
 /** A team of users in an organization. */
 export type TeamDiscussionsArgs = {
@@ -20479,7 +19986,6 @@ export type TeamDiscussionsArgs = {
   orderBy?: InputMaybe<TeamDiscussionOrder>;
 };
 
-
 /** A team of users in an organization. */
 export type TeamInvitationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -20487,7 +19993,6 @@ export type TeamInvitationsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A team of users in an organization. */
 export type TeamMemberStatusesArgs = {
@@ -20497,7 +20002,6 @@ export type TeamMemberStatusesArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<UserStatusOrder>;
 };
-
 
 /** A team of users in an organization. */
 export type TeamMembersArgs = {
@@ -20510,7 +20014,6 @@ export type TeamMembersArgs = {
   query?: InputMaybe<Scalars['String']>;
   role?: InputMaybe<TeamMemberRole>;
 };
-
 
 /** A team of users in an organization. */
 export type TeamRepositoriesArgs = {
@@ -20797,7 +20300,6 @@ export type TeamDiscussion = Comment & Deletable & Node & Reactable & Subscribab
   viewerSubscription?: Maybe<SubscriptionState>;
 };
 
-
 /** A team discussion. */
 export type TeamDiscussionCommentsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -20808,7 +20310,6 @@ export type TeamDiscussionCommentsArgs = {
   orderBy?: InputMaybe<TeamDiscussionCommentOrder>;
 };
 
-
 /** A team discussion. */
 export type TeamDiscussionReactionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -20818,7 +20319,6 @@ export type TeamDiscussionReactionsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<ReactionOrder>;
 };
-
 
 /** A team discussion. */
 export type TeamDiscussionUserContentEditsArgs = {
@@ -20886,7 +20386,6 @@ export type TeamDiscussionComment = Comment & Deletable & Node & Reactable & Uni
   viewerDidAuthor: Scalars['Boolean'];
 };
 
-
 /** A comment on a team discussion. */
 export type TeamDiscussionCommentReactionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -20896,7 +20395,6 @@ export type TeamDiscussionCommentReactionsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<ReactionOrder>;
 };
-
 
 /** A comment on a team discussion. */
 export type TeamDiscussionCommentUserContentEditsArgs = {
@@ -21280,12 +20778,10 @@ export type Topic = Node & Starrable & {
   viewerHasStarred: Scalars['Boolean'];
 };
 
-
 /** A topic aggregates entities that are related to a subject. */
 export type TopicRelatedTopicsArgs = {
   first?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A topic aggregates entities that are related to a subject. */
 export type TopicRepositoriesArgs = {
@@ -21300,7 +20796,6 @@ export type TopicRepositoriesArgs = {
   privacy?: InputMaybe<RepositoryPrivacy>;
   sponsorableOnly?: InputMaybe<Scalars['Boolean']>;
 };
-
 
 /** A topic aggregates entities that are related to a subject. */
 export type TopicStargazersArgs = {
@@ -23041,24 +22536,20 @@ export type User = Actor & Node & PackageOwner & ProfileOwner & ProjectNextOwner
   websiteUrl?: Maybe<Scalars['URI']>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserAnyPinnableItemsArgs = {
   type?: InputMaybe<PinnableItemType>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserAvatarUrlArgs = {
   size?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserCanReceiveOrganizationEmailsWhenNotificationsRestrictedArgs = {
   login: Scalars['String'];
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserCommitCommentsArgs = {
@@ -23068,14 +22559,12 @@ export type UserCommitCommentsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserContributionsCollectionArgs = {
   from?: InputMaybe<Scalars['DateTime']>;
   organizationID?: InputMaybe<Scalars['ID']>;
   to?: InputMaybe<Scalars['DateTime']>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserFollowersArgs = {
@@ -23085,7 +22574,6 @@ export type UserFollowersArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserFollowingArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -23094,12 +22582,10 @@ export type UserFollowingArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserGistArgs = {
   name: Scalars['String'];
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserGistCommentsArgs = {
@@ -23108,7 +22594,6 @@ export type UserGistCommentsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserGistsArgs = {
@@ -23120,18 +22605,15 @@ export type UserGistsArgs = {
   privacy?: InputMaybe<GistPrivacy>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserHovercardArgs = {
   primarySubjectId?: InputMaybe<Scalars['ID']>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserIsSponsoredByArgs = {
   accountLogin: Scalars['String'];
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserIssueCommentsArgs = {
@@ -23141,7 +22623,6 @@ export type UserIssueCommentsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<IssueCommentOrder>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserIssuesArgs = {
@@ -23155,18 +22636,15 @@ export type UserIssuesArgs = {
   states?: InputMaybe<Array<IssueState>>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserOrganizationArgs = {
   login: Scalars['String'];
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserOrganizationVerifiedDomainEmailsArgs = {
   login: Scalars['String'];
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserOrganizationsArgs = {
@@ -23175,7 +22653,6 @@ export type UserOrganizationsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserPackagesArgs = {
@@ -23189,7 +22666,6 @@ export type UserPackagesArgs = {
   repositoryId?: InputMaybe<Scalars['ID']>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserPinnableItemsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -23198,7 +22674,6 @@ export type UserPinnableItemsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   types?: InputMaybe<Array<PinnableItemType>>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserPinnedItemsArgs = {
@@ -23209,18 +22684,15 @@ export type UserPinnedItemsArgs = {
   types?: InputMaybe<Array<PinnableItemType>>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserProjectArgs = {
   number: Scalars['Int'];
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserProjectNextArgs = {
   number: Scalars['Int'];
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserProjectsArgs = {
@@ -23233,7 +22705,6 @@ export type UserProjectsArgs = {
   states?: InputMaybe<Array<ProjectState>>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserProjectsNextArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -23244,7 +22715,6 @@ export type UserProjectsNextArgs = {
   sortBy?: InputMaybe<ProjectNextOrderField>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserPublicKeysArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -23252,7 +22722,6 @@ export type UserPublicKeysArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserPullRequestsArgs = {
@@ -23266,7 +22735,6 @@ export type UserPullRequestsArgs = {
   orderBy?: InputMaybe<IssueOrder>;
   states?: InputMaybe<Array<PullRequestState>>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserRepositoriesArgs = {
@@ -23282,7 +22750,6 @@ export type UserRepositoriesArgs = {
   privacy?: InputMaybe<RepositoryPrivacy>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserRepositoriesContributedToArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -23296,13 +22763,11 @@ export type UserRepositoriesContributedToArgs = {
   privacy?: InputMaybe<RepositoryPrivacy>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserRepositoryArgs = {
   followRenames?: InputMaybe<Scalars['Boolean']>;
   name: Scalars['String'];
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserRepositoryDiscussionCommentsArgs = {
@@ -23313,7 +22778,6 @@ export type UserRepositoryDiscussionCommentsArgs = {
   onlyAnswers?: InputMaybe<Scalars['Boolean']>;
   repositoryId?: InputMaybe<Scalars['ID']>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserRepositoryDiscussionsArgs = {
@@ -23326,7 +22790,6 @@ export type UserRepositoryDiscussionsArgs = {
   repositoryId?: InputMaybe<Scalars['ID']>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserSavedRepliesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -23336,7 +22799,6 @@ export type UserSavedRepliesArgs = {
   orderBy?: InputMaybe<SavedReplyOrder>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserSponsoringArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -23345,7 +22807,6 @@ export type UserSponsoringArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<SponsorOrder>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserSponsorsArgs = {
@@ -23357,7 +22818,6 @@ export type UserSponsorsArgs = {
   tierId?: InputMaybe<Scalars['ID']>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserSponsorsActivitiesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -23368,7 +22828,6 @@ export type UserSponsorsActivitiesArgs = {
   period?: InputMaybe<SponsorsActivityPeriod>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserSponsorshipNewslettersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -23377,7 +22836,6 @@ export type UserSponsorshipNewslettersArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<SponsorshipNewsletterOrder>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserSponsorshipsAsMaintainerArgs = {
@@ -23389,7 +22847,6 @@ export type UserSponsorshipsAsMaintainerArgs = {
   orderBy?: InputMaybe<SponsorshipOrder>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserSponsorshipsAsSponsorArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -23398,7 +22855,6 @@ export type UserSponsorshipsAsSponsorArgs = {
   last?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<SponsorshipOrder>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserStarredRepositoriesArgs = {
@@ -23410,7 +22866,6 @@ export type UserStarredRepositoriesArgs = {
   ownedByViewer?: InputMaybe<Scalars['Boolean']>;
 };
 
-
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserTopRepositoriesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -23420,7 +22875,6 @@ export type UserTopRepositoriesArgs = {
   orderBy: RepositoryOrder;
   since?: InputMaybe<Scalars['DateTime']>;
 };
-
 
 /** A user is an individual's account on GitHub that owns repositories and can make new content. */
 export type UserWatchingArgs = {
@@ -23751,7 +23205,6 @@ export type WorkflowRun = Node & {
   workflow: Workflow;
 };
 
-
 /** A workflow run. */
 export type WorkflowRunDeploymentReviewsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -23759,7 +23212,6 @@ export type WorkflowRunDeploymentReviewsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** A workflow run. */
 export type WorkflowRunPendingDeploymentRequestsArgs = {
@@ -23769,985 +23221,983 @@ export type WorkflowRunPendingDeploymentRequestsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
-
-      export interface PossibleTypesResultData {
+export interface PossibleTypesResultData {
         possibleTypes: {
           [key: string]: string[]
         }
       }
-      const result: PossibleTypesResultData = {
-  "possibleTypes": {
-    "Actor": [
-      "Bot",
-      "EnterpriseUserAccount",
-      "Mannequin",
-      "Organization",
-      "User"
-    ],
-    "Assignable": [
-      "Issue",
-      "PullRequest"
-    ],
-    "Assignee": [
-      "Bot",
-      "Mannequin",
-      "Organization",
-      "User"
-    ],
-    "AuditEntry": [
-      "MembersCanDeleteReposClearAuditEntry",
-      "MembersCanDeleteReposDisableAuditEntry",
-      "MembersCanDeleteReposEnableAuditEntry",
-      "OauthApplicationCreateAuditEntry",
-      "OrgAddBillingManagerAuditEntry",
-      "OrgAddMemberAuditEntry",
-      "OrgBlockUserAuditEntry",
-      "OrgConfigDisableCollaboratorsOnlyAuditEntry",
-      "OrgConfigEnableCollaboratorsOnlyAuditEntry",
-      "OrgCreateAuditEntry",
-      "OrgDisableOauthAppRestrictionsAuditEntry",
-      "OrgDisableSamlAuditEntry",
-      "OrgDisableTwoFactorRequirementAuditEntry",
-      "OrgEnableOauthAppRestrictionsAuditEntry",
-      "OrgEnableSamlAuditEntry",
-      "OrgEnableTwoFactorRequirementAuditEntry",
-      "OrgInviteMemberAuditEntry",
-      "OrgInviteToBusinessAuditEntry",
-      "OrgOauthAppAccessApprovedAuditEntry",
-      "OrgOauthAppAccessDeniedAuditEntry",
-      "OrgOauthAppAccessRequestedAuditEntry",
-      "OrgRemoveBillingManagerAuditEntry",
-      "OrgRemoveMemberAuditEntry",
-      "OrgRemoveOutsideCollaboratorAuditEntry",
-      "OrgRestoreMemberAuditEntry",
-      "OrgUnblockUserAuditEntry",
-      "OrgUpdateDefaultRepositoryPermissionAuditEntry",
-      "OrgUpdateMemberAuditEntry",
-      "OrgUpdateMemberRepositoryCreationPermissionAuditEntry",
-      "OrgUpdateMemberRepositoryInvitationPermissionAuditEntry",
-      "PrivateRepositoryForkingDisableAuditEntry",
-      "PrivateRepositoryForkingEnableAuditEntry",
-      "RepoAccessAuditEntry",
-      "RepoAddMemberAuditEntry",
-      "RepoAddTopicAuditEntry",
-      "RepoArchivedAuditEntry",
-      "RepoChangeMergeSettingAuditEntry",
-      "RepoConfigDisableAnonymousGitAccessAuditEntry",
-      "RepoConfigDisableCollaboratorsOnlyAuditEntry",
-      "RepoConfigDisableContributorsOnlyAuditEntry",
-      "RepoConfigDisableSockpuppetDisallowedAuditEntry",
-      "RepoConfigEnableAnonymousGitAccessAuditEntry",
-      "RepoConfigEnableCollaboratorsOnlyAuditEntry",
-      "RepoConfigEnableContributorsOnlyAuditEntry",
-      "RepoConfigEnableSockpuppetDisallowedAuditEntry",
-      "RepoConfigLockAnonymousGitAccessAuditEntry",
-      "RepoConfigUnlockAnonymousGitAccessAuditEntry",
-      "RepoCreateAuditEntry",
-      "RepoDestroyAuditEntry",
-      "RepoRemoveMemberAuditEntry",
-      "RepoRemoveTopicAuditEntry",
-      "RepositoryVisibilityChangeDisableAuditEntry",
-      "RepositoryVisibilityChangeEnableAuditEntry",
-      "TeamAddMemberAuditEntry",
-      "TeamAddRepositoryAuditEntry",
-      "TeamChangeParentTeamAuditEntry",
-      "TeamRemoveMemberAuditEntry",
-      "TeamRemoveRepositoryAuditEntry"
-    ],
-    "AuditEntryActor": [
-      "Bot",
-      "Organization",
-      "User"
-    ],
-    "BranchActorAllowanceActor": [
-      "App",
-      "Team",
-      "User"
-    ],
-    "Closable": [
-      "Issue",
-      "Milestone",
-      "Project",
-      "ProjectNext",
-      "PullRequest"
-    ],
-    "Closer": [
-      "Commit",
-      "PullRequest"
-    ],
-    "Comment": [
-      "CommitComment",
-      "Discussion",
-      "DiscussionComment",
-      "GistComment",
-      "Issue",
-      "IssueComment",
-      "PullRequest",
-      "PullRequestReview",
-      "PullRequestReviewComment",
-      "TeamDiscussion",
-      "TeamDiscussionComment"
-    ],
-    "Contribution": [
-      "CreatedCommitContribution",
-      "CreatedIssueContribution",
-      "CreatedPullRequestContribution",
-      "CreatedPullRequestReviewContribution",
-      "CreatedRepositoryContribution",
-      "JoinedGitHubContribution",
-      "RestrictedContribution"
-    ],
-    "CreatedIssueOrRestrictedContribution": [
-      "CreatedIssueContribution",
-      "RestrictedContribution"
-    ],
-    "CreatedPullRequestOrRestrictedContribution": [
-      "CreatedPullRequestContribution",
-      "RestrictedContribution"
-    ],
-    "CreatedRepositoryOrRestrictedContribution": [
-      "CreatedRepositoryContribution",
-      "RestrictedContribution"
-    ],
-    "Deletable": [
-      "CommitComment",
-      "Discussion",
-      "DiscussionComment",
-      "GistComment",
-      "IssueComment",
-      "PullRequestReview",
-      "PullRequestReviewComment",
-      "TeamDiscussion",
-      "TeamDiscussionComment"
-    ],
-    "DeploymentReviewer": [
-      "Team",
-      "User"
-    ],
-    "EnterpriseAuditEntryData": [
-      "MembersCanDeleteReposClearAuditEntry",
-      "MembersCanDeleteReposDisableAuditEntry",
-      "MembersCanDeleteReposEnableAuditEntry",
-      "OrgInviteToBusinessAuditEntry",
-      "PrivateRepositoryForkingDisableAuditEntry",
-      "PrivateRepositoryForkingEnableAuditEntry",
-      "RepositoryVisibilityChangeDisableAuditEntry",
-      "RepositoryVisibilityChangeEnableAuditEntry"
-    ],
-    "EnterpriseMember": [
-      "EnterpriseUserAccount",
-      "User"
-    ],
-    "GitObject": [
-      "Blob",
-      "Commit",
-      "Tag",
-      "Tree"
-    ],
-    "GitSignature": [
-      "GpgSignature",
-      "SmimeSignature",
-      "UnknownSignature"
-    ],
-    "HovercardContext": [
-      "GenericHovercardContext",
-      "OrganizationTeamsHovercardContext",
-      "OrganizationsHovercardContext",
-      "ReviewStatusHovercardContext",
-      "ViewerHovercardContext"
-    ],
-    "IpAllowListOwner": [
-      "App",
-      "Enterprise",
-      "Organization"
-    ],
-    "IssueOrPullRequest": [
-      "Issue",
-      "PullRequest"
-    ],
-    "IssueTimelineItem": [
-      "AssignedEvent",
-      "ClosedEvent",
-      "Commit",
-      "CrossReferencedEvent",
-      "DemilestonedEvent",
-      "IssueComment",
-      "LabeledEvent",
-      "LockedEvent",
-      "MilestonedEvent",
-      "ReferencedEvent",
-      "RenamedTitleEvent",
-      "ReopenedEvent",
-      "SubscribedEvent",
-      "TransferredEvent",
-      "UnassignedEvent",
-      "UnlabeledEvent",
-      "UnlockedEvent",
-      "UnsubscribedEvent",
-      "UserBlockedEvent"
-    ],
-    "IssueTimelineItems": [
-      "AddedToProjectEvent",
-      "AssignedEvent",
-      "ClosedEvent",
-      "CommentDeletedEvent",
-      "ConnectedEvent",
-      "ConvertedNoteToIssueEvent",
-      "ConvertedToDiscussionEvent",
-      "CrossReferencedEvent",
-      "DemilestonedEvent",
-      "DisconnectedEvent",
-      "IssueComment",
-      "LabeledEvent",
-      "LockedEvent",
-      "MarkedAsDuplicateEvent",
-      "MentionedEvent",
-      "MilestonedEvent",
-      "MovedColumnsInProjectEvent",
-      "PinnedEvent",
-      "ReferencedEvent",
-      "RemovedFromProjectEvent",
-      "RenamedTitleEvent",
-      "ReopenedEvent",
-      "SubscribedEvent",
-      "TransferredEvent",
-      "UnassignedEvent",
-      "UnlabeledEvent",
-      "UnlockedEvent",
-      "UnmarkedAsDuplicateEvent",
-      "UnpinnedEvent",
-      "UnsubscribedEvent",
-      "UserBlockedEvent"
-    ],
-    "Labelable": [
-      "Discussion",
-      "Issue",
-      "PullRequest"
-    ],
-    "Lockable": [
-      "Discussion",
-      "Issue",
-      "PullRequest"
-    ],
-    "MemberStatusable": [
-      "Organization",
-      "Team"
-    ],
-    "Migration": [
-      "RepositoryMigration"
-    ],
-    "MilestoneItem": [
-      "Issue",
-      "PullRequest"
-    ],
-    "Minimizable": [
-      "CommitComment",
-      "DiscussionComment",
-      "GistComment",
-      "IssueComment",
-      "PullRequestReviewComment"
-    ],
-    "Node": [
-      "AddedToProjectEvent",
-      "App",
-      "AssignedEvent",
-      "AutoMergeDisabledEvent",
-      "AutoMergeEnabledEvent",
-      "AutoRebaseEnabledEvent",
-      "AutoSquashEnabledEvent",
-      "AutomaticBaseChangeFailedEvent",
-      "AutomaticBaseChangeSucceededEvent",
-      "BaseRefChangedEvent",
-      "BaseRefDeletedEvent",
-      "BaseRefForcePushedEvent",
-      "Blob",
-      "Bot",
-      "BranchProtectionRule",
-      "BypassForcePushAllowance",
-      "BypassPullRequestAllowance",
-      "CWE",
-      "CheckRun",
-      "CheckSuite",
-      "ClosedEvent",
-      "CodeOfConduct",
-      "CommentDeletedEvent",
-      "Commit",
-      "CommitComment",
-      "CommitCommentThread",
-      "ConnectedEvent",
-      "ConvertToDraftEvent",
-      "ConvertedNoteToIssueEvent",
-      "ConvertedToDiscussionEvent",
-      "CrossReferencedEvent",
-      "DemilestonedEvent",
-      "DeployKey",
-      "DeployedEvent",
-      "Deployment",
-      "DeploymentEnvironmentChangedEvent",
-      "DeploymentReview",
-      "DeploymentStatus",
-      "DisconnectedEvent",
-      "Discussion",
-      "DiscussionCategory",
-      "DiscussionComment",
-      "DraftIssue",
-      "Enterprise",
-      "EnterpriseAdministratorInvitation",
-      "EnterpriseIdentityProvider",
-      "EnterpriseRepositoryInfo",
-      "EnterpriseServerInstallation",
-      "EnterpriseServerUserAccount",
-      "EnterpriseServerUserAccountEmail",
-      "EnterpriseServerUserAccountsUpload",
-      "EnterpriseUserAccount",
-      "Environment",
-      "ExternalIdentity",
-      "Gist",
-      "GistComment",
-      "HeadRefDeletedEvent",
-      "HeadRefForcePushedEvent",
-      "HeadRefRestoredEvent",
-      "IpAllowListEntry",
-      "Issue",
-      "IssueComment",
-      "Label",
-      "LabeledEvent",
-      "Language",
-      "License",
-      "LockedEvent",
-      "Mannequin",
-      "MarkedAsDuplicateEvent",
-      "MarketplaceCategory",
-      "MarketplaceListing",
-      "MembersCanDeleteReposClearAuditEntry",
-      "MembersCanDeleteReposDisableAuditEntry",
-      "MembersCanDeleteReposEnableAuditEntry",
-      "MentionedEvent",
-      "MergedEvent",
-      "MigrationSource",
-      "Milestone",
-      "MilestonedEvent",
-      "MovedColumnsInProjectEvent",
-      "OIDCProvider",
-      "OauthApplicationCreateAuditEntry",
-      "OrgAddBillingManagerAuditEntry",
-      "OrgAddMemberAuditEntry",
-      "OrgBlockUserAuditEntry",
-      "OrgConfigDisableCollaboratorsOnlyAuditEntry",
-      "OrgConfigEnableCollaboratorsOnlyAuditEntry",
-      "OrgCreateAuditEntry",
-      "OrgDisableOauthAppRestrictionsAuditEntry",
-      "OrgDisableSamlAuditEntry",
-      "OrgDisableTwoFactorRequirementAuditEntry",
-      "OrgEnableOauthAppRestrictionsAuditEntry",
-      "OrgEnableSamlAuditEntry",
-      "OrgEnableTwoFactorRequirementAuditEntry",
-      "OrgInviteMemberAuditEntry",
-      "OrgInviteToBusinessAuditEntry",
-      "OrgOauthAppAccessApprovedAuditEntry",
-      "OrgOauthAppAccessDeniedAuditEntry",
-      "OrgOauthAppAccessRequestedAuditEntry",
-      "OrgRemoveBillingManagerAuditEntry",
-      "OrgRemoveMemberAuditEntry",
-      "OrgRemoveOutsideCollaboratorAuditEntry",
-      "OrgRestoreMemberAuditEntry",
-      "OrgUnblockUserAuditEntry",
-      "OrgUpdateDefaultRepositoryPermissionAuditEntry",
-      "OrgUpdateMemberAuditEntry",
-      "OrgUpdateMemberRepositoryCreationPermissionAuditEntry",
-      "OrgUpdateMemberRepositoryInvitationPermissionAuditEntry",
-      "Organization",
-      "OrganizationIdentityProvider",
-      "OrganizationInvitation",
-      "Package",
-      "PackageFile",
-      "PackageTag",
-      "PackageVersion",
-      "PinnedDiscussion",
-      "PinnedEvent",
-      "PinnedIssue",
-      "PrivateRepositoryForkingDisableAuditEntry",
-      "PrivateRepositoryForkingEnableAuditEntry",
-      "Project",
-      "ProjectCard",
-      "ProjectColumn",
-      "ProjectNext",
-      "ProjectNextField",
-      "ProjectNextItem",
-      "ProjectNextItemFieldValue",
-      "ProjectView",
-      "PublicKey",
-      "PullRequest",
-      "PullRequestCommit",
-      "PullRequestCommitCommentThread",
-      "PullRequestReview",
-      "PullRequestReviewComment",
-      "PullRequestReviewThread",
-      "Push",
-      "PushAllowance",
-      "Reaction",
-      "ReadyForReviewEvent",
-      "Ref",
-      "ReferencedEvent",
-      "Release",
-      "ReleaseAsset",
-      "RemovedFromProjectEvent",
-      "RenamedTitleEvent",
-      "ReopenedEvent",
-      "RepoAccessAuditEntry",
-      "RepoAddMemberAuditEntry",
-      "RepoAddTopicAuditEntry",
-      "RepoArchivedAuditEntry",
-      "RepoChangeMergeSettingAuditEntry",
-      "RepoConfigDisableAnonymousGitAccessAuditEntry",
-      "RepoConfigDisableCollaboratorsOnlyAuditEntry",
-      "RepoConfigDisableContributorsOnlyAuditEntry",
-      "RepoConfigDisableSockpuppetDisallowedAuditEntry",
-      "RepoConfigEnableAnonymousGitAccessAuditEntry",
-      "RepoConfigEnableCollaboratorsOnlyAuditEntry",
-      "RepoConfigEnableContributorsOnlyAuditEntry",
-      "RepoConfigEnableSockpuppetDisallowedAuditEntry",
-      "RepoConfigLockAnonymousGitAccessAuditEntry",
-      "RepoConfigUnlockAnonymousGitAccessAuditEntry",
-      "RepoCreateAuditEntry",
-      "RepoDestroyAuditEntry",
-      "RepoRemoveMemberAuditEntry",
-      "RepoRemoveTopicAuditEntry",
-      "Repository",
-      "RepositoryInvitation",
-      "RepositoryMigration",
-      "RepositoryTopic",
-      "RepositoryVisibilityChangeDisableAuditEntry",
-      "RepositoryVisibilityChangeEnableAuditEntry",
-      "RepositoryVulnerabilityAlert",
-      "ReviewDismissalAllowance",
-      "ReviewDismissedEvent",
-      "ReviewRequest",
-      "ReviewRequestRemovedEvent",
-      "ReviewRequestedEvent",
-      "SavedReply",
-      "SecurityAdvisory",
-      "SponsorsActivity",
-      "SponsorsListing",
-      "SponsorsTier",
-      "Sponsorship",
-      "SponsorshipNewsletter",
-      "Status",
-      "StatusCheckRollup",
-      "StatusContext",
-      "SubscribedEvent",
-      "Tag",
-      "Team",
-      "TeamAddMemberAuditEntry",
-      "TeamAddRepositoryAuditEntry",
-      "TeamChangeParentTeamAuditEntry",
-      "TeamDiscussion",
-      "TeamDiscussionComment",
-      "TeamRemoveMemberAuditEntry",
-      "TeamRemoveRepositoryAuditEntry",
-      "Topic",
-      "TransferredEvent",
-      "Tree",
-      "UnassignedEvent",
-      "UnlabeledEvent",
-      "UnlockedEvent",
-      "UnmarkedAsDuplicateEvent",
-      "UnpinnedEvent",
-      "UnsubscribedEvent",
-      "User",
-      "UserBlockedEvent",
-      "UserContentEdit",
-      "UserStatus",
-      "VerifiableDomain",
-      "Workflow",
-      "WorkflowRun"
-    ],
-    "OauthApplicationAuditEntryData": [
-      "OauthApplicationCreateAuditEntry",
-      "OrgOauthAppAccessApprovedAuditEntry",
-      "OrgOauthAppAccessDeniedAuditEntry",
-      "OrgOauthAppAccessRequestedAuditEntry"
-    ],
-    "OrgRestoreMemberAuditEntryMembership": [
-      "OrgRestoreMemberMembershipOrganizationAuditEntryData",
-      "OrgRestoreMemberMembershipRepositoryAuditEntryData",
-      "OrgRestoreMemberMembershipTeamAuditEntryData"
-    ],
-    "OrganizationAuditEntry": [
-      "MembersCanDeleteReposClearAuditEntry",
-      "MembersCanDeleteReposDisableAuditEntry",
-      "MembersCanDeleteReposEnableAuditEntry",
-      "OauthApplicationCreateAuditEntry",
-      "OrgAddBillingManagerAuditEntry",
-      "OrgAddMemberAuditEntry",
-      "OrgBlockUserAuditEntry",
-      "OrgConfigDisableCollaboratorsOnlyAuditEntry",
-      "OrgConfigEnableCollaboratorsOnlyAuditEntry",
-      "OrgCreateAuditEntry",
-      "OrgDisableOauthAppRestrictionsAuditEntry",
-      "OrgDisableSamlAuditEntry",
-      "OrgDisableTwoFactorRequirementAuditEntry",
-      "OrgEnableOauthAppRestrictionsAuditEntry",
-      "OrgEnableSamlAuditEntry",
-      "OrgEnableTwoFactorRequirementAuditEntry",
-      "OrgInviteMemberAuditEntry",
-      "OrgInviteToBusinessAuditEntry",
-      "OrgOauthAppAccessApprovedAuditEntry",
-      "OrgOauthAppAccessDeniedAuditEntry",
-      "OrgOauthAppAccessRequestedAuditEntry",
-      "OrgRemoveBillingManagerAuditEntry",
-      "OrgRemoveMemberAuditEntry",
-      "OrgRemoveOutsideCollaboratorAuditEntry",
-      "OrgRestoreMemberAuditEntry",
-      "OrgUnblockUserAuditEntry",
-      "OrgUpdateDefaultRepositoryPermissionAuditEntry",
-      "OrgUpdateMemberAuditEntry",
-      "OrgUpdateMemberRepositoryCreationPermissionAuditEntry",
-      "OrgUpdateMemberRepositoryInvitationPermissionAuditEntry",
-      "PrivateRepositoryForkingDisableAuditEntry",
-      "PrivateRepositoryForkingEnableAuditEntry",
-      "RepoAccessAuditEntry",
-      "RepoAddMemberAuditEntry",
-      "RepoAddTopicAuditEntry",
-      "RepoArchivedAuditEntry",
-      "RepoChangeMergeSettingAuditEntry",
-      "RepoConfigDisableAnonymousGitAccessAuditEntry",
-      "RepoConfigDisableCollaboratorsOnlyAuditEntry",
-      "RepoConfigDisableContributorsOnlyAuditEntry",
-      "RepoConfigDisableSockpuppetDisallowedAuditEntry",
-      "RepoConfigEnableAnonymousGitAccessAuditEntry",
-      "RepoConfigEnableCollaboratorsOnlyAuditEntry",
-      "RepoConfigEnableContributorsOnlyAuditEntry",
-      "RepoConfigEnableSockpuppetDisallowedAuditEntry",
-      "RepoConfigLockAnonymousGitAccessAuditEntry",
-      "RepoConfigUnlockAnonymousGitAccessAuditEntry",
-      "RepoCreateAuditEntry",
-      "RepoDestroyAuditEntry",
-      "RepoRemoveMemberAuditEntry",
-      "RepoRemoveTopicAuditEntry",
-      "RepositoryVisibilityChangeDisableAuditEntry",
-      "RepositoryVisibilityChangeEnableAuditEntry",
-      "TeamAddMemberAuditEntry",
-      "TeamAddRepositoryAuditEntry",
-      "TeamChangeParentTeamAuditEntry",
-      "TeamRemoveMemberAuditEntry",
-      "TeamRemoveRepositoryAuditEntry"
-    ],
-    "OrganizationAuditEntryData": [
-      "MembersCanDeleteReposClearAuditEntry",
-      "MembersCanDeleteReposDisableAuditEntry",
-      "MembersCanDeleteReposEnableAuditEntry",
-      "OauthApplicationCreateAuditEntry",
-      "OrgAddBillingManagerAuditEntry",
-      "OrgAddMemberAuditEntry",
-      "OrgBlockUserAuditEntry",
-      "OrgConfigDisableCollaboratorsOnlyAuditEntry",
-      "OrgConfigEnableCollaboratorsOnlyAuditEntry",
-      "OrgCreateAuditEntry",
-      "OrgDisableOauthAppRestrictionsAuditEntry",
-      "OrgDisableSamlAuditEntry",
-      "OrgDisableTwoFactorRequirementAuditEntry",
-      "OrgEnableOauthAppRestrictionsAuditEntry",
-      "OrgEnableSamlAuditEntry",
-      "OrgEnableTwoFactorRequirementAuditEntry",
-      "OrgInviteMemberAuditEntry",
-      "OrgInviteToBusinessAuditEntry",
-      "OrgOauthAppAccessApprovedAuditEntry",
-      "OrgOauthAppAccessDeniedAuditEntry",
-      "OrgOauthAppAccessRequestedAuditEntry",
-      "OrgRemoveBillingManagerAuditEntry",
-      "OrgRemoveMemberAuditEntry",
-      "OrgRemoveOutsideCollaboratorAuditEntry",
-      "OrgRestoreMemberAuditEntry",
-      "OrgRestoreMemberMembershipOrganizationAuditEntryData",
-      "OrgUnblockUserAuditEntry",
-      "OrgUpdateDefaultRepositoryPermissionAuditEntry",
-      "OrgUpdateMemberAuditEntry",
-      "OrgUpdateMemberRepositoryCreationPermissionAuditEntry",
-      "OrgUpdateMemberRepositoryInvitationPermissionAuditEntry",
-      "PrivateRepositoryForkingDisableAuditEntry",
-      "PrivateRepositoryForkingEnableAuditEntry",
-      "RepoAccessAuditEntry",
-      "RepoAddMemberAuditEntry",
-      "RepoAddTopicAuditEntry",
-      "RepoArchivedAuditEntry",
-      "RepoChangeMergeSettingAuditEntry",
-      "RepoConfigDisableAnonymousGitAccessAuditEntry",
-      "RepoConfigDisableCollaboratorsOnlyAuditEntry",
-      "RepoConfigDisableContributorsOnlyAuditEntry",
-      "RepoConfigDisableSockpuppetDisallowedAuditEntry",
-      "RepoConfigEnableAnonymousGitAccessAuditEntry",
-      "RepoConfigEnableCollaboratorsOnlyAuditEntry",
-      "RepoConfigEnableContributorsOnlyAuditEntry",
-      "RepoConfigEnableSockpuppetDisallowedAuditEntry",
-      "RepoConfigLockAnonymousGitAccessAuditEntry",
-      "RepoConfigUnlockAnonymousGitAccessAuditEntry",
-      "RepoCreateAuditEntry",
-      "RepoDestroyAuditEntry",
-      "RepoRemoveMemberAuditEntry",
-      "RepoRemoveTopicAuditEntry",
-      "RepositoryVisibilityChangeDisableAuditEntry",
-      "RepositoryVisibilityChangeEnableAuditEntry",
-      "TeamAddMemberAuditEntry",
-      "TeamAddRepositoryAuditEntry",
-      "TeamChangeParentTeamAuditEntry",
-      "TeamRemoveMemberAuditEntry",
-      "TeamRemoveRepositoryAuditEntry"
-    ],
-    "PackageOwner": [
-      "Organization",
-      "Repository",
-      "User"
-    ],
-    "PermissionGranter": [
-      "Organization",
-      "Repository",
-      "Team"
-    ],
-    "PinnableItem": [
-      "Gist",
-      "Repository"
-    ],
-    "ProfileOwner": [
-      "Organization",
-      "User"
-    ],
-    "ProjectCardItem": [
-      "Issue",
-      "PullRequest"
-    ],
-    "ProjectNextFieldCommon": [
-      "ProjectNextField"
-    ],
-    "ProjectNextItemContent": [
-      "DraftIssue",
-      "Issue",
-      "PullRequest"
-    ],
-    "ProjectNextOwner": [
-      "Issue",
-      "Organization",
-      "PullRequest",
-      "User"
-    ],
-    "ProjectOwner": [
-      "Organization",
-      "Repository",
-      "User"
-    ],
-    "ProjectV2Owner": [
-      "Issue",
-      "Organization",
-      "PullRequest",
-      "User"
-    ],
-    "PullRequestTimelineItem": [
-      "AssignedEvent",
-      "BaseRefDeletedEvent",
-      "BaseRefForcePushedEvent",
-      "ClosedEvent",
-      "Commit",
-      "CommitCommentThread",
-      "CrossReferencedEvent",
-      "DemilestonedEvent",
-      "DeployedEvent",
-      "DeploymentEnvironmentChangedEvent",
-      "HeadRefDeletedEvent",
-      "HeadRefForcePushedEvent",
-      "HeadRefRestoredEvent",
-      "IssueComment",
-      "LabeledEvent",
-      "LockedEvent",
-      "MergedEvent",
-      "MilestonedEvent",
-      "PullRequestReview",
-      "PullRequestReviewComment",
-      "PullRequestReviewThread",
-      "ReferencedEvent",
-      "RenamedTitleEvent",
-      "ReopenedEvent",
-      "ReviewDismissedEvent",
-      "ReviewRequestRemovedEvent",
-      "ReviewRequestedEvent",
-      "SubscribedEvent",
-      "UnassignedEvent",
-      "UnlabeledEvent",
-      "UnlockedEvent",
-      "UnsubscribedEvent",
-      "UserBlockedEvent"
-    ],
-    "PullRequestTimelineItems": [
-      "AddedToProjectEvent",
-      "AssignedEvent",
-      "AutoMergeDisabledEvent",
-      "AutoMergeEnabledEvent",
-      "AutoRebaseEnabledEvent",
-      "AutoSquashEnabledEvent",
-      "AutomaticBaseChangeFailedEvent",
-      "AutomaticBaseChangeSucceededEvent",
-      "BaseRefChangedEvent",
-      "BaseRefDeletedEvent",
-      "BaseRefForcePushedEvent",
-      "ClosedEvent",
-      "CommentDeletedEvent",
-      "ConnectedEvent",
-      "ConvertToDraftEvent",
-      "ConvertedNoteToIssueEvent",
-      "ConvertedToDiscussionEvent",
-      "CrossReferencedEvent",
-      "DemilestonedEvent",
-      "DeployedEvent",
-      "DeploymentEnvironmentChangedEvent",
-      "DisconnectedEvent",
-      "HeadRefDeletedEvent",
-      "HeadRefForcePushedEvent",
-      "HeadRefRestoredEvent",
-      "IssueComment",
-      "LabeledEvent",
-      "LockedEvent",
-      "MarkedAsDuplicateEvent",
-      "MentionedEvent",
-      "MergedEvent",
-      "MilestonedEvent",
-      "MovedColumnsInProjectEvent",
-      "PinnedEvent",
-      "PullRequestCommit",
-      "PullRequestCommitCommentThread",
-      "PullRequestReview",
-      "PullRequestReviewThread",
-      "PullRequestRevisionMarker",
-      "ReadyForReviewEvent",
-      "ReferencedEvent",
-      "RemovedFromProjectEvent",
-      "RenamedTitleEvent",
-      "ReopenedEvent",
-      "ReviewDismissedEvent",
-      "ReviewRequestRemovedEvent",
-      "ReviewRequestedEvent",
-      "SubscribedEvent",
-      "TransferredEvent",
-      "UnassignedEvent",
-      "UnlabeledEvent",
-      "UnlockedEvent",
-      "UnmarkedAsDuplicateEvent",
-      "UnpinnedEvent",
-      "UnsubscribedEvent",
-      "UserBlockedEvent"
-    ],
-    "PushAllowanceActor": [
-      "App",
-      "Team",
-      "User"
-    ],
-    "Reactable": [
-      "CommitComment",
-      "Discussion",
-      "DiscussionComment",
-      "Issue",
-      "IssueComment",
-      "PullRequest",
-      "PullRequestReview",
-      "PullRequestReviewComment",
-      "Release",
-      "TeamDiscussion",
-      "TeamDiscussionComment"
-    ],
-    "Reactor": [
-      "Bot",
-      "Mannequin",
-      "Organization",
-      "User"
-    ],
-    "ReferencedSubject": [
-      "Issue",
-      "PullRequest"
-    ],
-    "RenamedTitleSubject": [
-      "Issue",
-      "PullRequest"
-    ],
-    "RepositoryAuditEntryData": [
-      "OrgRestoreMemberMembershipRepositoryAuditEntryData",
-      "PrivateRepositoryForkingDisableAuditEntry",
-      "PrivateRepositoryForkingEnableAuditEntry",
-      "RepoAccessAuditEntry",
-      "RepoAddMemberAuditEntry",
-      "RepoAddTopicAuditEntry",
-      "RepoArchivedAuditEntry",
-      "RepoChangeMergeSettingAuditEntry",
-      "RepoConfigDisableAnonymousGitAccessAuditEntry",
-      "RepoConfigDisableCollaboratorsOnlyAuditEntry",
-      "RepoConfigDisableContributorsOnlyAuditEntry",
-      "RepoConfigDisableSockpuppetDisallowedAuditEntry",
-      "RepoConfigEnableAnonymousGitAccessAuditEntry",
-      "RepoConfigEnableCollaboratorsOnlyAuditEntry",
-      "RepoConfigEnableContributorsOnlyAuditEntry",
-      "RepoConfigEnableSockpuppetDisallowedAuditEntry",
-      "RepoConfigLockAnonymousGitAccessAuditEntry",
-      "RepoConfigUnlockAnonymousGitAccessAuditEntry",
-      "RepoCreateAuditEntry",
-      "RepoDestroyAuditEntry",
-      "RepoRemoveMemberAuditEntry",
-      "RepoRemoveTopicAuditEntry",
-      "TeamAddRepositoryAuditEntry",
-      "TeamRemoveRepositoryAuditEntry"
-    ],
-    "RepositoryDiscussionAuthor": [
-      "Organization",
-      "User"
-    ],
-    "RepositoryDiscussionCommentAuthor": [
-      "Organization",
-      "User"
-    ],
-    "RepositoryInfo": [
-      "Repository"
-    ],
-    "RepositoryNode": [
-      "CommitComment",
-      "CommitCommentThread",
-      "DependabotUpdate",
-      "Discussion",
-      "DiscussionCategory",
-      "Issue",
-      "IssueComment",
-      "PinnedDiscussion",
-      "PullRequest",
-      "PullRequestCommitCommentThread",
-      "PullRequestReview",
-      "PullRequestReviewComment",
-      "RepositoryVulnerabilityAlert"
-    ],
-    "RepositoryOwner": [
-      "Organization",
-      "User"
-    ],
-    "RequestedReviewer": [
-      "Mannequin",
-      "Team",
-      "User"
-    ],
-    "RequirableByPullRequest": [
-      "CheckRun",
-      "StatusContext"
-    ],
-    "ReviewDismissalAllowanceActor": [
-      "App",
-      "Team",
-      "User"
-    ],
-    "SearchResultItem": [
-      "App",
-      "Discussion",
-      "Issue",
-      "MarketplaceListing",
-      "Organization",
-      "PullRequest",
-      "Repository",
-      "User"
-    ],
-    "Sponsor": [
-      "Organization",
-      "User"
-    ],
-    "Sponsorable": [
-      "Organization",
-      "User"
-    ],
-    "SponsorableItem": [
-      "Organization",
-      "User"
-    ],
-    "Starrable": [
-      "Gist",
-      "Repository",
-      "Topic"
-    ],
-    "StatusCheckRollupContext": [
-      "CheckRun",
-      "StatusContext"
-    ],
-    "Subscribable": [
-      "Commit",
-      "Discussion",
-      "Issue",
-      "PullRequest",
-      "Repository",
-      "Team",
-      "TeamDiscussion"
-    ],
-    "TeamAuditEntryData": [
-      "OrgRestoreMemberMembershipTeamAuditEntryData",
-      "TeamAddMemberAuditEntry",
-      "TeamAddRepositoryAuditEntry",
-      "TeamChangeParentTeamAuditEntry",
-      "TeamRemoveMemberAuditEntry",
-      "TeamRemoveRepositoryAuditEntry"
-    ],
-    "TopicAuditEntryData": [
-      "RepoAddTopicAuditEntry",
-      "RepoRemoveTopicAuditEntry"
-    ],
-    "UniformResourceLocatable": [
-      "Bot",
-      "CheckRun",
-      "ClosedEvent",
-      "Commit",
-      "ConvertToDraftEvent",
-      "CrossReferencedEvent",
-      "Gist",
-      "Issue",
-      "Mannequin",
-      "MergedEvent",
-      "Milestone",
-      "Organization",
-      "PullRequest",
-      "PullRequestCommit",
-      "ReadyForReviewEvent",
-      "Release",
-      "Repository",
-      "RepositoryTopic",
-      "ReviewDismissedEvent",
-      "TeamDiscussion",
-      "TeamDiscussionComment",
-      "User"
-    ],
-    "Updatable": [
-      "CommitComment",
-      "Discussion",
-      "DiscussionComment",
-      "GistComment",
-      "Issue",
-      "IssueComment",
-      "Project",
-      "ProjectNext",
-      "PullRequest",
-      "PullRequestReview",
-      "PullRequestReviewComment",
-      "TeamDiscussion",
-      "TeamDiscussionComment"
-    ],
-    "UpdatableComment": [
-      "CommitComment",
-      "DiscussionComment",
-      "GistComment",
-      "Issue",
-      "IssueComment",
-      "PullRequest",
-      "PullRequestReview",
-      "PullRequestReviewComment",
-      "TeamDiscussion",
-      "TeamDiscussionComment"
-    ],
-    "VerifiableDomainOwner": [
-      "Enterprise",
-      "Organization"
-    ],
-    "Votable": [
-      "Discussion",
-      "DiscussionComment"
-    ]
-  }
+const result: PossibleTypesResultData = {
+  possibleTypes: {
+    Actor: [
+      'Bot',
+      'EnterpriseUserAccount',
+      'Mannequin',
+      'Organization',
+      'User',
+    ],
+    Assignable: [
+      'Issue',
+      'PullRequest',
+    ],
+    Assignee: [
+      'Bot',
+      'Mannequin',
+      'Organization',
+      'User',
+    ],
+    AuditEntry: [
+      'MembersCanDeleteReposClearAuditEntry',
+      'MembersCanDeleteReposDisableAuditEntry',
+      'MembersCanDeleteReposEnableAuditEntry',
+      'OauthApplicationCreateAuditEntry',
+      'OrgAddBillingManagerAuditEntry',
+      'OrgAddMemberAuditEntry',
+      'OrgBlockUserAuditEntry',
+      'OrgConfigDisableCollaboratorsOnlyAuditEntry',
+      'OrgConfigEnableCollaboratorsOnlyAuditEntry',
+      'OrgCreateAuditEntry',
+      'OrgDisableOauthAppRestrictionsAuditEntry',
+      'OrgDisableSamlAuditEntry',
+      'OrgDisableTwoFactorRequirementAuditEntry',
+      'OrgEnableOauthAppRestrictionsAuditEntry',
+      'OrgEnableSamlAuditEntry',
+      'OrgEnableTwoFactorRequirementAuditEntry',
+      'OrgInviteMemberAuditEntry',
+      'OrgInviteToBusinessAuditEntry',
+      'OrgOauthAppAccessApprovedAuditEntry',
+      'OrgOauthAppAccessDeniedAuditEntry',
+      'OrgOauthAppAccessRequestedAuditEntry',
+      'OrgRemoveBillingManagerAuditEntry',
+      'OrgRemoveMemberAuditEntry',
+      'OrgRemoveOutsideCollaboratorAuditEntry',
+      'OrgRestoreMemberAuditEntry',
+      'OrgUnblockUserAuditEntry',
+      'OrgUpdateDefaultRepositoryPermissionAuditEntry',
+      'OrgUpdateMemberAuditEntry',
+      'OrgUpdateMemberRepositoryCreationPermissionAuditEntry',
+      'OrgUpdateMemberRepositoryInvitationPermissionAuditEntry',
+      'PrivateRepositoryForkingDisableAuditEntry',
+      'PrivateRepositoryForkingEnableAuditEntry',
+      'RepoAccessAuditEntry',
+      'RepoAddMemberAuditEntry',
+      'RepoAddTopicAuditEntry',
+      'RepoArchivedAuditEntry',
+      'RepoChangeMergeSettingAuditEntry',
+      'RepoConfigDisableAnonymousGitAccessAuditEntry',
+      'RepoConfigDisableCollaboratorsOnlyAuditEntry',
+      'RepoConfigDisableContributorsOnlyAuditEntry',
+      'RepoConfigDisableSockpuppetDisallowedAuditEntry',
+      'RepoConfigEnableAnonymousGitAccessAuditEntry',
+      'RepoConfigEnableCollaboratorsOnlyAuditEntry',
+      'RepoConfigEnableContributorsOnlyAuditEntry',
+      'RepoConfigEnableSockpuppetDisallowedAuditEntry',
+      'RepoConfigLockAnonymousGitAccessAuditEntry',
+      'RepoConfigUnlockAnonymousGitAccessAuditEntry',
+      'RepoCreateAuditEntry',
+      'RepoDestroyAuditEntry',
+      'RepoRemoveMemberAuditEntry',
+      'RepoRemoveTopicAuditEntry',
+      'RepositoryVisibilityChangeDisableAuditEntry',
+      'RepositoryVisibilityChangeEnableAuditEntry',
+      'TeamAddMemberAuditEntry',
+      'TeamAddRepositoryAuditEntry',
+      'TeamChangeParentTeamAuditEntry',
+      'TeamRemoveMemberAuditEntry',
+      'TeamRemoveRepositoryAuditEntry',
+    ],
+    AuditEntryActor: [
+      'Bot',
+      'Organization',
+      'User',
+    ],
+    BranchActorAllowanceActor: [
+      'App',
+      'Team',
+      'User',
+    ],
+    Closable: [
+      'Issue',
+      'Milestone',
+      'Project',
+      'ProjectNext',
+      'PullRequest',
+    ],
+    Closer: [
+      'Commit',
+      'PullRequest',
+    ],
+    Comment: [
+      'CommitComment',
+      'Discussion',
+      'DiscussionComment',
+      'GistComment',
+      'Issue',
+      'IssueComment',
+      'PullRequest',
+      'PullRequestReview',
+      'PullRequestReviewComment',
+      'TeamDiscussion',
+      'TeamDiscussionComment',
+    ],
+    Contribution: [
+      'CreatedCommitContribution',
+      'CreatedIssueContribution',
+      'CreatedPullRequestContribution',
+      'CreatedPullRequestReviewContribution',
+      'CreatedRepositoryContribution',
+      'JoinedGitHubContribution',
+      'RestrictedContribution',
+    ],
+    CreatedIssueOrRestrictedContribution: [
+      'CreatedIssueContribution',
+      'RestrictedContribution',
+    ],
+    CreatedPullRequestOrRestrictedContribution: [
+      'CreatedPullRequestContribution',
+      'RestrictedContribution',
+    ],
+    CreatedRepositoryOrRestrictedContribution: [
+      'CreatedRepositoryContribution',
+      'RestrictedContribution',
+    ],
+    Deletable: [
+      'CommitComment',
+      'Discussion',
+      'DiscussionComment',
+      'GistComment',
+      'IssueComment',
+      'PullRequestReview',
+      'PullRequestReviewComment',
+      'TeamDiscussion',
+      'TeamDiscussionComment',
+    ],
+    DeploymentReviewer: [
+      'Team',
+      'User',
+    ],
+    EnterpriseAuditEntryData: [
+      'MembersCanDeleteReposClearAuditEntry',
+      'MembersCanDeleteReposDisableAuditEntry',
+      'MembersCanDeleteReposEnableAuditEntry',
+      'OrgInviteToBusinessAuditEntry',
+      'PrivateRepositoryForkingDisableAuditEntry',
+      'PrivateRepositoryForkingEnableAuditEntry',
+      'RepositoryVisibilityChangeDisableAuditEntry',
+      'RepositoryVisibilityChangeEnableAuditEntry',
+    ],
+    EnterpriseMember: [
+      'EnterpriseUserAccount',
+      'User',
+    ],
+    GitObject: [
+      'Blob',
+      'Commit',
+      'Tag',
+      'Tree',
+    ],
+    GitSignature: [
+      'GpgSignature',
+      'SmimeSignature',
+      'UnknownSignature',
+    ],
+    HovercardContext: [
+      'GenericHovercardContext',
+      'OrganizationTeamsHovercardContext',
+      'OrganizationsHovercardContext',
+      'ReviewStatusHovercardContext',
+      'ViewerHovercardContext',
+    ],
+    IpAllowListOwner: [
+      'App',
+      'Enterprise',
+      'Organization',
+    ],
+    IssueOrPullRequest: [
+      'Issue',
+      'PullRequest',
+    ],
+    IssueTimelineItem: [
+      'AssignedEvent',
+      'ClosedEvent',
+      'Commit',
+      'CrossReferencedEvent',
+      'DemilestonedEvent',
+      'IssueComment',
+      'LabeledEvent',
+      'LockedEvent',
+      'MilestonedEvent',
+      'ReferencedEvent',
+      'RenamedTitleEvent',
+      'ReopenedEvent',
+      'SubscribedEvent',
+      'TransferredEvent',
+      'UnassignedEvent',
+      'UnlabeledEvent',
+      'UnlockedEvent',
+      'UnsubscribedEvent',
+      'UserBlockedEvent',
+    ],
+    IssueTimelineItems: [
+      'AddedToProjectEvent',
+      'AssignedEvent',
+      'ClosedEvent',
+      'CommentDeletedEvent',
+      'ConnectedEvent',
+      'ConvertedNoteToIssueEvent',
+      'ConvertedToDiscussionEvent',
+      'CrossReferencedEvent',
+      'DemilestonedEvent',
+      'DisconnectedEvent',
+      'IssueComment',
+      'LabeledEvent',
+      'LockedEvent',
+      'MarkedAsDuplicateEvent',
+      'MentionedEvent',
+      'MilestonedEvent',
+      'MovedColumnsInProjectEvent',
+      'PinnedEvent',
+      'ReferencedEvent',
+      'RemovedFromProjectEvent',
+      'RenamedTitleEvent',
+      'ReopenedEvent',
+      'SubscribedEvent',
+      'TransferredEvent',
+      'UnassignedEvent',
+      'UnlabeledEvent',
+      'UnlockedEvent',
+      'UnmarkedAsDuplicateEvent',
+      'UnpinnedEvent',
+      'UnsubscribedEvent',
+      'UserBlockedEvent',
+    ],
+    Labelable: [
+      'Discussion',
+      'Issue',
+      'PullRequest',
+    ],
+    Lockable: [
+      'Discussion',
+      'Issue',
+      'PullRequest',
+    ],
+    MemberStatusable: [
+      'Organization',
+      'Team',
+    ],
+    Migration: [
+      'RepositoryMigration',
+    ],
+    MilestoneItem: [
+      'Issue',
+      'PullRequest',
+    ],
+    Minimizable: [
+      'CommitComment',
+      'DiscussionComment',
+      'GistComment',
+      'IssueComment',
+      'PullRequestReviewComment',
+    ],
+    Node: [
+      'AddedToProjectEvent',
+      'App',
+      'AssignedEvent',
+      'AutoMergeDisabledEvent',
+      'AutoMergeEnabledEvent',
+      'AutoRebaseEnabledEvent',
+      'AutoSquashEnabledEvent',
+      'AutomaticBaseChangeFailedEvent',
+      'AutomaticBaseChangeSucceededEvent',
+      'BaseRefChangedEvent',
+      'BaseRefDeletedEvent',
+      'BaseRefForcePushedEvent',
+      'Blob',
+      'Bot',
+      'BranchProtectionRule',
+      'BypassForcePushAllowance',
+      'BypassPullRequestAllowance',
+      'CWE',
+      'CheckRun',
+      'CheckSuite',
+      'ClosedEvent',
+      'CodeOfConduct',
+      'CommentDeletedEvent',
+      'Commit',
+      'CommitComment',
+      'CommitCommentThread',
+      'ConnectedEvent',
+      'ConvertToDraftEvent',
+      'ConvertedNoteToIssueEvent',
+      'ConvertedToDiscussionEvent',
+      'CrossReferencedEvent',
+      'DemilestonedEvent',
+      'DeployKey',
+      'DeployedEvent',
+      'Deployment',
+      'DeploymentEnvironmentChangedEvent',
+      'DeploymentReview',
+      'DeploymentStatus',
+      'DisconnectedEvent',
+      'Discussion',
+      'DiscussionCategory',
+      'DiscussionComment',
+      'DraftIssue',
+      'Enterprise',
+      'EnterpriseAdministratorInvitation',
+      'EnterpriseIdentityProvider',
+      'EnterpriseRepositoryInfo',
+      'EnterpriseServerInstallation',
+      'EnterpriseServerUserAccount',
+      'EnterpriseServerUserAccountEmail',
+      'EnterpriseServerUserAccountsUpload',
+      'EnterpriseUserAccount',
+      'Environment',
+      'ExternalIdentity',
+      'Gist',
+      'GistComment',
+      'HeadRefDeletedEvent',
+      'HeadRefForcePushedEvent',
+      'HeadRefRestoredEvent',
+      'IpAllowListEntry',
+      'Issue',
+      'IssueComment',
+      'Label',
+      'LabeledEvent',
+      'Language',
+      'License',
+      'LockedEvent',
+      'Mannequin',
+      'MarkedAsDuplicateEvent',
+      'MarketplaceCategory',
+      'MarketplaceListing',
+      'MembersCanDeleteReposClearAuditEntry',
+      'MembersCanDeleteReposDisableAuditEntry',
+      'MembersCanDeleteReposEnableAuditEntry',
+      'MentionedEvent',
+      'MergedEvent',
+      'MigrationSource',
+      'Milestone',
+      'MilestonedEvent',
+      'MovedColumnsInProjectEvent',
+      'OIDCProvider',
+      'OauthApplicationCreateAuditEntry',
+      'OrgAddBillingManagerAuditEntry',
+      'OrgAddMemberAuditEntry',
+      'OrgBlockUserAuditEntry',
+      'OrgConfigDisableCollaboratorsOnlyAuditEntry',
+      'OrgConfigEnableCollaboratorsOnlyAuditEntry',
+      'OrgCreateAuditEntry',
+      'OrgDisableOauthAppRestrictionsAuditEntry',
+      'OrgDisableSamlAuditEntry',
+      'OrgDisableTwoFactorRequirementAuditEntry',
+      'OrgEnableOauthAppRestrictionsAuditEntry',
+      'OrgEnableSamlAuditEntry',
+      'OrgEnableTwoFactorRequirementAuditEntry',
+      'OrgInviteMemberAuditEntry',
+      'OrgInviteToBusinessAuditEntry',
+      'OrgOauthAppAccessApprovedAuditEntry',
+      'OrgOauthAppAccessDeniedAuditEntry',
+      'OrgOauthAppAccessRequestedAuditEntry',
+      'OrgRemoveBillingManagerAuditEntry',
+      'OrgRemoveMemberAuditEntry',
+      'OrgRemoveOutsideCollaboratorAuditEntry',
+      'OrgRestoreMemberAuditEntry',
+      'OrgUnblockUserAuditEntry',
+      'OrgUpdateDefaultRepositoryPermissionAuditEntry',
+      'OrgUpdateMemberAuditEntry',
+      'OrgUpdateMemberRepositoryCreationPermissionAuditEntry',
+      'OrgUpdateMemberRepositoryInvitationPermissionAuditEntry',
+      'Organization',
+      'OrganizationIdentityProvider',
+      'OrganizationInvitation',
+      'Package',
+      'PackageFile',
+      'PackageTag',
+      'PackageVersion',
+      'PinnedDiscussion',
+      'PinnedEvent',
+      'PinnedIssue',
+      'PrivateRepositoryForkingDisableAuditEntry',
+      'PrivateRepositoryForkingEnableAuditEntry',
+      'Project',
+      'ProjectCard',
+      'ProjectColumn',
+      'ProjectNext',
+      'ProjectNextField',
+      'ProjectNextItem',
+      'ProjectNextItemFieldValue',
+      'ProjectView',
+      'PublicKey',
+      'PullRequest',
+      'PullRequestCommit',
+      'PullRequestCommitCommentThread',
+      'PullRequestReview',
+      'PullRequestReviewComment',
+      'PullRequestReviewThread',
+      'Push',
+      'PushAllowance',
+      'Reaction',
+      'ReadyForReviewEvent',
+      'Ref',
+      'ReferencedEvent',
+      'Release',
+      'ReleaseAsset',
+      'RemovedFromProjectEvent',
+      'RenamedTitleEvent',
+      'ReopenedEvent',
+      'RepoAccessAuditEntry',
+      'RepoAddMemberAuditEntry',
+      'RepoAddTopicAuditEntry',
+      'RepoArchivedAuditEntry',
+      'RepoChangeMergeSettingAuditEntry',
+      'RepoConfigDisableAnonymousGitAccessAuditEntry',
+      'RepoConfigDisableCollaboratorsOnlyAuditEntry',
+      'RepoConfigDisableContributorsOnlyAuditEntry',
+      'RepoConfigDisableSockpuppetDisallowedAuditEntry',
+      'RepoConfigEnableAnonymousGitAccessAuditEntry',
+      'RepoConfigEnableCollaboratorsOnlyAuditEntry',
+      'RepoConfigEnableContributorsOnlyAuditEntry',
+      'RepoConfigEnableSockpuppetDisallowedAuditEntry',
+      'RepoConfigLockAnonymousGitAccessAuditEntry',
+      'RepoConfigUnlockAnonymousGitAccessAuditEntry',
+      'RepoCreateAuditEntry',
+      'RepoDestroyAuditEntry',
+      'RepoRemoveMemberAuditEntry',
+      'RepoRemoveTopicAuditEntry',
+      'Repository',
+      'RepositoryInvitation',
+      'RepositoryMigration',
+      'RepositoryTopic',
+      'RepositoryVisibilityChangeDisableAuditEntry',
+      'RepositoryVisibilityChangeEnableAuditEntry',
+      'RepositoryVulnerabilityAlert',
+      'ReviewDismissalAllowance',
+      'ReviewDismissedEvent',
+      'ReviewRequest',
+      'ReviewRequestRemovedEvent',
+      'ReviewRequestedEvent',
+      'SavedReply',
+      'SecurityAdvisory',
+      'SponsorsActivity',
+      'SponsorsListing',
+      'SponsorsTier',
+      'Sponsorship',
+      'SponsorshipNewsletter',
+      'Status',
+      'StatusCheckRollup',
+      'StatusContext',
+      'SubscribedEvent',
+      'Tag',
+      'Team',
+      'TeamAddMemberAuditEntry',
+      'TeamAddRepositoryAuditEntry',
+      'TeamChangeParentTeamAuditEntry',
+      'TeamDiscussion',
+      'TeamDiscussionComment',
+      'TeamRemoveMemberAuditEntry',
+      'TeamRemoveRepositoryAuditEntry',
+      'Topic',
+      'TransferredEvent',
+      'Tree',
+      'UnassignedEvent',
+      'UnlabeledEvent',
+      'UnlockedEvent',
+      'UnmarkedAsDuplicateEvent',
+      'UnpinnedEvent',
+      'UnsubscribedEvent',
+      'User',
+      'UserBlockedEvent',
+      'UserContentEdit',
+      'UserStatus',
+      'VerifiableDomain',
+      'Workflow',
+      'WorkflowRun',
+    ],
+    OauthApplicationAuditEntryData: [
+      'OauthApplicationCreateAuditEntry',
+      'OrgOauthAppAccessApprovedAuditEntry',
+      'OrgOauthAppAccessDeniedAuditEntry',
+      'OrgOauthAppAccessRequestedAuditEntry',
+    ],
+    OrgRestoreMemberAuditEntryMembership: [
+      'OrgRestoreMemberMembershipOrganizationAuditEntryData',
+      'OrgRestoreMemberMembershipRepositoryAuditEntryData',
+      'OrgRestoreMemberMembershipTeamAuditEntryData',
+    ],
+    OrganizationAuditEntry: [
+      'MembersCanDeleteReposClearAuditEntry',
+      'MembersCanDeleteReposDisableAuditEntry',
+      'MembersCanDeleteReposEnableAuditEntry',
+      'OauthApplicationCreateAuditEntry',
+      'OrgAddBillingManagerAuditEntry',
+      'OrgAddMemberAuditEntry',
+      'OrgBlockUserAuditEntry',
+      'OrgConfigDisableCollaboratorsOnlyAuditEntry',
+      'OrgConfigEnableCollaboratorsOnlyAuditEntry',
+      'OrgCreateAuditEntry',
+      'OrgDisableOauthAppRestrictionsAuditEntry',
+      'OrgDisableSamlAuditEntry',
+      'OrgDisableTwoFactorRequirementAuditEntry',
+      'OrgEnableOauthAppRestrictionsAuditEntry',
+      'OrgEnableSamlAuditEntry',
+      'OrgEnableTwoFactorRequirementAuditEntry',
+      'OrgInviteMemberAuditEntry',
+      'OrgInviteToBusinessAuditEntry',
+      'OrgOauthAppAccessApprovedAuditEntry',
+      'OrgOauthAppAccessDeniedAuditEntry',
+      'OrgOauthAppAccessRequestedAuditEntry',
+      'OrgRemoveBillingManagerAuditEntry',
+      'OrgRemoveMemberAuditEntry',
+      'OrgRemoveOutsideCollaboratorAuditEntry',
+      'OrgRestoreMemberAuditEntry',
+      'OrgUnblockUserAuditEntry',
+      'OrgUpdateDefaultRepositoryPermissionAuditEntry',
+      'OrgUpdateMemberAuditEntry',
+      'OrgUpdateMemberRepositoryCreationPermissionAuditEntry',
+      'OrgUpdateMemberRepositoryInvitationPermissionAuditEntry',
+      'PrivateRepositoryForkingDisableAuditEntry',
+      'PrivateRepositoryForkingEnableAuditEntry',
+      'RepoAccessAuditEntry',
+      'RepoAddMemberAuditEntry',
+      'RepoAddTopicAuditEntry',
+      'RepoArchivedAuditEntry',
+      'RepoChangeMergeSettingAuditEntry',
+      'RepoConfigDisableAnonymousGitAccessAuditEntry',
+      'RepoConfigDisableCollaboratorsOnlyAuditEntry',
+      'RepoConfigDisableContributorsOnlyAuditEntry',
+      'RepoConfigDisableSockpuppetDisallowedAuditEntry',
+      'RepoConfigEnableAnonymousGitAccessAuditEntry',
+      'RepoConfigEnableCollaboratorsOnlyAuditEntry',
+      'RepoConfigEnableContributorsOnlyAuditEntry',
+      'RepoConfigEnableSockpuppetDisallowedAuditEntry',
+      'RepoConfigLockAnonymousGitAccessAuditEntry',
+      'RepoConfigUnlockAnonymousGitAccessAuditEntry',
+      'RepoCreateAuditEntry',
+      'RepoDestroyAuditEntry',
+      'RepoRemoveMemberAuditEntry',
+      'RepoRemoveTopicAuditEntry',
+      'RepositoryVisibilityChangeDisableAuditEntry',
+      'RepositoryVisibilityChangeEnableAuditEntry',
+      'TeamAddMemberAuditEntry',
+      'TeamAddRepositoryAuditEntry',
+      'TeamChangeParentTeamAuditEntry',
+      'TeamRemoveMemberAuditEntry',
+      'TeamRemoveRepositoryAuditEntry',
+    ],
+    OrganizationAuditEntryData: [
+      'MembersCanDeleteReposClearAuditEntry',
+      'MembersCanDeleteReposDisableAuditEntry',
+      'MembersCanDeleteReposEnableAuditEntry',
+      'OauthApplicationCreateAuditEntry',
+      'OrgAddBillingManagerAuditEntry',
+      'OrgAddMemberAuditEntry',
+      'OrgBlockUserAuditEntry',
+      'OrgConfigDisableCollaboratorsOnlyAuditEntry',
+      'OrgConfigEnableCollaboratorsOnlyAuditEntry',
+      'OrgCreateAuditEntry',
+      'OrgDisableOauthAppRestrictionsAuditEntry',
+      'OrgDisableSamlAuditEntry',
+      'OrgDisableTwoFactorRequirementAuditEntry',
+      'OrgEnableOauthAppRestrictionsAuditEntry',
+      'OrgEnableSamlAuditEntry',
+      'OrgEnableTwoFactorRequirementAuditEntry',
+      'OrgInviteMemberAuditEntry',
+      'OrgInviteToBusinessAuditEntry',
+      'OrgOauthAppAccessApprovedAuditEntry',
+      'OrgOauthAppAccessDeniedAuditEntry',
+      'OrgOauthAppAccessRequestedAuditEntry',
+      'OrgRemoveBillingManagerAuditEntry',
+      'OrgRemoveMemberAuditEntry',
+      'OrgRemoveOutsideCollaboratorAuditEntry',
+      'OrgRestoreMemberAuditEntry',
+      'OrgRestoreMemberMembershipOrganizationAuditEntryData',
+      'OrgUnblockUserAuditEntry',
+      'OrgUpdateDefaultRepositoryPermissionAuditEntry',
+      'OrgUpdateMemberAuditEntry',
+      'OrgUpdateMemberRepositoryCreationPermissionAuditEntry',
+      'OrgUpdateMemberRepositoryInvitationPermissionAuditEntry',
+      'PrivateRepositoryForkingDisableAuditEntry',
+      'PrivateRepositoryForkingEnableAuditEntry',
+      'RepoAccessAuditEntry',
+      'RepoAddMemberAuditEntry',
+      'RepoAddTopicAuditEntry',
+      'RepoArchivedAuditEntry',
+      'RepoChangeMergeSettingAuditEntry',
+      'RepoConfigDisableAnonymousGitAccessAuditEntry',
+      'RepoConfigDisableCollaboratorsOnlyAuditEntry',
+      'RepoConfigDisableContributorsOnlyAuditEntry',
+      'RepoConfigDisableSockpuppetDisallowedAuditEntry',
+      'RepoConfigEnableAnonymousGitAccessAuditEntry',
+      'RepoConfigEnableCollaboratorsOnlyAuditEntry',
+      'RepoConfigEnableContributorsOnlyAuditEntry',
+      'RepoConfigEnableSockpuppetDisallowedAuditEntry',
+      'RepoConfigLockAnonymousGitAccessAuditEntry',
+      'RepoConfigUnlockAnonymousGitAccessAuditEntry',
+      'RepoCreateAuditEntry',
+      'RepoDestroyAuditEntry',
+      'RepoRemoveMemberAuditEntry',
+      'RepoRemoveTopicAuditEntry',
+      'RepositoryVisibilityChangeDisableAuditEntry',
+      'RepositoryVisibilityChangeEnableAuditEntry',
+      'TeamAddMemberAuditEntry',
+      'TeamAddRepositoryAuditEntry',
+      'TeamChangeParentTeamAuditEntry',
+      'TeamRemoveMemberAuditEntry',
+      'TeamRemoveRepositoryAuditEntry',
+    ],
+    PackageOwner: [
+      'Organization',
+      'Repository',
+      'User',
+    ],
+    PermissionGranter: [
+      'Organization',
+      'Repository',
+      'Team',
+    ],
+    PinnableItem: [
+      'Gist',
+      'Repository',
+    ],
+    ProfileOwner: [
+      'Organization',
+      'User',
+    ],
+    ProjectCardItem: [
+      'Issue',
+      'PullRequest',
+    ],
+    ProjectNextFieldCommon: [
+      'ProjectNextField',
+    ],
+    ProjectNextItemContent: [
+      'DraftIssue',
+      'Issue',
+      'PullRequest',
+    ],
+    ProjectNextOwner: [
+      'Issue',
+      'Organization',
+      'PullRequest',
+      'User',
+    ],
+    ProjectOwner: [
+      'Organization',
+      'Repository',
+      'User',
+    ],
+    ProjectV2Owner: [
+      'Issue',
+      'Organization',
+      'PullRequest',
+      'User',
+    ],
+    PullRequestTimelineItem: [
+      'AssignedEvent',
+      'BaseRefDeletedEvent',
+      'BaseRefForcePushedEvent',
+      'ClosedEvent',
+      'Commit',
+      'CommitCommentThread',
+      'CrossReferencedEvent',
+      'DemilestonedEvent',
+      'DeployedEvent',
+      'DeploymentEnvironmentChangedEvent',
+      'HeadRefDeletedEvent',
+      'HeadRefForcePushedEvent',
+      'HeadRefRestoredEvent',
+      'IssueComment',
+      'LabeledEvent',
+      'LockedEvent',
+      'MergedEvent',
+      'MilestonedEvent',
+      'PullRequestReview',
+      'PullRequestReviewComment',
+      'PullRequestReviewThread',
+      'ReferencedEvent',
+      'RenamedTitleEvent',
+      'ReopenedEvent',
+      'ReviewDismissedEvent',
+      'ReviewRequestRemovedEvent',
+      'ReviewRequestedEvent',
+      'SubscribedEvent',
+      'UnassignedEvent',
+      'UnlabeledEvent',
+      'UnlockedEvent',
+      'UnsubscribedEvent',
+      'UserBlockedEvent',
+    ],
+    PullRequestTimelineItems: [
+      'AddedToProjectEvent',
+      'AssignedEvent',
+      'AutoMergeDisabledEvent',
+      'AutoMergeEnabledEvent',
+      'AutoRebaseEnabledEvent',
+      'AutoSquashEnabledEvent',
+      'AutomaticBaseChangeFailedEvent',
+      'AutomaticBaseChangeSucceededEvent',
+      'BaseRefChangedEvent',
+      'BaseRefDeletedEvent',
+      'BaseRefForcePushedEvent',
+      'ClosedEvent',
+      'CommentDeletedEvent',
+      'ConnectedEvent',
+      'ConvertToDraftEvent',
+      'ConvertedNoteToIssueEvent',
+      'ConvertedToDiscussionEvent',
+      'CrossReferencedEvent',
+      'DemilestonedEvent',
+      'DeployedEvent',
+      'DeploymentEnvironmentChangedEvent',
+      'DisconnectedEvent',
+      'HeadRefDeletedEvent',
+      'HeadRefForcePushedEvent',
+      'HeadRefRestoredEvent',
+      'IssueComment',
+      'LabeledEvent',
+      'LockedEvent',
+      'MarkedAsDuplicateEvent',
+      'MentionedEvent',
+      'MergedEvent',
+      'MilestonedEvent',
+      'MovedColumnsInProjectEvent',
+      'PinnedEvent',
+      'PullRequestCommit',
+      'PullRequestCommitCommentThread',
+      'PullRequestReview',
+      'PullRequestReviewThread',
+      'PullRequestRevisionMarker',
+      'ReadyForReviewEvent',
+      'ReferencedEvent',
+      'RemovedFromProjectEvent',
+      'RenamedTitleEvent',
+      'ReopenedEvent',
+      'ReviewDismissedEvent',
+      'ReviewRequestRemovedEvent',
+      'ReviewRequestedEvent',
+      'SubscribedEvent',
+      'TransferredEvent',
+      'UnassignedEvent',
+      'UnlabeledEvent',
+      'UnlockedEvent',
+      'UnmarkedAsDuplicateEvent',
+      'UnpinnedEvent',
+      'UnsubscribedEvent',
+      'UserBlockedEvent',
+    ],
+    PushAllowanceActor: [
+      'App',
+      'Team',
+      'User',
+    ],
+    Reactable: [
+      'CommitComment',
+      'Discussion',
+      'DiscussionComment',
+      'Issue',
+      'IssueComment',
+      'PullRequest',
+      'PullRequestReview',
+      'PullRequestReviewComment',
+      'Release',
+      'TeamDiscussion',
+      'TeamDiscussionComment',
+    ],
+    Reactor: [
+      'Bot',
+      'Mannequin',
+      'Organization',
+      'User',
+    ],
+    ReferencedSubject: [
+      'Issue',
+      'PullRequest',
+    ],
+    RenamedTitleSubject: [
+      'Issue',
+      'PullRequest',
+    ],
+    RepositoryAuditEntryData: [
+      'OrgRestoreMemberMembershipRepositoryAuditEntryData',
+      'PrivateRepositoryForkingDisableAuditEntry',
+      'PrivateRepositoryForkingEnableAuditEntry',
+      'RepoAccessAuditEntry',
+      'RepoAddMemberAuditEntry',
+      'RepoAddTopicAuditEntry',
+      'RepoArchivedAuditEntry',
+      'RepoChangeMergeSettingAuditEntry',
+      'RepoConfigDisableAnonymousGitAccessAuditEntry',
+      'RepoConfigDisableCollaboratorsOnlyAuditEntry',
+      'RepoConfigDisableContributorsOnlyAuditEntry',
+      'RepoConfigDisableSockpuppetDisallowedAuditEntry',
+      'RepoConfigEnableAnonymousGitAccessAuditEntry',
+      'RepoConfigEnableCollaboratorsOnlyAuditEntry',
+      'RepoConfigEnableContributorsOnlyAuditEntry',
+      'RepoConfigEnableSockpuppetDisallowedAuditEntry',
+      'RepoConfigLockAnonymousGitAccessAuditEntry',
+      'RepoConfigUnlockAnonymousGitAccessAuditEntry',
+      'RepoCreateAuditEntry',
+      'RepoDestroyAuditEntry',
+      'RepoRemoveMemberAuditEntry',
+      'RepoRemoveTopicAuditEntry',
+      'TeamAddRepositoryAuditEntry',
+      'TeamRemoveRepositoryAuditEntry',
+    ],
+    RepositoryDiscussionAuthor: [
+      'Organization',
+      'User',
+    ],
+    RepositoryDiscussionCommentAuthor: [
+      'Organization',
+      'User',
+    ],
+    RepositoryInfo: [
+      'Repository',
+    ],
+    RepositoryNode: [
+      'CommitComment',
+      'CommitCommentThread',
+      'DependabotUpdate',
+      'Discussion',
+      'DiscussionCategory',
+      'Issue',
+      'IssueComment',
+      'PinnedDiscussion',
+      'PullRequest',
+      'PullRequestCommitCommentThread',
+      'PullRequestReview',
+      'PullRequestReviewComment',
+      'RepositoryVulnerabilityAlert',
+    ],
+    RepositoryOwner: [
+      'Organization',
+      'User',
+    ],
+    RequestedReviewer: [
+      'Mannequin',
+      'Team',
+      'User',
+    ],
+    RequirableByPullRequest: [
+      'CheckRun',
+      'StatusContext',
+    ],
+    ReviewDismissalAllowanceActor: [
+      'App',
+      'Team',
+      'User',
+    ],
+    SearchResultItem: [
+      'App',
+      'Discussion',
+      'Issue',
+      'MarketplaceListing',
+      'Organization',
+      'PullRequest',
+      'Repository',
+      'User',
+    ],
+    Sponsor: [
+      'Organization',
+      'User',
+    ],
+    Sponsorable: [
+      'Organization',
+      'User',
+    ],
+    SponsorableItem: [
+      'Organization',
+      'User',
+    ],
+    Starrable: [
+      'Gist',
+      'Repository',
+      'Topic',
+    ],
+    StatusCheckRollupContext: [
+      'CheckRun',
+      'StatusContext',
+    ],
+    Subscribable: [
+      'Commit',
+      'Discussion',
+      'Issue',
+      'PullRequest',
+      'Repository',
+      'Team',
+      'TeamDiscussion',
+    ],
+    TeamAuditEntryData: [
+      'OrgRestoreMemberMembershipTeamAuditEntryData',
+      'TeamAddMemberAuditEntry',
+      'TeamAddRepositoryAuditEntry',
+      'TeamChangeParentTeamAuditEntry',
+      'TeamRemoveMemberAuditEntry',
+      'TeamRemoveRepositoryAuditEntry',
+    ],
+    TopicAuditEntryData: [
+      'RepoAddTopicAuditEntry',
+      'RepoRemoveTopicAuditEntry',
+    ],
+    UniformResourceLocatable: [
+      'Bot',
+      'CheckRun',
+      'ClosedEvent',
+      'Commit',
+      'ConvertToDraftEvent',
+      'CrossReferencedEvent',
+      'Gist',
+      'Issue',
+      'Mannequin',
+      'MergedEvent',
+      'Milestone',
+      'Organization',
+      'PullRequest',
+      'PullRequestCommit',
+      'ReadyForReviewEvent',
+      'Release',
+      'Repository',
+      'RepositoryTopic',
+      'ReviewDismissedEvent',
+      'TeamDiscussion',
+      'TeamDiscussionComment',
+      'User',
+    ],
+    Updatable: [
+      'CommitComment',
+      'Discussion',
+      'DiscussionComment',
+      'GistComment',
+      'Issue',
+      'IssueComment',
+      'Project',
+      'ProjectNext',
+      'PullRequest',
+      'PullRequestReview',
+      'PullRequestReviewComment',
+      'TeamDiscussion',
+      'TeamDiscussionComment',
+    ],
+    UpdatableComment: [
+      'CommitComment',
+      'DiscussionComment',
+      'GistComment',
+      'Issue',
+      'IssueComment',
+      'PullRequest',
+      'PullRequestReview',
+      'PullRequestReviewComment',
+      'TeamDiscussion',
+      'TeamDiscussionComment',
+    ],
+    VerifiableDomainOwner: [
+      'Enterprise',
+      'Organization',
+    ],
+    Votable: [
+      'Discussion',
+      'DiscussionComment',
+    ],
+  },
 };
-      export default result;
-    
+export default result;

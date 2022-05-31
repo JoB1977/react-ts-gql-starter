@@ -1,6 +1,6 @@
-import Button from '../components/Button';
 import { gql, useQuery } from '@apollo/client';
 import { FC, useState } from 'react';
+import Button from '../components/Button';
 import { Repository } from '../../schema.graphql';
 
 const GET_ISSUES_QUERY = gql`

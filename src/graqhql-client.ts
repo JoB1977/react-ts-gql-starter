@@ -1,4 +1,6 @@
-import { ApolloClient, ApolloLink, createHttpLink, from, InMemoryCache } from '@apollo/client';
+import {
+  ApolloClient, ApolloLink, createHttpLink, from, InMemoryCache,
+} from '@apollo/client';
 import appConfig from './config';
 
 const link = createHttpLink({ uri: appConfig.githubGraphqlApi });
