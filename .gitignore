@@ -3,4 +3,5 @@ dist
 .parcel-cache
 .idea
 .vscode
-.env
+.graphqlconfig
+codegen.yml
