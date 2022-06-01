@@ -5,7 +5,7 @@ React meets TS meets GraphQL in a first try
 
 - Clone repository, install dependecies & and create files for configuration 
 ```sh
-> git clone git@github.com:JoB1977/react-ts-gql-starter.git
+> git clone https://github.com/JoB1977/react-ts-gql-starter.git
 
 > cd react-ts-gql-starter
 > npm i
