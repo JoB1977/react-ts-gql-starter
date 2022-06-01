@@ -10,17 +10,23 @@ React meets TS meets GraphQL in a first try
 > cd react-ts-gql-starter
 > npm i
 
-> cpy .env.sample .env
-> cpy .graphqlconfig.sample .graphqlconfig
-> cpy codegen.yml.sample codegen.yml
+> cp .env.sample .env
+> cp .graphqlconfig.sample .graphqlconfig
+> cp codegen.yml.sample codegen.yml
 ```
 
 - Put your own `<GITHUB_PERSONAL_ACCESS_TOKEN>` in created files (replace placeholders).
 - Make sure the token has the permissions to read repos & users.
 
+Now you can do introspection for updating GraphQL-schema (use GraphQL-plugin for your IDE) and regenerate types.
+Regulary the types will not change, but in case they do, you can keep the definitions up to date. 
+```sh
+> npm run graphql-codegen
+```
+
 ## Run
 
 Execute NPM-task 
-´´´sh
-> npm start 
-´´´
+```sh
+> npm start
+```
