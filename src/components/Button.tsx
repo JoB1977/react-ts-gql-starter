@@ -5,7 +5,7 @@ const Button: FC<DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTML
   children,
   ...props
 }) => (
-  <button className={`bg-gray-300 px-4 rounded ${className}`} {...props}>
+  <button className={`bg-gray-300 px-4 rounded ${className ?? ''}`} {...props}>
     {children}
   </button>
 );

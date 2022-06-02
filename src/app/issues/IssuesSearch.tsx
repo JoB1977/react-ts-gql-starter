@@ -1,7 +1,9 @@
 import { debounce } from 'lodash';
 import { FC, SyntheticEvent, useEffect, useRef } from 'react';
+import Input from '../../components/Input';
+import Select from '../../components/Select';
 
-interface IssuesSearchProps {
+export interface IssuesSearchProps {
   search: string;
   status: string;
   onSearch: (search: string) => any;
@@ -31,25 +33,21 @@ const IssuesSearch: FC<IssuesSearchProps> = ({ search, status, onSearch, onStatu
 
   return (
     <div className="my-4 flex">
-      <div className="relative flex-grow">
-        <input
-          ref={inputEl}
-          type="text"
-          className="block w-full border-2 rounded peer"
-          onInput={handleSearch}
-        />
-        <label className="absolute text-gray-500 left-5 top-0 peer-focus:left-0 peer-focus:top-[-50%] peer-focus:text-xs pointer-events-none">
-          Suche im Title / Body
-        </label>
-      </div>
+      <Input
+        ref={inputEl}
+        type="text"
+        label="Suche im Title / Body"
+        className="flex-grow"
+        onInput={handleSearch}
+      ></Input>
 
-      <select className="border-2 rounded ml-2" value={status} onChange={handeStatusChange}>
+      <Select className="min-w-10 ml-2" label="Status" value={status} onChange={handeStatusChange}>
         {statusOptions.map((s) => (
           <option key={s} value={s}>
             {s || '-'}
           </option>
         ))}
-      </select>
+      </Select>
     </div>
   );
 };

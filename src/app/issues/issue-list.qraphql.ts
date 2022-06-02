@@ -18,6 +18,7 @@ export const SEARCH_ISSUES_QUERY = gql`
           title
           body
           state
+          resourcePath
           author {
             login
             avatarUrl

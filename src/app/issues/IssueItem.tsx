@@ -22,7 +22,7 @@ const IssueItem: FC<IssueProps> = ({ index, issue, open, onToggleOpen }) => {
   };
 
   return (
-    <li className="flex mt-1 py-1 px-2 hover:bg-gray-50">
+    <li className="flex mt-1 py-1 hover:bg-gray-50">
       <b
         className={
           'mr-2 px-1 text-white rounded ' +
@@ -37,12 +37,12 @@ const IssueItem: FC<IssueProps> = ({ index, issue, open, onToggleOpen }) => {
           {issue.title}
         </strong>
 
-        {open ? <pre className="whitespace-pre-wrap">{issue.body}</pre> : null}
+        {open ? <pre className="whitespace-pre-wrap pr-2">{issue.body}</pre> : null}
 
         {issue.comments.totalCount ? (
           <div className={`text-right ${displayComments ? ' mt-4' : ''}`}>
             {issue.comments.totalCount} Kommentare
-            <Button className="ml-2" onClick={handleDisplayComments}>
+            <Button className="mx-2" onClick={handleDisplayComments}>
               {displayComments ? 'verbergen' : 'anzeigen'}
             </Button>
             {displayComments ? (
