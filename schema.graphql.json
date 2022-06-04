@@ -40625,11 +40625,6 @@
           },
           {
             "kind": "INTERFACE",
-            "name": "ProjectV2Owner",
-            "ofType": null
-          },
-          {
-            "kind": "INTERFACE",
             "name": "Reactable",
             "ofType": null
           },
@@ -67436,11 +67431,6 @@
           },
           {
             "kind": "INTERFACE",
-            "name": "ProjectV2Owner",
-            "ofType": null
-          },
-          {
-            "kind": "INTERFACE",
             "name": "RepositoryDiscussionAuthor",
             "ofType": null
           },
@@ -76974,54 +76964,6 @@
         "possibleTypes": null
       },
       {
-        "kind": "INTERFACE",
-        "name": "ProjectV2Owner",
-        "description": "Represents an owner of a project (beta).",
-        "fields": [
-          {
-            "name": "id",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
-        "enumValues": null,
-        "possibleTypes": [
-          {
-            "kind": "OBJECT",
-            "name": "Issue",
-            "ofType": null
-          },
-          {
-            "kind": "OBJECT",
-            "name": "Organization",
-            "ofType": null
-          },
-          {
-            "kind": "OBJECT",
-            "name": "PullRequest",
-            "ofType": null
-          },
-          {
-            "kind": "OBJECT",
-            "name": "User",
-            "ofType": null
-          }
-        ]
-      },
-      {
         "kind": "OBJECT",
         "name": "ProjectView",
         "description": "A view within a Project.",
@@ -80311,11 +80253,6 @@
           {
             "kind": "INTERFACE",
             "name": "ProjectNextOwner",
-            "ofType": null
-          },
-          {
-            "kind": "INTERFACE",
-            "name": "ProjectV2Owner",
             "ofType": null
           },
           {
@@ -86227,6 +86164,26 @@
                 "deprecationReason": null
               },
               {
+                "name": "classifications",
+                "description": "A list of classifications to filter advisories by.",
+                "type": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "SecurityAdvisoryClassification",
+                      "ofType": null
+                    }
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
                 "name": "first",
                 "description": "Returns the first _n_ elements from the list.",
                 "type": {
@@ -86363,6 +86320,26 @@
                   "kind": "SCALAR",
                   "name": "String",
                   "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "classifications",
+                "description": "A list of advisory classifications to filter vulnerabilities by.",
+                "type": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "SecurityAdvisoryClassification",
+                      "ofType": null
+                    }
+                  }
                 },
                 "defaultValue": null,
                 "isDeprecated": false,
@@ -108062,6 +108039,22 @@
         "description": "A GitHub Security Advisory",
         "fields": [
           {
+            "name": "classification",
+            "description": "The classification of the advisory",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "ENUM",
+                "name": "SecurityAdvisoryClassification",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "cvss",
             "description": "The CVSS associated with this advisory",
             "args": [],
@@ -108383,6 +108376,26 @@
                 "deprecationReason": null
               },
               {
+                "name": "classifications",
+                "description": "A list of advisory classifications to filter vulnerabilities by.",
+                "type": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "SecurityAdvisoryClassification",
+                      "ofType": null
+                    }
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
                 "name": "ecosystem",
                 "description": "An ecosystem to filter vulnerabilities by.",
                 "type": {
@@ -108497,6 +108510,29 @@
           }
         ],
         "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "SecurityAdvisoryClassification",
+        "description": "Classification of the advisory.",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "GENERAL",
+            "description": "Classification of general advisories.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "MALWARE",
+            "description": "Classification of malware advisories.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
         "possibleTypes": null
       },
       {
@@ -132894,11 +132930,6 @@
           {
             "kind": "INTERFACE",
             "name": "ProjectOwner",
-            "ofType": null
-          },
-          {
-            "kind": "INTERFACE",
-            "name": "ProjectV2Owner",
             "ofType": null
           },
           {

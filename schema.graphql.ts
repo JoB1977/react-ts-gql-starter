@@ -7028,7 +7028,6 @@ export type Issue = Assignable &
   Lockable &
   Node &
   ProjectNextOwner &
-  ProjectV2Owner &
   Reactable &
   RepositoryNode &
   Subscribable &
@@ -11658,7 +11657,6 @@ export type Organization = Actor &
   ProfileOwner &
   ProjectNextOwner &
   ProjectOwner &
-  ProjectV2Owner &
   RepositoryDiscussionAuthor &
   RepositoryDiscussionCommentAuthor &
   RepositoryOwner &
@@ -13763,11 +13761,6 @@ export enum ProjectTemplate {
   BugTriage = 'BUG_TRIAGE',
 }
 
-/** Represents an owner of a project (beta). */
-export type ProjectV2Owner = {
-  id: Scalars['ID'];
-};
-
 /** A view within a Project. */
 export type ProjectView = Node & {
   __typename?: 'ProjectView';
@@ -13886,7 +13879,6 @@ export type PullRequest = Assignable &
   Lockable &
   Node &
   ProjectNextOwner &
-  ProjectV2Owner &
   Reactable &
   RepositoryNode &
   Subscribable &
@@ -15365,6 +15357,7 @@ export type QuerySearchArgs = {
 export type QuerySecurityAdvisoriesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
+  classifications?: InputMaybe<Array<SecurityAdvisoryClassification>>;
   first?: InputMaybe<Scalars['Int']>;
   identifier?: InputMaybe<SecurityAdvisoryIdentifierFilter>;
   last?: InputMaybe<Scalars['Int']>;
@@ -15382,6 +15375,7 @@ export type QuerySecurityAdvisoryArgs = {
 export type QuerySecurityVulnerabilitiesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
+  classifications?: InputMaybe<Array<SecurityAdvisoryClassification>>;
   ecosystem?: InputMaybe<SecurityAdvisoryEcosystem>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
@@ -19090,6 +19084,8 @@ export enum SearchType {
 /** A GitHub Security Advisory */
 export type SecurityAdvisory = Node & {
   __typename?: 'SecurityAdvisory';
+  /** The classification of the advisory */
+  classification: SecurityAdvisoryClassification;
   /** The CVSS associated with this advisory */
   cvss: Cvss;
   /** CWEs associated with this Advisory */
@@ -19137,6 +19133,7 @@ export type SecurityAdvisoryCwesArgs = {
 export type SecurityAdvisoryVulnerabilitiesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
+  classifications?: InputMaybe<Array<SecurityAdvisoryClassification>>;
   ecosystem?: InputMaybe<SecurityAdvisoryEcosystem>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
@@ -19144,6 +19141,14 @@ export type SecurityAdvisoryVulnerabilitiesArgs = {
   package?: InputMaybe<Scalars['String']>;
   severities?: InputMaybe<Array<SecurityAdvisorySeverity>>;
 };
+
+/** Classification of the advisory. */
+export enum SecurityAdvisoryClassification {
+  /** Classification of general advisories. */
+  General = 'GENERAL',
+  /** Classification of malware advisories. */
+  Malware = 'MALWARE',
+}
 
 /** The connection type for SecurityAdvisory. */
 export type SecurityAdvisoryConnection = {
@@ -22884,7 +22889,6 @@ export type User = Actor &
   ProfileOwner &
   ProjectNextOwner &
   ProjectOwner &
-  ProjectV2Owner &
   RepositoryDiscussionAuthor &
   RepositoryDiscussionCommentAuthor &
   RepositoryOwner &
@@ -24311,7 +24315,6 @@ const result: PossibleTypesResultData = {
     ProjectNextItemContent: ['DraftIssue', 'Issue', 'PullRequest'],
     ProjectNextOwner: ['Issue', 'Organization', 'PullRequest', 'User'],
     ProjectOwner: ['Organization', 'Repository', 'User'],
-    ProjectV2Owner: ['Issue', 'Organization', 'PullRequest', 'User'],
     PullRequestTimelineItem: [
       'AssignedEvent',
       'BaseRefDeletedEvent',
