@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Button should be created 1`] = `
+<div>
+  <button
+    class="bg-gray-300 px-4 rounded "
+    name="crazyButton"
+  >
+    Click me
+  </button>
+</div>
+`;
