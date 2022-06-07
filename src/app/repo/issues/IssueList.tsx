@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
 import { FC } from 'react';
 import Spinner from '../../../components/Spinner';
-import { SEARCH_ISSUES_QUERY, IssueListResult, getIssueListQuery } from './issue.qraphql';
+import { SEARCH_ISSUES_QUERY, IssueListResult, getIssueListQuery } from './issues.qraphql';
 import IssueListItem from './IssueListItem';
 
 interface IssueListProps {

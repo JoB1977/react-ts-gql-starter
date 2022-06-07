@@ -4,7 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import { IssueComment } from '../../../../schema.graphql';
 import Button from '../../../components/Button';
 import Spinner from '../../../components/Spinner';
-import { GET_ISSUE, IssueCommentsResult } from './issue.qraphql';
+import { GET_ISSUE, IssueCommentsResult } from './issues.qraphql';
 import IssueCommentList from './IssueCommentList';
 
 const IssueItem: FC = () => {
