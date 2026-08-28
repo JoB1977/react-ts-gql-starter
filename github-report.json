@@ -57,7 +57,7 @@
         "archived": false,
         "fork": false,
         "default_branch": "main",
-        "last_commit_date": "2026-08-27T08:01:31Z",
+        "last_commit_date": "2026-08-28T13:18:37Z",
         "contributors": [
           {
             "login": "kozang",
@@ -73,7 +73,7 @@
           },
           {
             "login": "Aathikrish",
-            "contributions": 12
+            "contributions": 13
           },
           {
             "login": "mischapogr",
@@ -307,12 +307,12 @@
             "contributions": 23
           },
           {
-            "login": "sheheryar-allane",
+            "login": "allane-luigibanzato",
             "contributions": 19
           },
           {
-            "login": "allane-luigibanzato",
-            "contributions": 17
+            "login": "sheheryar-allane",
+            "contributions": 19
           },
           {
             "login": "Aathikrish",
@@ -414,7 +414,7 @@
         "archived": false,
         "fork": false,
         "default_branch": "main",
-        "last_commit_date": "2026-08-27T14:48:22Z",
+        "last_commit_date": "2026-08-28T13:40:15Z",
         "contributors": [
           {
             "login": "Aathikrish",
@@ -994,11 +994,7 @@
         "org": "allane-mobility",
         "login": "Aathikrish",
         "name": "Athira Radhakrishna",
-        "lastCommit": {
-          "repo": "cloud-aft-global-customizations",
-          "date": "2026-08-27T16:48:22.000+02:00",
-          "message": "Merge pull request #32 from allane-mobility/CLOUD-4664-fix\n\nCloud 4664 fix: Adding CrowdStrike along cyberguardian check"
-        },
+        "lastCommit": null,
         "repos": [
           {
             "repo": "allane-cloud-terraform"
@@ -1112,7 +1108,11 @@
         "org": "allane-mobility",
         "login": "daehee9119",
         "name": "Daehee Kim",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "coreSup-vehicleConfigDt",
+          "date": "2024-10-30T17:59:13.000+02:00",
+          "message": "[MK-1030] exclude package price from KIA vehicle base price (#294)\n\n* [MK-1030] make Kia business etl update base price of vehicle\r\n\r\n* [MK-1030] make method for KIA only for the purpose of logging. update unit test\r\n\r\n* [MK-1030] check kia vehicle's price has been reduced, reinforce unit testes\r\n\r\n* [MK-1030] enrich unit test to cover branches\r\n\r\n* [MK-1030] Fix merge errors after BV refactor\r\n\r\n* [MK-1030] Remove empty file\r\n\r\n---------\r\n\r\nCo-authored-by: Walter Angerer <86776324+walter-business@users.noreply.github.com>\r\nCo-authored-by: BorisNen <boris.nenchovski.extern@allane.com>"
+        },
         "repos": [
           {
             "repo": "coreSup-vehicleConfigDt"
@@ -1133,7 +1133,11 @@
         "org": "allane-mobility",
         "login": "Emmusta",
         "name": "Mustafa Al-Jashaami",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "cloud-dc-workloads-terragrunt",
+          "date": "2026-08-11T13:37:40.000+02:00",
+          "message": "feat: s3 access logs destination added (#225)"
+        },
         "repos": [
           {
             "repo": "allane-cloud-terraform"
@@ -1170,14 +1174,22 @@
         "org": "allane-mobility",
         "login": "erlind1987",
         "name": "Erlind Shahini",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "coreSup-dba-test",
+          "date": "2026-07-31T17:18:26.000+02:00",
+          "message": "cleanaurora 3 (#88)"
+        },
         "repos": []
       },
       {
         "org": "allane-mobility",
         "login": "evstatievallane",
         "name": "Alexander Evstatiev",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "core-fulfillmentServices-logistics",
+          "date": "2026-06-30T17:19:21.000+03:00",
+          "message": "GMT-542 (#559)\n\n* GMT-542 Configurable delivery locations for Doorstep\n\n* GMT-542 Configurable delivery locations for Doorstep\n\n* GMT-542 fix backoffice tests\n\n* GMT-542 fix backoffice tests\n\n* fix: workers validation\n\n---------\n\nCo-authored-by: Vladimir Mutafov <vladimir.mutafov.extern@allane.com>\nCo-authored-by: Nedelcho Delchev <116798482+nedelcho-delchev-allane@users.noreply.github.com>"
+        },
         "repos": [
           {
             "repo": "core-fulfillmentServices-wearMaintenance"
@@ -1198,14 +1210,22 @@
         "org": "allane-mobility",
         "login": "FlorianSchebelle",
         "name": "Florian Schebelle",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "ai-use-cases-business",
+          "date": "2026-07-14T17:04:57.000+02:00",
+          "message": "Merge pull request #53 from allane-mobility/feature/legal-compliance-chat\n\nFeature/legal compliance chat"
+        },
         "repos": []
       },
       {
         "org": "allane-mobility",
         "login": "FranzFritsche01",
         "name": "Franz Fritsche",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "coreSup-vehicleConfigDt-IACconfig",
+          "date": "2026-08-27T14:24:33.000+02:00",
+          "message": "[CHANGE-2837] Deployment preparation (#153)\n\n* [CP-3294] prepare jato-vehicle-service test deployment\n\n* [CP-3294] provisioning\n\n* [CP-3294] provisioning\n\n* [CP-3294] prepare release\n\n* [CP-3294] prepare release"
+        },
         "repos": [
           {
             "repo": "coreSup-vehicleConfigDt"
@@ -1229,7 +1249,11 @@
         "org": "allane-mobility",
         "login": "gerdmathiasr",
         "name": "Gerd-Mathias Rehner",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "ai-use-cases-business",
+          "date": "2026-06-11T11:06:49.000+02:00",
+          "message": "Fix/aiagent-99 idcard validity period and identbogen signature (#52)\n\n* fix(idcard-agent): improve validity_period extraction accuracy (AIAGENT-99)\n\n- expiry_date prompt: add common DE document date formats with conversion\n  examples, explicit DD.MM.YYYY (day-first) note to prevent day/month swaps,\n  plausibility hint to re-read when date is implausibly far in the future\n- clarify validity_period as identical to expiry_date (was vague alternative)\n- passthrough: collaboration_agent now forwards the Identbogen validity_period\n  to the idcard_agent as a reference anchor (Identbogen is usually clean),\n  so OCR misreads on the ID scan can be caught instead of blindly trusted\n\n* fix(identbogen-agent): signature_present targets seller signature (AIAGENT-99)\n\n- clarify signature_present check: it must look for the SELLER's signature\n  (Autohaus-Mitarbeiter), not the customer's — a customer signature is never\n  on the Identbogen, which caused false fails\n- fix outdated test fixtures: add missing document_is_expected_type and\n  rpa_antragsnummer_match checks (were in EXPECTED_LLM_RULES but not in mocks)\n\n* chore(acr-terraform): remove unused contract-review S3 prefix marker\n\nThe aws_s3_object.contract_review_folder marker was unused (uploads/reads\nwork via prefix + API Gateway PutObject) and the 24h lifecycle rule deletes\nit, causing perpetual plan drift. Verified absent in dev and sta buckets;\nthe system functions without it.\n\n* chore(acr-agents): remove Kiro spec requirement refs from module docstrings\n\n* test(acr): update outdated assertions to match current behavior\n\n- test_antrag_agent: respect document_is_expected_type gate (keep doc-type\n  check passing so other checks are not skipped)\n- test_document_reader: invalid JSON now raises 'not in a supported format'\n- test_lambda_handler: handler returns 202 (async dispatch), status 'accepted'\n\n---------\n\nCo-authored-by: Gerd-Mathias Rehner <[email]>"
+        },
         "repos": []
       },
       {
@@ -1250,14 +1274,22 @@
         "org": "allane-mobility",
         "login": "iwerstlersf",
         "name": "Ingo Werstler",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "coreSup-salesforce-platform",
+          "date": "2026-08-14T13:49:33.000Z",
+          "message": "Merging branch Staging"
+        },
         "repos": []
       },
       {
         "org": "allane-mobility",
         "login": "J02670",
         "name": "Johannes Malburg",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "salesSup-CRMFlow",
+          "date": "2026-08-27T20:09:38.000+02:00",
+          "message": "Merge pull request #98 from allane-mobility/CRMFLOW-168\n\nCRMFLOW-168"
+        },
         "repos": []
       },
       {
@@ -1282,7 +1314,11 @@
         "org": "allane-mobility",
         "login": "jongrab",
         "name": "Jonas Gräbner",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "cloud-dc-workloads-terragrunt",
+          "date": "2025-07-24T15:27:12.000+02:00",
+          "message": "Update terragrunt.hcl (#148)"
+        },
         "repos": [
           {
             "repo": "cloud-aft-account-request"
@@ -1308,7 +1344,11 @@
         "org": "allane-mobility",
         "login": "junkuluk",
         "name": "Youngjun Yang",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "coreSup-vehicleConfigDt",
+          "date": "2024-09-16T16:07:05.000+03:00",
+          "message": "Mb 515 (#275)\n\n* [MB-515] initial commit\r\n\r\n* build success\r\n\r\n* clean mapping logic\r\n\r\n* add unit test\r\n\r\n* try to apply gross -> net\r\n\r\n* unit test done except for buseinss vault transaction\r\n\r\n* clean unit test\r\n\r\n* [MB-515] changing base and retail price of fsc in hyundai side\r\n\r\n* adopting requested changes\r\n\r\n---------\r\n\r\nCo-authored-by: daehee.kim <daehee.kim.extern@allane.com>"
+        },
         "repos": [
           {
             "repo": "coreSup-vehicleConfigDt"
@@ -1322,14 +1362,22 @@
         "org": "allane-mobility",
         "login": "k9846",
         "name": "Klemen Strazar",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "coreSup-integration-platform",
+          "date": "2026-08-20T13:02:37.000+02:00",
+          "message": "Update migration tool for enhanced authentication and error handling. (#275)"
+        },
         "repos": []
       },
       {
         "org": "allane-mobility",
         "login": "karel-claes",
         "name": "karel claes",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "amazon-connect-infra",
+          "date": "2026-08-27T11:10:44.000+02:00",
+          "message": "Merge pull request #41 from allane-mobility/sync-stg-prd\n\nSync stg prd"
+        },
         "repos": []
       },
       {
@@ -2462,8 +2510,8 @@
         "name": "Athira Radhakrishna",
         "lastCommit": {
           "repo": "infrastructure.cloudflare.terraform",
-          "date": "2026-08-24T13:59:33.000+02:00",
-          "message": "Merge pull request #522 from SLSE-IT/CLOUD-4040-Redirect_auto-konfigurator_to_allane.de\n\nCloud 4040 redirect auto konfigurator to allane.de"
+          "date": "2026-08-28T15:09:09.000+02:00",
+          "message": "Merge pull request #586 from SLSE-IT/CLOUD-4759\n\nfeat: Adding Clickjacking Protection"
         },
         "repos": [
           {
@@ -2525,11 +2573,7 @@
         "org": "SLSE-IT",
         "login": "andre-borowski",
         "name": "Andre Borowski",
-        "lastCommit": {
-          "repo": "processoptimization.rpa.mono",
-          "date": "2024-02-28T11:52:42.000+01:00",
-          "message": "End Mail hinzugefügt"
-        },
+        "lastCommit": null,
         "repos": []
       },
       {
@@ -2565,7 +2609,11 @@
         "org": "SLSE-IT",
         "login": "BorisNen",
         "name": "Boris Nenchovski",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "orit.bp.system-vehiclesearch",
+          "date": "2026-01-14T10:01:27.000+02:00",
+          "message": "[GMT-442] Exchange BMF image source with JATO (#137)"
+        },
         "repos": [
           {
             "repo": "orit.config"
@@ -2576,14 +2624,22 @@
         "org": "SLSE-IT",
         "login": "cag2702",
         "name": "Christian Guenther",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "iagent.kb",
+          "date": "2025-09-22T15:46:24.000+02:00",
+          "message": "Merge pull request #78 from SLSE-IT/FINRI-7231__Kategorie_fuer_HCBE-RNG_Projekt\n\nFinri-7231 - Routing Kategorie HCBE_HYU_Lease_End"
+        },
         "repos": []
       },
       {
         "org": "SLSE-IT",
         "login": "chaebyeongsik",
         "name": "Byeongsik Chae",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "orit.bp.interfaces",
+          "date": "2026-08-26T12:00:03.000+03:00",
+          "message": "[CP-3148] E-Subsidy for Wishrate (#167)\n\n* test\n\n* [CP-3148] calculation error enum added\n\n* [CP-3306] calculation error type added\n\n* [CP-3306] calculation error enum name changed\n\n---------\n\nCo-authored-by: e05860 <eunsung.lee.extern@allane.com>"
+        },
         "repos": []
       },
       {
@@ -2597,7 +2653,11 @@
         "org": "SLSE-IT",
         "login": "daehee9119",
         "name": "Daehee Kim",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "orit.bp.product-dealer-pos",
+          "date": "2026-08-26T13:11:09.000+03:00",
+          "message": "[CP-3290] add esubsidy agio to `totalAgioPercentage` (#1010)\n\n* apply esubsidy agio to total agio percentage\n\n* update lib-domain version\n\n* uncomment test code\n\n* send totalsurcharge to totalAgio of offer data to cam\n\n---------\n\nCo-authored-by: Alen Ivanov Nikolov <alennikolov95@gmail.com>"
+        },
         "repos": [
           {
             "repo": "orit.config"
@@ -2643,42 +2703,66 @@
         "org": "SLSE-IT",
         "login": "donggri019",
         "name": "Donggyun Kim",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "orit.bp.web-allease",
+          "date": "2026-07-20T17:27:46.000+09:00",
+          "message": "[CP-2750] Exclude Legitimation Data For Re-Rendering the Offer Document (#382)\n\n* [CP-2750] legitimationData action change\n\n* [CP-2750] legitimationData action change\n\n---------\n\nCo-authored-by: Daehee Kim <daehee9119@users.noreply.github.com>\nCo-authored-by: Snehlata Kumar <132344362+snehlatakumar@users.noreply.github.com>"
+        },
         "repos": []
       },
       {
         "org": "SLSE-IT",
         "login": "E05860",
         "name": "Eunsung Lee",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "orit.bp.product-dealer-pos",
+          "date": "2026-08-26T12:03:51.000+03:00",
+          "message": "[CP-3148]add Esubsidy data to Calculation (#988)\n\n* add eSubsidy\n\n* fixing tests\n\n* add more tests\n\n* fix IT, adding condition\n\n* add condition check of esubsidy and related tests\n\n* premium and share should not be required\n\n* allow not exisitng co2 or electric range\n\n* removed pluged-in hybrid related logics\n\n* Delete .idea/codeStyles/codeStyleConfig.xml\n\n* revert .idea deletion\n\n* code align\n\n* update lib-doomain version\n\n* return calculated esubsidy and totalinitial payment\n\n* update for calculation result\n\n* [Cp-3104]transfer E-Subsidy to silicon (#974)\n\n* [CP-3104]esubsidy data to silicon\n\n* [CP-3104]esubsidy data to silicon\n\n* [CP-3104]change to map structure\n\n---------\n\nCo-authored-by: daehee.kim <daehee.kim.extern@allane.com>\n\n* [CP-3107] set aktionskennzeichen (#978)\n\n* [CP-3107] set aktionskennzeichen\n\n* add initialPaymentPercentage to check whether offer data is using total's percentage\n\n* [e-subisdy] map initial payment to total when total is not existing (#982)\n\n* fill totla initial payment when mapping\n\n* map inexisting total initial payment with existing initial payment\n\n* fix test\n\n* fix dealer process test\n\n* [CP-3148]add Esubsidy data to Calculation\n\n* [CP-3148]add junit test\n\n* update lib-domain, interface\n\n* [CP-3148] interface and lib-domain version changed\n\n* [CP-3148] interface version changed\n\n* [CP-3148] gradle test flag true changed\n\n* [CP-3148] lib-domain vesion change\n\n* [Cp-3306] wishrate calculation error\n\n* [Cp-3306] unit test flage false\n\n* [Cp-3306] unit test flage restore\n\n* [CP-3306] lib-domain version changed\n\n* [CP-3306] lib-domain version changed\n\n* [CP-3306] calculation error enum name changed\n\n* [CP-3306] lib-domain version change\n\n* [CP-3148] lib-domain version change\n\n* [CP-3148] lib-domain version change\n\n* [CP-3306] lib-domain version change\n\n* [CP-3148] lib-domain version change\n\n* [CP-3148] lib-domain version changed\n\n---------\n\nCo-authored-by: daehee.kim <daehee.kim.extern@allane.com>\nCo-authored-by: Daehee Kim <daehee9119@users.noreply.github.com>\nCo-authored-by: Byeongsik Chae <byeongsik.chae.extern@allane.com>"
+        },
         "repos": []
       },
       {
         "org": "SLSE-IT",
         "login": "e9960",
         "name": "Enrico Jahn",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "processoptimization.rpa.mono",
+          "date": "2026-04-15T16:23:09.000+02:00",
+          "message": "pop-1928"
+        },
         "repos": []
       },
       {
         "org": "SLSE-IT",
         "login": "emarz2",
         "name": "Eugen Marz",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "legacy.php.fleet.ctm",
+          "date": "2026-08-07T14:00:46.000+02:00",
+          "message": "Merge remote-tracking branch 'origin/COB-1942' into release"
+        },
         "repos": []
       },
       {
         "org": "SLSE-IT",
         "login": "Emmusta",
         "name": "Mustafa Al-Jashaami",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "infrastructure.cloudflare.terraform",
+          "date": "2026-08-19T10:23:09.000+02:00",
+          "message": "feat: added dns entries of test portal kia/hyundai"
+        },
         "repos": []
       },
       {
         "org": "SLSE-IT",
         "login": "emre-allane",
         "name": "Emre Bozkurt",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "b2b.platform.leaseservices.fleetimporter",
+          "date": "2026-07-30T15:09:59.000+02:00",
+          "message": "[INT-2386] Replace frontoffice report copies with integration address"
+        },
         "repos": [
           {
             "repo": "b2b.platform.test.api"

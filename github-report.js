@@ -4,45 +4,55 @@ dotenv.config('./');
 
 const TOKEN = process.env['GITHUB_PERSONAL_ACCESS_TOKEN'];
 
-const sleep = (ms = 1) => new Promise((resolve) => setTimeout(resolve, ms * 1000));
+const sleep = (s = 1) => new Promise((resolve) => setTimeout(resolve, s * 1000));
 
 const cache = new Map();
 
 const fetchGH = async (url, params = null, retry = 0) => {
-  const query = new URLSearchParams(params || {});
+  const query = new URLSearchParams(params || {}).toString();
   const completeUrl = `${url.startsWith('https://') ? '' : 'https://api.github.com'}/${url.replace(
     /^\/+/,
     '',
   )}`;
-  const completeUrlWithParams = `${completeUrl}${query.keys().length ? `?${query}` : ''}`;
+  const completeUrlWithParams = `${completeUrl}${query ? `?${query}` : ''}`;
 
-  if (params?.q?.includes('JoB1977')) {
-    console.log('fetch GH', { url, params, completeUrlWithParams });
-  }
+  // if (params?.q?.includes('JoB1977')) {
+  //   console.log('fetch GH', { url, params, completeUrlWithParams });
+  // }
 
   if (cache.has(completeUrlWithParams)) {
     return cache.get(completeUrlWithParams).clone();
   }
 
+  await sleep();
   const res = await fetch(completeUrlWithParams, { headers: { Authorization: `token ${TOKEN}` } });
 
-  const now = Math.floor(Date.now() / 1000);
-  const ratelimitMemaining = res.headers.get('x-ratelimit-remaining');
-  const ratelimitReset = +res.headers.get('x-ratelimit-reset');
-  if (res.status === 403 && ratelimitMemaining === '0') {
-    const sleepFor = ratelimitReset ? Math.max(ratelimitReset - now, 1) + 2 : 60;
-    console.log(`  [rate limit] sleeping ${sleepFor}s until reset...`);
-    await sleep(sleepFor);
-    return fetchGH(url);
-  }
+  // if (params?.q?.includes('JoB1977')) {
+  //   console.log('fetch GH', { url, params, completeUrlWithParams, res });
+  // }
 
-  // Secondary rate limit / abuse detection
-  const retryAfter = res.headers.get('retry-after');
-  if (res.status === 403 && retryAfter) {
-    const sleepFor = (+retryAfter || 0) + 2;
-    console.log(`  [secondary rate limit] sleeping ${sleepFor}s...`);
-    await sleep(sleepFor);
-    return fetchGH(url);
+  if (res.status === 403) {
+    const now = Math.floor(Date.now() / 1000);
+    const ratelimitMemaining = +res.headers.get('x-ratelimit-remaining');
+    const ratelimitReset = +res.headers.get('x-ratelimit-reset');
+    const retryAfter = res.headers.get('retry-after');
+
+    let sleepFor = 60;
+    if (ratelimitMemaining === 0 && ratelimitReset) {
+      sleepFor = Math.max(ratelimitReset - now, 30);
+      console.log(`  [rate limit] sleeping ${sleepFor}s until reset...`);
+    } else if (retryAfter) {
+      // Secondary rate limit / abuse detection
+      sleepFor = (+retryAfter || 0) + 2;
+      console.log(`  [secondary rate limit] sleeping ${sleepFor}s...`);
+    } else {
+      console.log(`  [other rate limit] sleeping ${sleepFor}s...`);
+    }
+
+    if (retry < 10) {
+      await sleep(sleepFor);
+      return fetchGH(url, params, retry + 1);
+    }
   }
 
   if (res.status >= 500 && retry < 10) {
@@ -61,10 +71,7 @@ const fetchGH = async (url, params = null, retry = 0) => {
 
 const getGH = async (url, params) => {
   const res = await fetchGH(url, params);
-  const data = res.status >= 200 && res.status < 300 ? await res.json() : null;
-  if (params?.q?.includes('JoB1977')) {
-    console.log('get GH', { url, params, data });
-  }
+  return res.status >= 200 && res.status < 300 ? await res.json() : null;
 };
 
 const getPaginated = async function* (url, params) {
@@ -112,7 +119,7 @@ const getPaginated = async function* (url, params) {
 // Data gathering
 // --------------------------------------------------------------------------
 
-const getLastCommitDate = async (owner, repo, defaultBranch) => {
+const getLastCommitForRepo = async (owner, repo, defaultBranch) => {
   if (!defaultBranch) {
     return null;
   }
@@ -122,9 +129,7 @@ const getLastCommitDate = async (owner, repo, defaultBranch) => {
     per_page: 1,
   });
 
-  const commit = data?.[0]?.commit;
-  const date = commit?.committer?.date || commit?.author?.date;
-  return date || null;
+  return data?.[0]?.commit;
 };
 
 const getContributors = async (owner, repo) => {
@@ -196,7 +201,7 @@ const gatherOrgRepos = async (org, params = {}) => {
 
     process.stdout.write(`  [${repoCount}] ${org}/${name} ... `);
 
-    const lastCommit = await getLastCommitDate(org, name, repo.default_branch);
+    const lastCommit = await getLastCommitForRepo(org, name, repo.default_branch);
     const contributors = await getContributors(org, name);
 
     console.log(`last commit: ${lastCommit || 'n/a'}, contributors: ${contributors.length}`);
@@ -208,7 +213,7 @@ const gatherOrgRepos = async (org, params = {}) => {
       archived: repo.archived || false,
       fork: repo.fork || false,
       default_branch: repo.default_branch,
-      last_commit_date: lastCommit,
+      last_commit_date: lastCommit?.committer?.date || lastCommit?.author?.date,
       contributors,
       contributor_count: contributors.length,
       url: repo.html_url,
