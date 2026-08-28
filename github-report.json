@@ -1,0 +1,2730 @@
+{
+  "allane-mobility": {
+    "repos": [
+      {
+        "org": "allane-mobility",
+        "repo": "allane-cloud-terraform",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-08-26T14:26:02Z",
+        "contributors": [
+          {
+            "login": "jthenne",
+            "contributions": 19
+          },
+          {
+            "login": "kozang",
+            "contributions": 15
+          },
+          {
+            "login": "simkre-lnx",
+            "contributions": 12
+          },
+          {
+            "login": "Aathikrish",
+            "contributions": 7
+          },
+          {
+            "login": "kashan-allane",
+            "contributions": 5
+          },
+          {
+            "login": "marcdeop",
+            "contributions": 4
+          },
+          {
+            "login": "sheheryar-allane",
+            "contributions": 3
+          },
+          {
+            "login": "mischapogr",
+            "contributions": 1
+          },
+          {
+            "login": "Emmusta",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 9,
+        "url": "https://github.com/allane-mobility/allane-cloud-terraform"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "allane-cloud-terragrunt",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-08-27T08:01:31Z",
+        "contributors": [
+          {
+            "login": "kozang",
+            "contributions": 36
+          },
+          {
+            "login": "simkre-lnx",
+            "contributions": 21
+          },
+          {
+            "login": "jthenne",
+            "contributions": 21
+          },
+          {
+            "login": "Aathikrish",
+            "contributions": 12
+          },
+          {
+            "login": "mischapogr",
+            "contributions": 9
+          },
+          {
+            "login": "kashan-allane",
+            "contributions": 7
+          },
+          {
+            "login": "marcdeop",
+            "contributions": 7
+          },
+          {
+            "login": "sheheryar-allane",
+            "contributions": 3
+          },
+          {
+            "login": "Emmusta",
+            "contributions": 3
+          }
+        ],
+        "contributor_count": 9,
+        "url": "https://github.com/allane-mobility/allane-cloud-terragrunt"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "allane-sops-test",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2023-05-11T15:51:36Z",
+        "contributors": [
+          {
+            "login": "kozang",
+            "contributions": 5
+          }
+        ],
+        "contributor_count": 1,
+        "url": "https://github.com/allane-mobility/allane-sops-test"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "ec2-action-runner",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2023-04-26T12:41:23Z",
+        "contributors": [
+          {
+            "login": "kozang",
+            "contributions": 15
+          },
+          {
+            "login": "simkre-lnx",
+            "contributions": 9
+          }
+        ],
+        "contributor_count": 2,
+        "url": "https://github.com/allane-mobility/ec2-action-runner"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "core-fulfillmentServices-tires",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-08-17T20:03:11Z",
+        "contributors": [
+          {
+            "login": "yordan-pavlov-allane",
+            "contributions": 131
+          },
+          {
+            "login": "StanGenchevAllane",
+            "contributions": 85
+          },
+          {
+            "login": "atanas-himchev",
+            "contributions": 68
+          },
+          {
+            "login": "tbreyanova",
+            "contributions": 53
+          },
+          {
+            "login": "radoslav-marinov-allane",
+            "contributions": 21
+          },
+          {
+            "login": "DDachev-Allaine",
+            "contributions": 9
+          },
+          {
+            "login": "vladimirmutafov",
+            "contributions": 3
+          }
+        ],
+        "contributor_count": 7,
+        "url": "https://github.com/allane-mobility/core-fulfillmentServices-tires"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "allane-cloud-template",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2023-02-24T15:09:34Z",
+        "contributors": [
+          {
+            "login": "kozang",
+            "contributions": 2
+          }
+        ],
+        "contributor_count": 1,
+        "url": "https://github.com/allane-mobility/allane-cloud-template"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "core-fulfillmentServices-wearMaintenance",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-06-15T07:59:41Z",
+        "contributors": [
+          {
+            "login": "IL-sixt",
+            "contributions": 368
+          },
+          {
+            "login": "vladimirmutafov",
+            "contributions": 308
+          },
+          {
+            "login": "eklierka",
+            "contributions": 169
+          },
+          {
+            "login": "maks1mp6s",
+            "contributions": 98
+          },
+          {
+            "login": "oleksandraponochovna",
+            "contributions": 98
+          },
+          {
+            "login": "o0318",
+            "contributions": 65
+          },
+          {
+            "login": "evstatievallane",
+            "contributions": 65
+          },
+          {
+            "login": "nedelcho-delchev-allane",
+            "contributions": 62
+          },
+          {
+            "login": "SerhiiVoloshyn",
+            "contributions": 60
+          },
+          {
+            "login": "vbBakalska",
+            "contributions": 17
+          },
+          {
+            "login": "akseltahir",
+            "contributions": 15
+          },
+          {
+            "login": "dbantchovski",
+            "contributions": 1
+          },
+          {
+            "login": "ivaylo-petrov-allane",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 13,
+        "url": "https://github.com/allane-mobility/core-fulfillmentServices-wearMaintenance"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "allane-cloud-gh-actions",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-05-08T16:54:49Z",
+        "contributors": [
+          {
+            "login": "mischapogr",
+            "contributions": 20
+          }
+        ],
+        "contributor_count": 1,
+        "url": "https://github.com/allane-mobility/allane-cloud-gh-actions"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "cloud-aft-account-request",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-08-28T12:25:02Z",
+        "contributors": [
+          {
+            "login": "sainyusuf",
+            "contributions": 43
+          },
+          {
+            "login": "reshma102986",
+            "contributions": 43
+          },
+          {
+            "login": "jongrab",
+            "contributions": 36
+          },
+          {
+            "login": "kozang",
+            "contributions": 29
+          },
+          {
+            "login": "oschick",
+            "contributions": 23
+          },
+          {
+            "login": "sheheryar-allane",
+            "contributions": 19
+          },
+          {
+            "login": "allane-luigibanzato",
+            "contributions": 17
+          },
+          {
+            "login": "Aathikrish",
+            "contributions": 17
+          },
+          {
+            "login": "Emmusta",
+            "contributions": 10
+          },
+          {
+            "login": "TimonDevoteam",
+            "contributions": 10
+          },
+          {
+            "login": "simkre-lnx",
+            "contributions": 9
+          },
+          {
+            "login": "Sanjaybeerelli",
+            "contributions": 7
+          },
+          {
+            "login": "zevinhill",
+            "contributions": 7
+          },
+          {
+            "login": "kashan-allane",
+            "contributions": 4
+          },
+          {
+            "login": "mischapogr",
+            "contributions": 2
+          },
+          {
+            "login": "alex77g",
+            "contributions": 1
+          },
+          {
+            "login": "n03388",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 17,
+        "url": "https://github.com/allane-mobility/cloud-aft-account-request"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "cloud-aft-account-customizations",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-08-12T10:48:44Z",
+        "contributors": [
+          {
+            "login": "sainyusuf",
+            "contributions": 232
+          },
+          {
+            "login": "Aathikrish",
+            "contributions": 19
+          },
+          {
+            "login": "sheheryar-allane",
+            "contributions": 7
+          },
+          {
+            "login": "oschick",
+            "contributions": 7
+          },
+          {
+            "login": "allane-luigibanzato",
+            "contributions": 4
+          },
+          {
+            "login": "jongrab",
+            "contributions": 4
+          },
+          {
+            "login": "Sanjaybeerelli",
+            "contributions": 3
+          },
+          {
+            "login": "simkre-lnx",
+            "contributions": 2
+          },
+          {
+            "login": "kozang",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 9,
+        "url": "https://github.com/allane-mobility/cloud-aft-account-customizations"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "cloud-aft-global-customizations",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-08-27T14:48:22Z",
+        "contributors": [
+          {
+            "login": "Aathikrish",
+            "contributions": 34
+          },
+          {
+            "login": "sheheryar-allane",
+            "contributions": 18
+          },
+          {
+            "login": "allane-luigibanzato",
+            "contributions": 4
+          },
+          {
+            "login": "Emmusta",
+            "contributions": 2
+          },
+          {
+            "login": "oschick",
+            "contributions": 2
+          },
+          {
+            "login": "Sanjaybeerelli",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 6,
+        "url": "https://github.com/allane-mobility/cloud-aft-global-customizations"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "cloud-aft-account-provisioning-customizations",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2023-06-21T08:24:48Z",
+        "contributors": [
+          {
+            "login": "Sanjaybeerelli",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 1,
+        "url": "https://github.com/allane-mobility/cloud-aft-account-provisioning-customizations"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "cloud-aft-modules",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2024-03-28T15:41:46Z",
+        "contributors": [
+          {
+            "login": "jongrab",
+            "contributions": 10
+          },
+          {
+            "login": "oschick",
+            "contributions": 9
+          },
+          {
+            "login": "Sanjaybeerelli",
+            "contributions": 9
+          },
+          {
+            "login": "kozang",
+            "contributions": 5
+          },
+          {
+            "login": "simkre-lnx",
+            "contributions": 2
+          },
+          {
+            "login": "mischapogr",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 6,
+        "url": "https://github.com/allane-mobility/cloud-aft-modules"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "cloud-aft-terragrunt",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-08-25T11:58:53Z",
+        "contributors": [
+          {
+            "login": "oschick",
+            "contributions": 31
+          },
+          {
+            "login": "reshma102986",
+            "contributions": 13
+          },
+          {
+            "login": "jongrab",
+            "contributions": 11
+          },
+          {
+            "login": "kozang",
+            "contributions": 9
+          },
+          {
+            "login": "kashan-allane",
+            "contributions": 5
+          },
+          {
+            "login": "TimonDevoteam",
+            "contributions": 4
+          },
+          {
+            "login": "sainyusuf",
+            "contributions": 4
+          },
+          {
+            "login": "simkre-lnx",
+            "contributions": 3
+          },
+          {
+            "login": "allane-luigibanzato",
+            "contributions": 2
+          },
+          {
+            "login": "Sanjaybeerelli",
+            "contributions": 2
+          },
+          {
+            "login": "Aathikrish",
+            "contributions": 2
+          },
+          {
+            "login": "zevinhill",
+            "contributions": 2
+          },
+          {
+            "login": "Emmusta",
+            "contributions": 2
+          },
+          {
+            "login": "mischapogr",
+            "contributions": 1
+          },
+          {
+            "login": "sheheryar-allane",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 15,
+        "url": "https://github.com/allane-mobility/cloud-aft-terragrunt"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "cloud-terragrunt-gh-action",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-05-21T07:36:58Z",
+        "contributors": [
+          {
+            "login": "kozang",
+            "contributions": 21
+          },
+          {
+            "login": "sheheryar-allane",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 2,
+        "url": "https://github.com/allane-mobility/cloud-terragrunt-gh-action"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "core-fulfillmentServices-logistics",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-06-30T14:19:21Z",
+        "contributors": [
+          {
+            "login": "oleksandraponochovna",
+            "contributions": 1112
+          },
+          {
+            "login": "IL-sixt",
+            "contributions": 1009
+          },
+          {
+            "login": "o0318",
+            "contributions": 685
+          },
+          {
+            "login": "SerhiiVoloshyn",
+            "contributions": 508
+          },
+          {
+            "login": "eklierka",
+            "contributions": 289
+          },
+          {
+            "login": "nedelcho-delchev-allane",
+            "contributions": 254
+          },
+          {
+            "login": "vladimirmutafov",
+            "contributions": 234
+          },
+          {
+            "login": "maks1mp6s",
+            "contributions": 223
+          },
+          {
+            "login": "evstatievallane",
+            "contributions": 73
+          },
+          {
+            "login": "v06691",
+            "contributions": 52
+          },
+          {
+            "login": "akseltahir",
+            "contributions": 46
+          },
+          {
+            "login": "ivaylo-petrov-allane",
+            "contributions": 23
+          },
+          {
+            "login": "dbantchovski",
+            "contributions": 19
+          },
+          {
+            "login": "vbBakalska",
+            "contributions": 18
+          },
+          {
+            "login": "tenebras",
+            "contributions": 9
+          },
+          {
+            "login": "s3626",
+            "contributions": 6
+          },
+          {
+            "login": "uwesalamon",
+            "contributions": 3
+          },
+          {
+            "login": "mischapogr",
+            "contributions": 2
+          },
+          {
+            "login": "shahab-etm",
+            "contributions": 2
+          },
+          {
+            "login": "iLavryk",
+            "contributions": 2
+          }
+        ],
+        "contributor_count": 20,
+        "url": "https://github.com/allane-mobility/core-fulfillmentServices-logistics"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "coreSup-vehicleConfigDt",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-08-26T11:15:28Z",
+        "contributors": [
+          {
+            "login": "dependabot[bot]",
+            "contributions": 40
+          },
+          {
+            "login": "BorisNen",
+            "contributions": 40
+          },
+          {
+            "login": "daehee9119",
+            "contributions": 38
+          },
+          {
+            "login": "angelbuzov",
+            "contributions": 36
+          },
+          {
+            "login": "FranzFritsche01",
+            "contributions": 23
+          },
+          {
+            "login": "junkuluk",
+            "contributions": 16
+          },
+          {
+            "login": "i-pchelarov",
+            "contributions": 11
+          },
+          {
+            "login": "itsanov-allane",
+            "contributions": 8
+          },
+          {
+            "login": "Stanislav-Stoilov",
+            "contributions": 3
+          },
+          {
+            "login": "F02086",
+            "contributions": 1
+          },
+          {
+            "login": "kozang",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 11,
+        "url": "https://github.com/allane-mobility/coreSup-vehicleConfigDt"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "salesSup-appProcWebOneAllane",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "develop",
+        "last_commit_date": "2026-08-24T12:29:46Z",
+        "contributors": [
+          {
+            "login": "github-actions[bot]",
+            "contributions": 570
+          },
+          {
+            "login": "F02086",
+            "contributions": 352
+          },
+          {
+            "login": "JoB1977",
+            "contributions": 348
+          },
+          {
+            "login": "dave-six",
+            "contributions": 252
+          },
+          {
+            "login": "MaksymSvyatenko",
+            "contributions": 231
+          },
+          {
+            "login": "Stanislav-Stoilov",
+            "contributions": 211
+          },
+          {
+            "login": "TheMaru",
+            "contributions": 183
+          },
+          {
+            "login": "velio-g",
+            "contributions": 44
+          },
+          {
+            "login": "MariaAndersz",
+            "contributions": 24
+          },
+          {
+            "login": "StanGenchevAllane",
+            "contributions": 22
+          },
+          {
+            "login": "romankoyuliia",
+            "contributions": 17
+          },
+          {
+            "login": "v06691",
+            "contributions": 11
+          },
+          {
+            "login": "yordan-pavlov-allane",
+            "contributions": 11
+          },
+          {
+            "login": "atanas-himchev",
+            "contributions": 10
+          },
+          {
+            "login": "mischapogr",
+            "contributions": 4
+          },
+          {
+            "login": "psdimitrova",
+            "contributions": 4
+          },
+          {
+            "login": "faina-harmash",
+            "contributions": 2
+          },
+          {
+            "login": "ronnykind",
+            "contributions": 2
+          },
+          {
+            "login": "mtrieba",
+            "contributions": 2
+          },
+          {
+            "login": "kozang",
+            "contributions": 1
+          },
+          {
+            "login": "turbobot-temp",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 21,
+        "url": "https://github.com/allane-mobility/salesSup-appProcWebOneAllane"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "coreSup-vehicleConfigDt-IACmodules",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-08-26T10:59:23Z",
+        "contributors": [
+          {
+            "login": "FranzFritsche01",
+            "contributions": 92
+          },
+          {
+            "login": "DevoteamAnalytix",
+            "contributions": 42
+          },
+          {
+            "login": "antunes-dt",
+            "contributions": 36
+          },
+          {
+            "login": "jongrab",
+            "contributions": 19
+          },
+          {
+            "login": "eabud",
+            "contributions": 7
+          },
+          {
+            "login": "fiesagit",
+            "contributions": 7
+          },
+          {
+            "login": "angelbuzov",
+            "contributions": 3
+          },
+          {
+            "login": "BorisNen",
+            "contributions": 2
+          },
+          {
+            "login": "kozang",
+            "contributions": 1
+          },
+          {
+            "login": "itsanov-allane",
+            "contributions": 1
+          },
+          {
+            "login": "mischapogr",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 11,
+        "url": "https://github.com/allane-mobility/coreSup-vehicleConfigDt-IACmodules"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "coreSup-vehicleConfigDt-IACconfig",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-08-27T12:24:33Z",
+        "contributors": [
+          {
+            "login": "FranzFritsche01",
+            "contributions": 24
+          },
+          {
+            "login": "BorisNen",
+            "contributions": 23
+          },
+          {
+            "login": "angelbuzov",
+            "contributions": 13
+          },
+          {
+            "login": "eabud",
+            "contributions": 9
+          },
+          {
+            "login": "itsanov-allane",
+            "contributions": 9
+          },
+          {
+            "login": "jongrab",
+            "contributions": 8
+          },
+          {
+            "login": "daehee9119",
+            "contributions": 6
+          },
+          {
+            "login": "antunes-dt",
+            "contributions": 6
+          },
+          {
+            "login": "DevoteamAnalytix",
+            "contributions": 4
+          },
+          {
+            "login": "kozang",
+            "contributions": 1
+          },
+          {
+            "login": "junkuluk",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 11,
+        "url": "https://github.com/allane-mobility/coreSup-vehicleConfigDt-IACconfig"
+      },
+      {
+        "org": "allane-mobility",
+        "repo": "cloud-token-gh-action",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-06-08T13:28:04Z",
+        "contributors": [
+          {
+            "login": "kozang",
+            "contributions": 10
+          },
+          {
+            "login": "sheheryar-allane",
+            "contributions": 3
+          }
+        ],
+        "contributor_count": 2,
+        "url": "https://github.com/allane-mobility/cloud-token-gh-action"
+      },
+      {
+        "org": "allane-mobility",
+        "private": false,
+        "archived": false,
+        "fork": false,
+        "last_commit_date": null,
+        "contributors": [
+          {
+            "login": "(unknown)",
+            "contributions": 0
+          }
+        ],
+        "contributor_count": 1
+      }
+    ],
+    "users": [
+      {
+        "org": "allane-mobility",
+        "login": "Aathikrish",
+        "name": "Athira Radhakrishna",
+        "lastCommit": {
+          "repo": "cloud-aft-global-customizations",
+          "date": "2026-08-27T16:48:22.000+02:00",
+          "message": "Merge pull request #32 from allane-mobility/CLOUD-4664-fix\n\nCloud 4664 fix: Adding CrowdStrike along cyberguardian check"
+        },
+        "repos": [
+          {
+            "repo": "allane-cloud-terraform"
+          },
+          {
+            "repo": "allane-cloud-terragrunt"
+          },
+          {
+            "repo": "cloud-aft-account-request"
+          },
+          {
+            "repo": "cloud-aft-account-customizations"
+          },
+          {
+            "repo": "cloud-aft-global-customizations"
+          },
+          {
+            "repo": "cloud-aft-terragrunt"
+          }
+        ]
+      },
+      {
+        "org": "allane-mobility",
+        "login": "alex-allane",
+        "name": "Alex Leung",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "allane-luigibanzato",
+        "name": "Luigi Banzato",
+        "lastCommit": {
+          "repo": "cloud-aft-account-request",
+          "date": "2026-08-28T14:25:02.000+02:00",
+          "message": "Merge pull request #144 from allane-mobility/CLOUD-4707_6\n\nadding the devops agent role to this nonprod account"
+        },
+        "repos": [
+          {
+            "repo": "cloud-aft-account-request"
+          },
+          {
+            "repo": "cloud-aft-account-customizations"
+          },
+          {
+            "repo": "cloud-aft-global-customizations"
+          },
+          {
+            "repo": "cloud-aft-terragrunt"
+          }
+        ]
+      },
+      {
+        "org": "allane-mobility",
+        "login": "anant-pawar",
+        "name": "Anant Pawar",
+        "lastCommit": {
+          "repo": "coreSup-integration-platform",
+          "date": "2026-08-28T13:00:23.000+02:00",
+          "message": "Dependbot Changes (#300)\n\n* Bump org.apache.maven.plugins:maven-clean-plugin (#267)\n\nBumps [org.apache.maven.plugins:maven-clean-plugin](https://github.com/apache/maven-clean-plugin) in `/apis/experience/business-events-xapi` from 3.3.2 to 3.5.0.\n\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\nUpdates `org.apache.maven.plugins:maven-clean-plugin` from 3.3.2 to 3.5.0\n- [Release notes](https://github.com/apache/maven-clean-plugin/releases)\n- [Commits](https://github.com/apache/maven-clean-plugin/compare/maven-clean-plugin-3.3.2...maven-clean-plugin-3.5.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.apache.maven.plugins:maven-clean-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: maven\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.mule.connectors:mule-objectstore-connector (#266)\n\nBumps org.mule.connectors:mule-objectstore-connector in `/apis/experience/business-events-xapi` from 1.3.0 to 1.3.1.\n\n\nUpdates `org.mule.connectors:mule-objectstore-connector` from 1.3.0 to 1.3.1\n\nUpdates `org.mule.connectors:mule-objectstore-connector` from 1.3.0 to 1.3.1\n\nUpdates `org.mule.connectors:mule-objectstore-connector` from 1.3.0 to 1.3.1\n\n---\nupdated-dependencies:\n- dependency-name: org.mule.connectors:mule-objectstore-connector\n  dependency-version: 1.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-objectstore-connector\n  dependency-version: 1.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-objectstore-connector\n  dependency-version: 1.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.mule.connectors:mule-http-connector (#265)\n\nBumps org.mule.connectors:mule-http-connector in `/apis/experience/business-events-xapi` from 1.11.1 to 1.12.1.\n\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\nUpdates `org.mule.connectors:mule-http-connector` from 1.11.1 to 1.12.1\n\n---\nupdated-dependencies:\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.connectors:mule-http-connector\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.mule.modules:mule-apikit-module (#264)\n\nBumps org.mule.modules:mule-apikit-module in `/apis/experience/business-events-xapi` from 1.12.3 to 1.12.5.\n\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\nUpdates `org.mule.modules:mule-apikit-module` from 1.12.3 to 1.12.5\n\n---\nupdated-dependencies:\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n- dependency-name: org.mule.modules:mule-apikit-module\n  dependency-version: 1.12.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.mule.weave:assertions in /apis/experience/business-events-xapi (#263)\n\nBumps org.mule.weave:assertions in `/apis/experience/business-events-xapi` from 2.8.0 to 2.13.0-20260706.\n\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\nUpdates `org.mule.weave:assertions` from 2.8.0 to 2.13.0-20260706\n\n---\nupdated-dependencies:\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: maven\n- dependency-name: org.mule.weave:assertions\n  dependency-version: 2.13.0-20260706\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: maven\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Anant Pawar <anant.pawar@allane.com>\n\n* Bump `weave.version` to `2.13.0-20260706` in `pom.xml`.\n\n* Bump parent and module versions across multiple APIs and shared modules in `pom.xml`.\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+        },
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "aoberhuber",
+        "name": "Andreas Oberhuber",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "atodorov-allane",
+        "name": "Alexander Todorov",
+        "lastCommit": {
+          "repo": "core-system-contractManagement",
+          "date": "2023-12-08T12:40:15.000+02:00",
+          "message": "Merge pull request #523 from allane-mobility/pcms-828\n\nPCMS-828 Add validation that validTo is larger than validFrom"
+        },
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "BorisNen",
+        "name": "Boris Nenchovski",
+        "lastCommit": {
+          "repo": "coreSup-vehicleConfigDt-IACconfig",
+          "date": "2026-08-24T13:45:01.000+03:00",
+          "message": "[CHANGE-2824][CP-2992][CP-2993][CP-3245] Batch KIA and Hyundai datavault jobs (#151)\n\n* [CP-2992] Deploy batched kia job\n\n* [CP-2992] Provision new env variable\n\n* [CP-2992] Deploy kia etl job\n\n* [CP-2992] Deploy kia etl job\n\n* [CP-2992] Deploy kia etl job\n\n* [CP-3245] Deploy effectivity sattellite rework\n\n* [CP-3245] Deploy effectivity sattellite rework on acc\n\n* [CP-3245] Deploy new version\n\n* [CP-3245] Deploy new version\n\n* [CP-3245] Prepare on all stages\n\n* [CHANGE-2824] Deploy latest version to prd and all other stages"
+        },
+        "repos": [
+          {
+            "repo": "coreSup-vehicleConfigDt"
+          },
+          {
+            "repo": "coreSup-vehicleConfigDt-IACmodules"
+          },
+          {
+            "repo": "coreSup-vehicleConfigDt-IACconfig"
+          }
+        ]
+      },
+      {
+        "org": "allane-mobility",
+        "login": "cag2702",
+        "name": "Christian Guenther",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "daehee9119",
+        "name": "Daehee Kim",
+        "lastCommit": null,
+        "repos": [
+          {
+            "repo": "coreSup-vehicleConfigDt"
+          },
+          {
+            "repo": "coreSup-vehicleConfigDt-IACconfig"
+          }
+        ]
+      },
+      {
+        "org": "allane-mobility",
+        "login": "dd-allane",
+        "name": "Daniel Dworatschek",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "Emmusta",
+        "name": "Mustafa Al-Jashaami",
+        "lastCommit": null,
+        "repos": [
+          {
+            "repo": "allane-cloud-terraform"
+          },
+          {
+            "repo": "allane-cloud-terragrunt"
+          },
+          {
+            "repo": "cloud-aft-account-request"
+          },
+          {
+            "repo": "cloud-aft-global-customizations"
+          },
+          {
+            "repo": "cloud-aft-terragrunt"
+          }
+        ]
+      },
+      {
+        "org": "allane-mobility",
+        "login": "emre-allane",
+        "name": "Emre Bozkurt",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "ergysrexhepi",
+        "name": "Ergys Rexhepi",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "erlind1987",
+        "name": "Erlind Shahini",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "evstatievallane",
+        "name": "Alexander Evstatiev",
+        "lastCommit": null,
+        "repos": [
+          {
+            "repo": "core-fulfillmentServices-wearMaintenance"
+          },
+          {
+            "repo": "core-fulfillmentServices-logistics"
+          }
+        ]
+      },
+      {
+        "org": "allane-mobility",
+        "login": "f9785",
+        "name": "Felix Tibo",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "FlorianSchebelle",
+        "name": "Florian Schebelle",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "FranzFritsche01",
+        "name": "Franz Fritsche",
+        "lastCommit": null,
+        "repos": [
+          {
+            "repo": "coreSup-vehicleConfigDt"
+          },
+          {
+            "repo": "coreSup-vehicleConfigDt-IACmodules"
+          },
+          {
+            "repo": "coreSup-vehicleConfigDt-IACconfig"
+          }
+        ]
+      },
+      {
+        "org": "allane-mobility",
+        "login": "franzibaierlein",
+        "name": "Franziska Baierlein",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "gerdmathiasr",
+        "name": "Gerd-Mathias Rehner",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "h0829",
+        "name": "Hardy Oppmann",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "iwansuleiman-allane",
+        "name": "Iwan Suleiman",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "iwerstlersf",
+        "name": "Ingo Werstler",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "J02670",
+        "name": "Johannes Malburg",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "j7816",
+        "name": "Johannes Landgraf",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "JoB1977",
+        "name": "Johannes Bubner",
+        "lastCommit": null,
+        "repos": [
+          {
+            "repo": "salesSup-appProcWebOneAllane"
+          }
+        ]
+      },
+      {
+        "org": "allane-mobility",
+        "login": "jongrab",
+        "name": "Jonas Gräbner",
+        "lastCommit": null,
+        "repos": [
+          {
+            "repo": "cloud-aft-account-request"
+          },
+          {
+            "repo": "cloud-aft-account-customizations"
+          },
+          {
+            "repo": "cloud-aft-modules"
+          },
+          {
+            "repo": "cloud-aft-terragrunt"
+          },
+          {
+            "repo": "coreSup-vehicleConfigDt-IACmodules"
+          },
+          {
+            "repo": "coreSup-vehicleConfigDt-IACconfig"
+          }
+        ]
+      },
+      {
+        "org": "allane-mobility",
+        "login": "junkuluk",
+        "name": "Youngjun Yang",
+        "lastCommit": null,
+        "repos": [
+          {
+            "repo": "coreSup-vehicleConfigDt"
+          },
+          {
+            "repo": "coreSup-vehicleConfigDt-IACconfig"
+          }
+        ]
+      },
+      {
+        "org": "allane-mobility",
+        "login": "k9846",
+        "name": "Klemen Strazar",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "login": "karel-claes",
+        "name": "karel claes",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "allane-mobility",
+        "lastCommit": null,
+        "repos": []
+      }
+    ]
+  },
+  "SLSE-IT": {
+    "repos": [
+      {
+        "org": "SLSE-IT",
+        "repo": "wiper.interfaces",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-06-30T08:54:53Z",
+        "contributors": [
+          {
+            "login": "roland-sixt",
+            "contributions": 17
+          },
+          {
+            "login": "danie86",
+            "contributions": 4
+          },
+          {
+            "login": "FrenaConsulting",
+            "contributions": 3
+          },
+          {
+            "login": "yichenmaoy",
+            "contributions": 3
+          },
+          {
+            "login": "shahab-etm",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 5,
+        "url": "https://github.com/SLSE-IT/wiper.interfaces"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "takama.interfaces",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2026-04-01T16:18:17Z",
+        "contributors": [
+          {
+            "login": "snajeebullah",
+            "contributions": 33
+          },
+          {
+            "login": "yichenmaoy",
+            "contributions": 26
+          },
+          {
+            "login": "PodiliMonica",
+            "contributions": 18
+          },
+          {
+            "login": "shifuddin-masud-sixt",
+            "contributions": 18
+          },
+          {
+            "login": "danie86",
+            "contributions": 12
+          },
+          {
+            "login": "roland-sixt",
+            "contributions": 10
+          },
+          {
+            "login": "shahab-etm",
+            "contributions": 7
+          },
+          {
+            "login": "FrenaConsulting",
+            "contributions": 5
+          },
+          {
+            "login": "MoniPodili",
+            "contributions": 4
+          },
+          {
+            "login": "satyavulise",
+            "contributions": 4
+          }
+        ],
+        "contributor_count": 10,
+        "url": "https://github.com/SLSE-IT/takama.interfaces"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "takama.testsuite",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-06-30T08:56:53Z",
+        "contributors": [
+          {
+            "login": "snajeebullah",
+            "contributions": 39
+          },
+          {
+            "login": "danie86",
+            "contributions": 8
+          },
+          {
+            "login": "PodiliMonica",
+            "contributions": 7
+          },
+          {
+            "login": "roland-sixt",
+            "contributions": 5
+          },
+          {
+            "login": "yichenmaoy",
+            "contributions": 4
+          },
+          {
+            "login": "shahab-etm",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 6,
+        "url": "https://github.com/SLSE-IT/takama.testsuite"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "b2b.platform.test.api",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2026-06-15T18:45:59Z",
+        "contributors": [
+          {
+            "login": "roland-sixt",
+            "contributions": 1041
+          },
+          {
+            "login": "snajeebullah",
+            "contributions": 462
+          },
+          {
+            "login": "yichenmaoy",
+            "contributions": 316
+          },
+          {
+            "login": "PodiliMonica",
+            "contributions": 132
+          },
+          {
+            "login": "danie86",
+            "contributions": 117
+          },
+          {
+            "login": "FrenaConsulting",
+            "contributions": 72
+          },
+          {
+            "login": "shifuddin-masud-sixt",
+            "contributions": 67
+          },
+          {
+            "login": "emre-allane",
+            "contributions": 45
+          },
+          {
+            "login": "reneduteloff-allane",
+            "contributions": 38
+          },
+          {
+            "login": "anant-pawar",
+            "contributions": 25
+          },
+          {
+            "login": "ali-kazi",
+            "contributions": 15
+          },
+          {
+            "login": "MoniPodili",
+            "contributions": 9
+          },
+          {
+            "login": "Rupert-SixtLeasing",
+            "contributions": 5
+          },
+          {
+            "login": "kozang",
+            "contributions": 2
+          },
+          {
+            "login": "marammedini",
+            "contributions": 2
+          },
+          {
+            "login": "ndelchev-allane",
+            "contributions": 2
+          }
+        ],
+        "contributor_count": 16,
+        "url": "https://github.com/SLSE-IT/b2b.platform.test.api"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "b2b.platform.docker",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2026-08-17T17:27:49Z",
+        "contributors": [
+          {
+            "login": "roland-sixt",
+            "contributions": 188
+          },
+          {
+            "login": "yichenmaoy",
+            "contributions": 56
+          },
+          {
+            "login": "shifuddin-masud-sixt",
+            "contributions": 47
+          },
+          {
+            "login": "anant-pawar",
+            "contributions": 31
+          },
+          {
+            "login": "hostnikj",
+            "contributions": 23
+          },
+          {
+            "login": "i0579",
+            "contributions": 21
+          },
+          {
+            "login": "MoniPodili",
+            "contributions": 16
+          },
+          {
+            "login": "igor-fele",
+            "contributions": 15
+          },
+          {
+            "login": "emre-allane",
+            "contributions": 7
+          },
+          {
+            "login": "k9846",
+            "contributions": 6
+          },
+          {
+            "login": "reneduteloff-allane",
+            "contributions": 4
+          },
+          {
+            "login": "simkre-lnx",
+            "contributions": 4
+          },
+          {
+            "login": "FrenaConsulting",
+            "contributions": 4
+          },
+          {
+            "login": "danie86",
+            "contributions": 4
+          },
+          {
+            "login": "ungaralex",
+            "contributions": 3
+          },
+          {
+            "login": "borstphilipp-sixt",
+            "contributions": 3
+          },
+          {
+            "login": "snajeebullah",
+            "contributions": 3
+          },
+          {
+            "login": "trulex",
+            "contributions": 2
+          },
+          {
+            "login": "w9911",
+            "contributions": 2
+          },
+          {
+            "login": "satyavulise",
+            "contributions": 2
+          },
+          {
+            "login": "c1799",
+            "contributions": 2
+          },
+          {
+            "login": "ali-kazi",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 22,
+        "url": "https://github.com/SLSE-IT/b2b.platform.docker"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "b2b.platform.devops",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2022-03-01T16:39:38Z",
+        "contributors": [
+          {
+            "login": "roland-sixt",
+            "contributions": 72
+          },
+          {
+            "login": "iwalz-sixt",
+            "contributions": 24
+          },
+          {
+            "login": "trulex",
+            "contributions": 1
+          },
+          {
+            "login": "iwalz",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 4,
+        "url": "https://github.com/SLSE-IT/b2b.platform.devops"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "hourly.hourly",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2022-02-20T17:34:15Z",
+        "contributors": [
+          {
+            "login": "PodiliMonica",
+            "contributions": 177
+          },
+          {
+            "login": "roland-sixt",
+            "contributions": 56
+          },
+          {
+            "login": "yichenmaoy",
+            "contributions": 32
+          },
+          {
+            "login": "snajeebullah",
+            "contributions": 18
+          },
+          {
+            "login": "danie86",
+            "contributions": 4
+          },
+          {
+            "login": "FrenaConsulting",
+            "contributions": 3
+          }
+        ],
+        "contributor_count": 6,
+        "url": "https://github.com/SLSE-IT/hourly.hourly"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "wiper.infra",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-09-05T15:02:13Z",
+        "contributors": [
+          {
+            "login": "danie86",
+            "contributions": 14
+          },
+          {
+            "login": "shahab-etm",
+            "contributions": 11
+          },
+          {
+            "login": "MoniPodili",
+            "contributions": 8
+          },
+          {
+            "login": "roland-sixt",
+            "contributions": 7
+          },
+          {
+            "login": "reneduteloff-allane",
+            "contributions": 3
+          }
+        ],
+        "contributor_count": 5,
+        "url": "https://github.com/SLSE-IT/wiper.infra"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "wiper.dms",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-06-30T09:45:21Z",
+        "contributors": [
+          {
+            "login": "danie86",
+            "contributions": 48
+          },
+          {
+            "login": "yichenmaoy",
+            "contributions": 38
+          },
+          {
+            "login": "roland-sixt",
+            "contributions": 32
+          },
+          {
+            "login": "snajeebullah",
+            "contributions": 27
+          },
+          {
+            "login": "FrenaConsulting",
+            "contributions": 3
+          },
+          {
+            "login": "shahab-etm",
+            "contributions": 2
+          },
+          {
+            "login": "PodiliMonica",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 7,
+        "url": "https://github.com/SLSE-IT/wiper.dms"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "silicon.test.ui",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "main",
+        "last_commit_date": "2025-07-22T06:50:00Z",
+        "contributors": [
+          {
+            "login": "a3798",
+            "contributions": 1896
+          },
+          {
+            "login": "s3626",
+            "contributions": 1375
+          },
+          {
+            "login": "selimKastan",
+            "contributions": 485
+          },
+          {
+            "login": "Rupert-SixtLeasing",
+            "contributions": 53
+          },
+          {
+            "login": "sebastian-kunze",
+            "contributions": 40
+          },
+          {
+            "login": "ungaralex",
+            "contributions": 13
+          },
+          {
+            "login": "uwesalamon",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 7,
+        "url": "https://github.com/SLSE-IT/silicon.test.ui"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "wiper.blend",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-07-02T11:51:17Z",
+        "contributors": [
+          {
+            "login": "danie86",
+            "contributions": 66
+          },
+          {
+            "login": "roland-sixt",
+            "contributions": 50
+          },
+          {
+            "login": "MoniPodili",
+            "contributions": 28
+          },
+          {
+            "login": "yichenmaoy",
+            "contributions": 23
+          },
+          {
+            "login": "snajeebullah",
+            "contributions": 7
+          },
+          {
+            "login": "shahab-etm",
+            "contributions": 2
+          },
+          {
+            "login": "FrenaConsulting",
+            "contributions": 2
+          },
+          {
+            "login": "PodiliMonica",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 8,
+        "url": "https://github.com/SLSE-IT/wiper.blend"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "wiper.testsuite",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2022-02-18T10:41:08Z",
+        "contributors": [
+          {
+            "login": "yichenmaoy",
+            "contributions": 14
+          },
+          {
+            "login": "roland-sixt",
+            "contributions": 13
+          },
+          {
+            "login": "snajeebullah",
+            "contributions": 11
+          },
+          {
+            "login": "danie86",
+            "contributions": 2
+          }
+        ],
+        "contributor_count": 4,
+        "url": "https://github.com/SLSE-IT/wiper.testsuite"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "wiper.app",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-06-30T09:44:47Z",
+        "contributors": [
+          {
+            "login": "roland-sixt",
+            "contributions": 254
+          },
+          {
+            "login": "FrenaConsulting",
+            "contributions": 110
+          },
+          {
+            "login": "yichenmaoy",
+            "contributions": 83
+          },
+          {
+            "login": "danie86",
+            "contributions": 68
+          },
+          {
+            "login": "snajeebullah",
+            "contributions": 33
+          },
+          {
+            "login": "PodiliMonica",
+            "contributions": 9
+          },
+          {
+            "login": "marammedini",
+            "contributions": 5
+          },
+          {
+            "login": "shahab-etm",
+            "contributions": 2
+          }
+        ],
+        "contributor_count": 8,
+        "url": "https://github.com/SLSE-IT/wiper.app"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "qa.infrastructure.docker",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-09-18T07:35:35Z",
+        "contributors": [
+          {
+            "login": "a3798",
+            "contributions": 93
+          },
+          {
+            "login": "sebastian-kunze",
+            "contributions": 25
+          },
+          {
+            "login": "Rupert-SixtLeasing",
+            "contributions": 16
+          },
+          {
+            "login": "ungaralex",
+            "contributions": 8
+          },
+          {
+            "login": "s3626",
+            "contributions": 4
+          }
+        ],
+        "contributor_count": 5,
+        "url": "https://github.com/SLSE-IT/qa.infrastructure.docker"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "qa.infrastructure.unifiedserver-core-adapter",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2022-08-10T11:34:52Z",
+        "contributors": [
+          {
+            "login": "a3798",
+            "contributions": 13
+          },
+          {
+            "login": "s3626",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 2,
+        "url": "https://github.com/SLSE-IT/qa.infrastructure.unifiedserver-core-adapter"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "tdmt.ui",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-11-13T16:44:36Z",
+        "contributors": [
+          {
+            "login": "k9846",
+            "contributions": 351
+          },
+          {
+            "login": "s3626",
+            "contributions": 328
+          },
+          {
+            "login": "a07725",
+            "contributions": 121
+          },
+          {
+            "login": "l03090",
+            "contributions": 13
+          },
+          {
+            "login": "p9072",
+            "contributions": 12
+          },
+          {
+            "login": "a3798",
+            "contributions": 5
+          },
+          {
+            "login": "AmosTech00",
+            "contributions": 2
+          }
+        ],
+        "contributor_count": 7,
+        "url": "https://github.com/SLSE-IT/tdmt.ui"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "tdmt.adapter",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-11-13T16:36:59Z",
+        "contributors": [
+          {
+            "login": "s3626",
+            "contributions": 346
+          },
+          {
+            "login": "a07725",
+            "contributions": 216
+          },
+          {
+            "login": "i9814",
+            "contributions": 51
+          },
+          {
+            "login": "p9072",
+            "contributions": 38
+          },
+          {
+            "login": "a3798",
+            "contributions": 11
+          },
+          {
+            "login": "k9846",
+            "contributions": 10
+          },
+          {
+            "login": "l03090",
+            "contributions": 7
+          },
+          {
+            "login": "ungaralex",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 8,
+        "url": "https://github.com/SLSE-IT/tdmt.adapter"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "tdmt.ui-services",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-11-13T16:37:57Z",
+        "contributors": [
+          {
+            "login": "s3626",
+            "contributions": 117
+          },
+          {
+            "login": "k9846",
+            "contributions": 71
+          },
+          {
+            "login": "a07725",
+            "contributions": 37
+          },
+          {
+            "login": "a3798",
+            "contributions": 10
+          },
+          {
+            "login": "l03090",
+            "contributions": 3
+          },
+          {
+            "login": "p9072",
+            "contributions": 2
+          }
+        ],
+        "contributor_count": 6,
+        "url": "https://github.com/SLSE-IT/tdmt.ui-services"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "b2b.platform.jenkins.backup",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2022-04-28T15:36:35Z",
+        "contributors": [],
+        "contributor_count": 0,
+        "url": "https://github.com/SLSE-IT/b2b.platform.jenkins.backup"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "scout.scoop.leasing-logistic-services",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "acceptance",
+        "last_commit_date": "2016-07-11T11:15:30Z",
+        "contributors": [
+          {
+            "login": "rok-stembergar",
+            "contributions": 120
+          }
+        ],
+        "contributor_count": 1,
+        "url": "https://github.com/SLSE-IT/scout.scoop.leasing-logistic-services"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "scout.scoop.leasing-maintenance-margins",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "acceptance_test",
+        "last_commit_date": "2015-06-18T16:19:36Z",
+        "contributors": [
+          {
+            "login": "rok-stembergar",
+            "contributions": 65
+          }
+        ],
+        "contributor_count": 1,
+        "url": "https://github.com/SLSE-IT/scout.scoop.leasing-maintenance-margins"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "scout.scoop.leasing-quick-search",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "acceptance_test",
+        "last_commit_date": "2015-06-17T08:56:16Z",
+        "contributors": [
+          {
+            "login": "rok-stembergar",
+            "contributions": 11
+          }
+        ],
+        "contributor_count": 1,
+        "url": "https://github.com/SLSE-IT/scout.scoop.leasing-quick-search"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "scout.scoop.config",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2021-10-15T14:38:01Z",
+        "contributors": [
+          {
+            "login": "trulex",
+            "contributions": 14
+          },
+          {
+            "login": "roland-sixt",
+            "contributions": 10
+          }
+        ],
+        "contributor_count": 2,
+        "url": "https://github.com/SLSE-IT/scout.scoop.config"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "scout.cctool.customercaretool",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-05-07T06:58:49Z",
+        "contributors": [
+          {
+            "login": "w9911",
+            "contributions": 68
+          },
+          {
+            "login": "roland-sixt",
+            "contributions": 19
+          }
+        ],
+        "contributor_count": 2,
+        "url": "https://github.com/SLSE-IT/scout.cctool.customercaretool"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "scout.lucy.leasingscout",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2019-01-18T12:09:25Z",
+        "contributors": [],
+        "contributor_count": 0,
+        "url": "https://github.com/SLSE-IT/scout.lucy.leasingscout"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "scout.lucy.smc.offerandorder",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2016-08-16T08:32:49Z",
+        "contributors": [],
+        "contributor_count": 0,
+        "url": "https://github.com/SLSE-IT/scout.lucy.smc.offerandorder"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "scout.lucy.smc.offerandorder-service",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-08-27T07:00:56Z",
+        "contributors": [
+          {
+            "login": "trulex",
+            "contributions": 30
+          },
+          {
+            "login": "minchov",
+            "contributions": 6
+          },
+          {
+            "login": "roland-sixt",
+            "contributions": 6
+          },
+          {
+            "login": "shahab-etm",
+            "contributions": 5
+          },
+          {
+            "login": "reneduteloff-allane",
+            "contributions": 2
+          }
+        ],
+        "contributor_count": 5,
+        "url": "https://github.com/SLSE-IT/scout.lucy.smc.offerandorder-service"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "infrastructure.aws.basic-setup",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2025-06-04T13:31:04Z",
+        "contributors": [
+          {
+            "login": "Ramle-muc",
+            "contributions": 54
+          },
+          {
+            "login": "a4080",
+            "contributions": 5
+          },
+          {
+            "login": "sergiikotenko",
+            "contributions": 4
+          },
+          {
+            "login": "sixt-leasing",
+            "contributions": 3
+          },
+          {
+            "login": "oleksandrshakin",
+            "contributions": 3
+          },
+          {
+            "login": "marcdeop",
+            "contributions": 1
+          },
+          {
+            "login": "mischapogr",
+            "contributions": 1
+          },
+          {
+            "login": "Thomas-Wagner-Sixt",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 8,
+        "url": "https://github.com/SLSE-IT/infrastructure.aws.basic-setup"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "orit.template",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2026-05-11T10:47:11Z",
+        "contributors": [
+          {
+            "login": "mischapogr",
+            "contributions": 6
+          },
+          {
+            "login": "patrickbergner",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 2,
+        "url": "https://github.com/SLSE-IT/orit.template"
+      },
+      {
+        "org": "SLSE-IT",
+        "repo": "orit.config",
+        "private": true,
+        "archived": false,
+        "fork": false,
+        "default_branch": "master",
+        "last_commit_date": "2026-07-27T07:18:02Z",
+        "contributors": [
+          {
+            "login": "Aathikrish",
+            "contributions": 200
+          },
+          {
+            "login": "mischapogr",
+            "contributions": 112
+          },
+          {
+            "login": "kozang",
+            "contributions": 32
+          },
+          {
+            "login": "marcdeop",
+            "contributions": 11
+          },
+          {
+            "login": "patrickbergner",
+            "contributions": 7
+          },
+          {
+            "login": "niklaskappler",
+            "contributions": 7
+          },
+          {
+            "login": "dave-six",
+            "contributions": 4
+          },
+          {
+            "login": "GabrielBB",
+            "contributions": 4
+          },
+          {
+            "login": "fdallane",
+            "contributions": 4
+          },
+          {
+            "login": "simkre-lnx",
+            "contributions": 2
+          },
+          {
+            "login": "Mischazz",
+            "contributions": 2
+          },
+          {
+            "login": "akaydinb",
+            "contributions": 1
+          },
+          {
+            "login": "BorisNen",
+            "contributions": 1
+          },
+          {
+            "login": "daehee9119",
+            "contributions": 1
+          },
+          {
+            "login": "hanneszilt",
+            "contributions": 1
+          },
+          {
+            "login": "JoB1977",
+            "contributions": 1
+          },
+          {
+            "login": "TheMaru",
+            "contributions": 1
+          },
+          {
+            "login": "Natali6S",
+            "contributions": 1
+          },
+          {
+            "login": "reneduteloff-allane",
+            "contributions": 1
+          },
+          {
+            "login": "samhai30",
+            "contributions": 1
+          }
+        ],
+        "contributor_count": 20,
+        "url": "https://github.com/SLSE-IT/orit.config"
+      },
+      {
+        "org": "SLSE-IT",
+        "private": false,
+        "archived": false,
+        "fork": false,
+        "last_commit_date": null,
+        "contributors": [
+          {
+            "login": "(unknown)",
+            "contributions": 0
+          }
+        ],
+        "contributor_count": 1
+      }
+    ],
+    "users": [
+      {
+        "org": "SLSE-IT",
+        "login": "Aathikrish",
+        "name": "Athira Radhakrishna",
+        "lastCommit": {
+          "repo": "infrastructure.cloudflare.terraform",
+          "date": "2026-08-24T13:59:33.000+02:00",
+          "message": "Merge pull request #522 from SLSE-IT/CLOUD-4040-Redirect_auto-konfigurator_to_allane.de\n\nCloud 4040 redirect auto konfigurator to allane.de"
+        },
+        "repos": [
+          {
+            "repo": "orit.config"
+          }
+        ]
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "aleksej-scharich",
+        "name": null,
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "Alen-Nikolov",
+        "name": "Alen Ivanov Nikolov",
+        "lastCommit": {
+          "repo": "orit.bp.system-email",
+          "date": "2026-08-19T13:25:20.000+02:00",
+          "message": "Cp 3260 Adjustment of email for order confirmation (#167)\n\n* CP-3260 changed email template\n\n* CP-3260 uncapitalized first letter\n\n---------\n\nCo-authored-by: Franz Fritsche <85171735+FranzFritsche01@users.noreply.github.com>"
+        },
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "alex-allane",
+        "name": "Alex Leung",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "allane-luigibanzato",
+        "name": "Luigi Banzato",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "anant-pawar",
+        "name": "Anant Pawar",
+        "lastCommit": {
+          "repo": "b2b.platform.leaseservices.sunprodataquery",
+          "date": "2026-08-24T17:06:46.000+02:00",
+          "message": "Merge pull request #141 from SLSE-IT/staging\n\nMerge Staging to Master"
+        },
+        "repos": [
+          {
+            "repo": "b2b.platform.test.api"
+          },
+          {
+            "repo": "b2b.platform.docker"
+          }
+        ]
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "andre-borowski",
+        "name": "Andre Borowski",
+        "lastCommit": {
+          "repo": "processoptimization.rpa.mono",
+          "date": "2024-02-28T11:52:42.000+01:00",
+          "message": "End Mail hinzugefügt"
+        },
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "atodorov-allane",
+        "name": "Alexander Todorov",
+        "lastCommit": {
+          "repo": "orit.bp.system-pdf-rendering",
+          "date": "2026-08-05T10:36:54.000+03:00",
+          "message": "CP-2572 system-pdf-rendering: upgrade to Spring Boot 3.x & Java 21 (#292)\n\n* CP-2572 system-pdf-rendering: upgrade to Spring Boot 3.x & Java 21\n\n* Fix SNS/SQS code\n\n* Fixes\n\n* Update the docker image\n\n* trigger the build with empty commit\n\n* Test\n\n* Test\n\n* test\n\n* test\n\n* test\n\n* test\n\n* test\n\n* Test\n\n* Test\n\n* fix versions\n\n* Test\n\n* test\n\n* test\n\n* test\n\n* test\n\n* test\n\n* Test with new font\n\n* Testt\n\n* test\n\n* Remove the debug logs\n\n* Fix build.gradle\n\n* Fix build.gradle\n\n* Fix the Dockerfile\n\n* Fix Dockerfile\n\n* Fixes\n\n* Fixes\n\n* Fixes\n\n* Fixes\n\n* Fixes\n\n* Fixes\n\n* Fixes\n\n* Fixes\n\n* [CP-2572]spring boots (#311)\n\n* test\n\n* Fix the base docker image version\n\n---------\n\nCo-authored-by: daehee.kim <daehee.kim.extern@allane.com>\nCo-authored-by: Eunsung Lee <110970494+E05860@users.noreply.github.com>"
+        },
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "b1185",
+        "name": "Lesiv Bogdan",
+        "lastCommit": {
+          "repo": "bi.data-platform",
+          "date": "2026-08-25T12:41:55.000+03:00",
+          "message": "LACQS-5134"
+        },
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "BoievOlexander",
+        "name": "Oleksandr Boiev",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "BorisNen",
+        "name": "Boris Nenchovski",
+        "lastCommit": null,
+        "repos": [
+          {
+            "repo": "orit.config"
+          }
+        ]
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "cag2702",
+        "name": "Christian Guenther",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "chaebyeongsik",
+        "name": "Byeongsik Chae",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "classic-github-jenkins",
+        "name": null,
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "daehee9119",
+        "name": "Daehee Kim",
+        "lastCommit": null,
+        "repos": [
+          {
+            "repo": "orit.config"
+          }
+        ]
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "danielathi",
+        "name": "Daniela Thivessen",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "dd-allane",
+        "name": "Daniel Dworatschek",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "Ddin-K",
+        "name": "Jin-hyuk Kim",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "DevoteamAnalytix",
+        "name": "Sascha",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "DimaMartens",
+        "name": "Dietrich Martens",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "donggri019",
+        "name": "Donggyun Kim",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "E05860",
+        "name": "Eunsung Lee",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "e9960",
+        "name": "Enrico Jahn",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "emarz2",
+        "name": "Eugen Marz",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "Emmusta",
+        "name": "Mustafa Al-Jashaami",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "emre-allane",
+        "name": "Emre Bozkurt",
+        "lastCommit": null,
+        "repos": [
+          {
+            "repo": "b2b.platform.test.api"
+          },
+          {
+            "repo": "b2b.platform.docker"
+          }
+        ]
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "ergysrexhepi",
+        "name": "Ergys Rexhepi",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "erlind1987",
+        "name": "Erlind Shahini",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "evstatievallane",
+        "name": "Alexander Evstatiev",
+        "lastCommit": null,
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "login": "f9785",
+        "name": "Felix Tibo",
+        "lastCommit": {
+          "repo": "orit.legacy.lacb2c",
+          "date": "2026-01-09T10:47:06.000+01:00",
+          "message": "Merge pull request #1304 from SLSE-IT/LACORCS-2134_new_Leila1_Kundenart\n\n[PROD] LACORCS-2134 New Kundenart for cooperation - Affiliate"
+        },
+        "repos": []
+      },
+      {
+        "org": "SLSE-IT",
+        "lastCommit": null,
+        "repos": []
+      }
+    ]
+  }
+}
