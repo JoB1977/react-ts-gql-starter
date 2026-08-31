@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
-import { writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
+
 dotenv.config('./');
 
 const TOKEN = process.env['GITHUB_PERSONAL_ACCESS_TOKEN'];
@@ -7,6 +8,8 @@ const TOKEN = process.env['GITHUB_PERSONAL_ACCESS_TOKEN'];
 const sleep = (s = 1) => new Promise((resolve) => setTimeout(resolve, s * 1000));
 
 const cache = new Map();
+
+const defaultSleepFor = 60;
 
 const fetchGH = async (url, params = null, retry = 0) => {
   const query = new URLSearchParams(params || {}).toString();
@@ -16,36 +19,34 @@ const fetchGH = async (url, params = null, retry = 0) => {
   )}`;
   const completeUrlWithParams = `${completeUrl}${query ? `?${query}` : ''}`;
 
-  // if (params?.q?.includes('JoB1977')) {
-  //   console.log('fetch GH', { url, params, completeUrlWithParams });
-  // }
-
   if (cache.has(completeUrlWithParams)) {
     return cache.get(completeUrlWithParams).clone();
   }
 
-  await sleep();
+  // await sleep(0.5);
   const res = await fetch(completeUrlWithParams, { headers: { Authorization: `token ${TOKEN}` } });
 
-  // if (params?.q?.includes('JoB1977')) {
-  //   console.log('fetch GH', { url, params, completeUrlWithParams, res });
-  // }
+  const ratelimitRemaining = +res.headers.get('x-ratelimit-remaining');
+  const ratelimitReset = +res.headers.get('x-ratelimit-reset');
+  const retryAfter = +res.headers.get('retry-after');
+
+  let sleepFor = 0;
+  if (ratelimitRemaining === 0) {
+    sleepFor = ratelimitReset
+      ? Math.max(ratelimitReset - Math.floor(Date.now() / 1000), defaultSleepFor)
+      : defaultSleepFor;
+    console.log(`  [rate limit] sleeping ${sleepFor}s until reset...`);
+  }
 
   if (res.status === 403) {
-    const now = Math.floor(Date.now() / 1000);
-    const ratelimitMemaining = +res.headers.get('x-ratelimit-remaining');
-    const ratelimitReset = +res.headers.get('x-ratelimit-reset');
-    const retryAfter = res.headers.get('retry-after');
-
-    let sleepFor = 60;
-    if (ratelimitMemaining === 0 && ratelimitReset) {
-      sleepFor = Math.max(ratelimitReset - now, 30);
-      console.log(`  [rate limit] sleeping ${sleepFor}s until reset...`);
+    if (sleepFor) {
+      // already computed
     } else if (retryAfter) {
       // Secondary rate limit / abuse detection
-      sleepFor = (+retryAfter || 0) + 2;
+      sleepFor = retryAfter + 2;
       console.log(`  [secondary rate limit] sleeping ${sleepFor}s...`);
     } else {
+      sleepFor = 60;
       console.log(`  [other rate limit] sleeping ${sleepFor}s...`);
     }
 
@@ -59,6 +60,10 @@ const fetchGH = async (url, params = null, retry = 0) => {
     console.log(`  [server error ${res.status}] retrying in 5s...`);
     await sleep(5);
     return fetchGH(url, params, retry + 1);
+  }
+
+  if (sleepFor) {
+    await sleep(sleepFor);
   }
 
   if (res.status >= 200 && res.status < 300) {
@@ -257,21 +262,57 @@ const gatherOrgMembers = async (org, params = {}) => {
 const dryRun = process.argv.includes('dry-run');
 
 const orgs = ['allane-mobility', 'SLSE-IT'];
-const report = {};
 
-for (const org of orgs) {
-  const repos = await gatherOrgRepos(org, { dryRun });
-  const users = await gatherOrgMembers(org);
+const generateReport = async () => {
+  const report = {};
 
-  report[org] = {
-    repos,
-    users: users.map((user) => ({
-      ...user,
-      repos: repos
-        .filter((r) => r.contributors.some((c) => c.login === user.login))
-        .map((r) => ({ repo: r.repo })),
-    })),
-  };
-}
+  for (const org of orgs) {
+    const repos = await gatherOrgRepos(org, { dryRun });
+    const users = await gatherOrgMembers(org);
 
-await writeFile('./github-report.json', JSON.stringify(report, null, 2), { encoding: 'utf-8' });
+    report[org] = {
+      repos,
+      users: users.map((user) => ({
+        ...user,
+        repos: repos
+          .filter((r) => r.contributors.some((c) => c.login === user.login))
+          .map((r) => ({ repo: r.repo })),
+      })),
+    };
+  }
+
+  await writeFile('./github-report.json', JSON.stringify(report, null, 2), { encoding: 'utf-8' });
+};
+
+const generateUserList = async () => {
+  const reportStr = await readFile('./github-report.json', { encoding: 'utf-8' });
+  const report = reportStr ? JSON.parse(reportStr) : null;
+
+  if (!report) {
+    return;
+  }
+
+  const userIds = new Set(orgs.flatMap((org) => report[org].users.map((u) => u.login)));
+
+  const users = [...userIds].map((login) => {
+    const orgUsers = orgs
+      .map((org) => report[org].users.find((u) => u.login === login))
+      .filter(Boolean);
+    const user = orgUsers[0];
+
+    return {
+      login: user.login,
+      name: user.name,
+      orgs: orgUsers.map((u) => u.org),
+      repos: orgUsers.flatMap((u) => u.repos?.map((r) => `${u.org}/${r.repo}`) ?? []),
+      lastCommits: orgUsers
+        .filter((u) => u.lastCommit)
+        .map((u) => `${u.org}/${u.lastCommit.repo}:: ${u.lastCommit.date}`),
+    };
+  });
+
+  await writeFile('./github-users.json', JSON.stringify(users, null, 2), { encoding: 'utf-8' });
+};
+
+await generateReport();
+await generateUserList();

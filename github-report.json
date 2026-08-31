@@ -414,11 +414,11 @@
         "archived": false,
         "fork": false,
         "default_branch": "main",
-        "last_commit_date": "2026-08-28T13:40:15Z",
+        "last_commit_date": "2026-08-28T14:03:59Z",
         "contributors": [
           {
             "login": "Aathikrish",
-            "contributions": 34
+            "contributions": 43
           },
           {
             "login": "sheheryar-allane",
@@ -979,7 +979,6 @@
         "private": false,
         "archived": false,
         "fork": false,
-        "last_commit_date": null,
         "contributors": [
           {
             "login": "(unknown)",
@@ -994,7 +993,11 @@
         "org": "allane-mobility",
         "login": "Aathikrish",
         "name": "Athira Radhakrishna",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "cloud-aft-global-customizations",
+          "date": "2026-08-28T16:03:59.000+02:00",
+          "message": "Merge pull request #34 from allane-mobility/CLOUD-4664-fix\n\nfeat: Security agent deployment"
+        },
         "repos": [
           {
             "repo": "allane-cloud-terraform"
@@ -1160,7 +1163,11 @@
         "org": "allane-mobility",
         "login": "emre-allane",
         "name": "Emre Bozkurt",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "coreSup-integration-platform",
+          "date": "2026-08-28T11:26:50.000+02:00",
+          "message": "INT-2321: Submit invoices and persist provider acknowledgements (#287)"
+        },
         "repos": []
       },
       {
@@ -1303,7 +1310,11 @@
         "org": "allane-mobility",
         "login": "JoB1977",
         "name": "Johannes Bubner",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "coreSup-cmsMainPages",
+          "date": "2026-08-24T14:38:09.000+02:00",
+          "message": "clearer sructure for dockerfile, enable direct prod-deployment (#216)"
+        },
         "repos": [
           {
             "repo": "salesSup-appProcWebOneAllane"
@@ -2493,7 +2504,6 @@
         "private": false,
         "archived": false,
         "fork": false,
-        "last_commit_date": null,
         "contributors": [
           {
             "login": "(unknown)",
@@ -2573,7 +2583,11 @@
         "org": "SLSE-IT",
         "login": "andre-borowski",
         "name": "Andre Borowski",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "processoptimization.rpa.mono",
+          "date": "2024-02-28T11:52:42.000+01:00",
+          "message": "End Mail hinzugefügt"
+        },
         "repos": []
       },
       {
@@ -2682,7 +2696,11 @@
         "org": "SLSE-IT",
         "login": "Ddin-K",
         "name": "Jin-hyuk Kim",
-        "lastCommit": null,
+        "lastCommit": {
+          "repo": "orit.bp.web-allease",
+          "date": "2026-08-26T12:04:01.000+03:00",
+          "message": "[CP 3148] The incorrect sentence has been deleted (#393)\n\n* [CP-3148] Remove incorrect phrases\n\n* [CP-3148] fixed\n\n---------\n\nCo-authored-by: Eunsung Lee <110970494+E05860@users.noreply.github.com>\nCo-authored-by: Daehee Kim <daehee9119@users.noreply.github.com>"
+        },
         "repos": []
       },
       {
